@@ -1,0 +1,62 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/account-card/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'account'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Личный кабинет
+
+block content
+    section.section
+        .account
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Личный кабинет
+
+            .account__user.animation-element
+                .container
+                    .account__user-body
+                        .account__user-data
+                            .account__user-icon
+                                i
+                            .account__user-info
+                                .account__user-name Иванов Иван
+                                .account__user-phone +7 999 999 99 99
+                        .account__buttons
+                            .account__user-button
+                                a.btn.btn_block.btn_dark.btn_edit(href="#")
+                                    i
+                                    span Редактировать
+                            .account__user-button
+                                button.btn.btn_block.btn_lite.btn_logout(type="button")
+                                    i
+                                    span Выйти
+
+            .account__cards.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            +account-card('pencil', 'Изменить пароль', 'Изменить пароль')
+                        .col-12.col-lg-4
+                            +account-card('cart', 'История заказов', 'Смотреть историю')
+                        .col-12.col-lg-4
+                            +account-card('mixer', 'Мои конфигурации', 'Смотреть конфигурации')
+
+            .account__back.animation-element
+                .container
+                    a.btn.btn_block.btn_dark(href="#")
+                        span Вернуться в каталог

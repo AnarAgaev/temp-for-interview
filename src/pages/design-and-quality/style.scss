@@ -1,0 +1,93 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+// daq is a abbreviation of the design-and-quality pagename
+.daq {
+    .container {
+        &:not(:first-child) {
+            margin-bottom: 40px;
+
+            @include animationElementWithDelay;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border: 1px solid var(--color-font-primary);
+        background: var(--color-back-secondary);
+        margin-bottom: 20px;
+
+        @media (min-width: $md) {
+            min-height: 300px;
+        }
+
+        @media (min-width: $lg) {
+            height: 100%;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $xxl) {
+            min-height: 453px;
+        }
+    }
+
+    &__caption {
+        color: var(--color-font-primary);
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 140%; /* 28px */
+        text-transform: uppercase;
+        min-height: 28px;
+    }
+
+    &__text {
+        color: var(--color-font-primary);
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px; /* 138.462% */
+
+        @media (min-width: $md) {
+            font-size: 16px;
+            line-height: 20px; /* 125% */
+        }
+    }
+
+    &__pic {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border: 1px solid var(--color-font-primary);
+
+        @media (min-width: $md) {
+            aspect-ratio: initial;
+            height: 453px;
+        }
+
+        @media (min-width: $lg) {
+            height: 100%;
+        }
+
+        img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @include imgSafety;
+        }
+    }
+}

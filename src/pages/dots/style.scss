@@ -1,0 +1,27 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+@import 'components/dots/dots';
+
+.dots {
+    // user-select: none;
+
+    // * {
+    //     user-select: none;
+    // }
+
+    @media (min-width: $lg) {
+        margin-bottom: 40px;
+    }
+
+    &__component {
+        @include animationElementWithDelay;
+
+        .container {
+            min-height: 400px;
+        }
+    }
+
+    &__accordion {
+        @include animationElementWithDelay;
+    }
+}

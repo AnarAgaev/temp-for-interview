@@ -1,0 +1,19 @@
+@import 'components/product/product';
+@import 'components/recommendation/recommendation';
+@import 'components/info/info';
+
+.product {
+    // user-select: none;
+
+    // * {
+    //     user-select: none;
+    // }
+
+    &__component {
+        @include animationElementWithDelay;
+
+        .container {
+            min-height: 400px;
+        }
+    }
+}

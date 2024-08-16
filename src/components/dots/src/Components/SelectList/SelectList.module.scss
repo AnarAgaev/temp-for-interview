@@ -1,0 +1,28 @@
+@import '../../../../../scss/sass-variables';
+
+.selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $md) {
+        gap: 40px
+    }
+
+    @media (min-width: $xxl) {
+        gap: 10px;
+    }
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $sm) {
+        gap: 10px;
+    }
+}

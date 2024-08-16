@@ -1,0 +1,37 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'product'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Продукция
+                li
+                    a(href="#") PROFI 48V
+                li
+                    span Спот 42
+
+block content
+    section.section
+        .product
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Спот 42
+
+            .product__component.animation-element
+                .container
+                    .row#productComponent
+
+    include ../../components/product-info/product-info
+    include ../../components/recommendation/recommendation

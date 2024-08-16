@@ -1,0 +1,70 @@
+div.modal.hide#enterPhone
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title Введите номер телефона
+            p.modal__subtitle Мы отправим код или позвоним. Отвечать на звонок не нужно
+
+        .modal__body
+            form.modal__form(action="")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        input(type="text" placeholder="Номер телефона")
+                        span.error-message Текст ошибки
+
+                button.btn.btn_block.btn_lite.modal__button(type="button" data-modal data-modal-target="#enterCode" data-modal-action="toggle")
+                    span Получить код
+
+                span.modal__text или
+
+                button.btn.btn_block.btn_lite.modal__button(type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle")
+                    span Войти по почте
+
+        .modal__footer
+            span.modal__text через сервис
+            .modal__service
+                button.modal__service-link.modal__service-link_tinkoff(type="button")
+                button.modal__service-link.modal__service-link_yandex(type="button")
+
+div.modal.hide#enterCode
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title Введите код
+            p.modal__subtitle Мы отправили код подтверждения на номер  
+                span +7 926 818 11 84
+            button.modal__link(type="button" data-modal data-modal-target="#enterPhone" data-modal-action="toggle") Изменить
+
+
+        .modal__body
+            form.modal__form(action="")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        input(type="text" placeholder="Введите код")
+                        span.error-message Текст ошибки
+
+                span.modal__timer Получить новый код можно через  
+                    span.modal__timer-value 00:60
+
+                button.modal__link.d-none(type="button") Получить новый код
+
+                span.modal__text или
+
+                button.btn.btn_block.btn_lite.modal__button(type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle")
+                    span Войти по почте
+
+        .modal__footer
+            span.modal__text через сервис
+            .modal__service
+                button.modal__service-link.modal__service-link_tinkoff(type="button")
+                button.modal__service-link.modal__service-link_yandex(type="button")

@@ -1,0 +1,30 @@
+
+//- Include used template for this page
+extends ../../template/template
+
+include mixin-poster
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'download'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Компания
+                li
+                    span Скачать
+
+block content
+    section.section
+        .download
+            #DownloadCaption
+            #DownloadTabsList
+            #DownloadFilesList

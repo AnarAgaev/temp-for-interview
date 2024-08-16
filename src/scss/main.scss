@@ -1,0 +1,27 @@
+@import 'fonts';
+@import 'css-variables';
+@import 'grid';
+@import 'default';
+@import '../template/header/style';
+@import '../template/footer/style';
+
+// Components
+@import '../components/spinner/style';
+@import '../components/scroll-to-top/style';
+@import '../components/show-modal-msg/style';
+@import '../components/projects-item/style';
+@import '../components/pagination/style';
+@import '../components/button-play/style';
+@import '../components/modals/style';
+@import '../components/account-card/style';
+@import '../components/account-order/style';
+@import '../components/account-configuration/style';
+@import '../components/description/style';
+@import '../components/cards-series/style';
+@import '../components/filters/_style';
+@import '../components/cards-item/style';
+@import '../components/account-forms/style';
+@import '../components/recommendation/style';
+@import '../components/product-info/style';
+@import '../components/accordion/style';
+@import '../components/informer/style';

@@ -1,0 +1,32 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'registration'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Регистрация
+
+block content
+    section.section
+        .registration
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Регистрация
+
+        .registration__body.animation-element
+            .container
+                .row
+                    .col.col-lg-8.col-xl-6.offset-lg-2.offset-xl-3
+                        include ../../components/account-forms/registration.pug

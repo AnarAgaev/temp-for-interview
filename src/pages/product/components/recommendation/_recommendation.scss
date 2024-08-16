@@ -1,0 +1,110 @@
+@import '../../../../scss/sass-variables';
+@import '../../../../scss/mixins';
+
+.recommendation {
+    @include animationElementWithDelay;
+
+    &__slider {
+        width: calc(100% + 10px);
+        height: auto;
+
+        @media (min-width: $sm) {
+            width: 100%;
+        }
+
+        &_series {
+            @media (min-width: $xl) {
+                margin-bottom: -40px;
+            }
+
+            @media (min-width: $xxl) {
+                margin-bottom: -60px;
+            }
+        }
+    }
+
+    .swiper {
+        width: 100vw;
+        height: auto;
+        padding-left: 10px;
+        margin-left: -10px;
+        padding-bottom: 36px;
+
+        @media (min-width: $sm) {
+            width: 100%;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        @media (min-width: $xl) {
+            padding-bottom: 0;
+        }
+
+        &.scroll-hidden {
+            padding-bottom: 0;
+        }
+    }
+
+    .swiper-wrapper {
+        @media (min-width: $xl) {
+            column-gap: 20px;
+            transform: none !important;
+            flex-wrap: wrap;
+        }
+    }
+
+    .swiper-slide {
+        width: auto;
+        height: auto;
+
+        @media (min-width: $sm) {
+            width: 100%;
+        }
+
+        @media (min-width: $xl) {
+            flex: 1;
+            position: relative;
+            max-width: calc((100% - 20px * 3) / 4);
+            min-width: calc((100% - 20px * 3) / 4);
+            padding: 0;
+        }
+    }
+
+    .swiper-scrollbar {
+        width: calc(100% - 30px * 2);
+        height: 26px;
+        left: 30px;
+        bottom: 0;
+        background: transparent;
+
+        @media (min-width: $xl) {
+            display: none;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 13px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-font-primary);
+        }
+    }
+
+    .swiper-scrollbar-drag {
+        background: transparent;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: var(--color-font-primary);
+        }
+    }
+}

@@ -1,0 +1,77 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/account-card/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'account'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Изменить пароль
+
+block content
+    // Для всех страниц кабнета добавляем один файл скрптов - account.js
+    section.section
+        .account
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text
+                            a.link-back(href="#" title="Вернуться в личный кабинет")
+                            span Изменить пароль
+
+            .account__form.animation-element
+                .container
+                    .row
+                        .col-12.col-md-6
+                            form.account__form-body#changePasswordForm(action="")
+                                .account__form-data.account__form-data_small-offset
+                                    .account__form-section
+                                        .account__form-controller.account__form-controller_pass
+                                            span.account__form-caption Введите новый пароль
+                                            label.account__form-label
+                                                i.edit
+                                                input#currentPass(type="password" value="12345")
+                                                button.account__form-toggle-pass(type="button")
+                                            mark.account__form-msg Должен содержать минимум 8 символов
+                                            span.account__form-error Сообщение об ошибке
+
+                                    .account__form-section
+                                        // Класс .has-error контроллеру не добавлять. Нужен для демострации ошибкии
+                                        .account__form-controller.account__form-controller_pass.has-error
+                                            span.account__form-caption Подтвердите ваш новый пароль
+                                            label.account__form-label
+                                                i.edit
+                                                input#newPass(type="text" value="12345678")
+                                                button.account__form-toggle-pass.pass-visible(type="button")
+                                            mark.account__form-msg Должен содержать минимум 8 символов
+                                            span.account__form-error Сообщение об ошибке
+
+                                .account__form-button
+                                    button.btn.btn_block.btn_dark(type="submit")
+                                        span Сохранить
+
+            .account__cards.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            +account-card('pencil', 'Изменить пароль', 'Изменить пароль')
+                        .col-12.col-lg-4
+                            +account-card('cart', 'История заказов', 'Смотреть историю')
+                        .col-12.col-lg-4
+                            +account-card('mixer', 'Мои конфигурации', 'Смотреть конфигурации')
+
+            .account__back.animation-element
+                .container
+                    a.btn.btn_block.btn_dark(href="#")
+                        span Вернуться в каталог

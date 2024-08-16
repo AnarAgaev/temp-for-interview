@@ -1,0 +1,99 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'products'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Продукция
+
+block content
+    section.section
+        .products
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Продукция
+
+            .products__body.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            a.products__item(href="#")
+                                .products__card
+                                    p.products__caption
+                                        span.products__title DOT
+                                        span.products__subtitle 220V
+                                    img.products__pic(src="https://aws.massive.ru/technolight/images/projects/dots.jpg" alt="" loading="lazy")
+                                    button.products__toggle-scheme
+                                    .products__scheme
+                                        img(src="https://placehold.co/400?text=No+Image&font=roboto" alt="")
+                                .products__action
+                                    p DOT 220V
+                                    mark
+                        .col-12.col-lg-4
+                            a.products__item(href="#")
+                                .products__card
+                                    p.products__caption
+                                        span.products__title Трековая
+                                        span.products__subtitle система
+                                    img.products__pic(src="https://aws.massive.ru/technolight/images/projects/track.jpg" alt="" loading="lazy")
+                                    button.products__toggle-scheme
+                                    .products__scheme
+                                        img(src="https://placehold.co/400?text=No+Image&font=roboto" alt="")
+
+                                .products__action
+                                    p Трековая система PROFI 48V
+                                    mark
+                        .col-12.col-lg-4
+                            a.products__item(href="#")
+                                .products__card
+                                    p.products__caption
+                                        span.products__title Вспомогательная
+                                        span.products__subtitle продукция
+                                    img.products__pic(src="https://aws.massive.ru/technolight/images/projects/helps.jpg" alt="" loading="lazy")
+                                    button.products__toggle-scheme
+                                    .products__scheme
+                                        img(src="https://placehold.co/400?text=No+Image&font=roboto" alt="")
+
+                                .products__action
+                                    p Вспомогательная продукция
+                                    mark
+                        .col-12.col-lg-4
+                            a.products__item(href="#")
+                                .products__card
+                                    p.products__caption
+                                        span.products__title Уличное
+                                        span.products__subtitle освещение
+                                    img.products__pic(src="https://aws.massive.ru/technolight/images/projects/lights.jpg" alt="" loading="lazy")
+                                    button.products__toggle-scheme
+                                    .products__scheme
+                                        img(src="https://placehold.co/400?text=No+Image&font=roboto" alt="")
+
+                                .products__action
+                                    p Уличное освещение
+                                    mark
+                        .col-12.col-lg-4
+                            a.products__item(href="#")
+                                .products__card
+                                    p.products__caption
+                                        span.products__title Модульные
+                                        span.products__subtitle светильники
+                                    img.products__pic(src="https://aws.massive.ru/technolight/images/projects/modul.jpg" alt="" loading="lazy")
+                                    button.products__toggle-scheme
+                                    .products__scheme
+                                        img(src="https://placehold.co/400?text=No+Image&font=roboto" alt="")
+
+                                .products__action
+                                    p Модульные светильники
+                                    mark

@@ -1,0 +1,24 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'series'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Продукция
+                li
+                    span Трековая система PROFI 48V
+
+block content
+    include components/description/description
+    include components/cards-series/cards-series

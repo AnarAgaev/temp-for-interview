@@ -1,0 +1,13 @@
+@import '../../../../../scss/sass-variables';
+
+.blocked {
+    color: var(--color-font-hover-dark) !important;
+    border: 1px solid var(--color-font-hover-dark) !important;
+    background: var(--color-back-primary) !important;
+    cursor: not-allowed !important;
+    pointer-events: none;
+
+    &::before {
+        display: none !important;
+    }
+}

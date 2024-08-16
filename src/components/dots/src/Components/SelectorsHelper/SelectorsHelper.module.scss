@@ -1,0 +1,17 @@
+@import '../../../../../scss/sass-variables';
+
+.message {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.desc {
+    color: var(--color-background-template);
+    padding-right: 5px;
+}
+
+.params {
+    background: var(--color-back-secondary);
+    padding: 0 5px;
+}

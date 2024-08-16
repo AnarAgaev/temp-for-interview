@@ -1,0 +1,20 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'custom'
+
+block content
+    section.section
+        .payment
+            .payment__body
+                h1 Ссылка на оплату
+                h2 сумма к оплате
+                mark 123 руб.
+                a.btn.btn_dark.btn_block(href='https://payments.technolight.ru/api/order/39599beb-5283-4370-8fa1-696739928913?go=1' target='_blank')
+                    span Оплатить
+                p Если у вас возникли вопросы то вы можете позвонить по телефону +7 495-797-72-51

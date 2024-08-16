@@ -1,0 +1,95 @@
+@import '../../../../../scss/sass-variables';
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--color-background-template);
+    padding: 20px;
+
+    @media (min-width: $xl) {
+        gap: 40px;
+        min-width: 100%;
+        padding: 60px;
+    }
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+
+    @media (min-width: $sm) {
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    button {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        cursor: pointer;
+        transition: all .7s cubic-bezier(0.25, 1, 0.5, 1);
+        background: rgba(0, 0, 0, 0) no-repeat center;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMTVMMTAgOS41TDE2IDE1TTE2IDRMOS45OTg4NiA5LjVMNCA0IiBzdHJva2U9IiNGNUY1RjUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.text {
+    display: block;
+    position: relative;
+    width: 75vw;
+    max-width: 400px;
+    padding: 0 20px;
+    color: var(--color-font-inversion);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    text-wrap: balance;
+
+    background: transparent;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+
+    button {
+        max-width: 220px;
+        padding: 0;
+
+        span span {
+            display: none;
+
+            @media (min-width: $sm) {
+                display: inline-block;
+            }
+        }
+    }
+}

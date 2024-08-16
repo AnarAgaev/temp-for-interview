@@ -1,0 +1,80 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'trademark'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Компания
+                li
+                    span Торговая марка
+
+block content
+    section.section
+        .trademark
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Торговая марка
+
+            .container.animation-element
+                .row
+                    .col-12.col-lg-4
+                        .trademark__badge
+                            img(src="https://aws.massive.ru/technolight/images/trademark/logo.png" alt="" loading="lazy")
+                    .col-12.col-xxl-8
+                        p.trademark__description Technolight® — это торговая марка с историей, знаниями и опытом с 1993 года. Создана под влиянием современных тенденций и технологий в освещении и дизайне интерьеров. Основа продукции — это лаконичный дизайн и лучшие технологические решения. На сегодняшний день мы реализуем крупные проекты и имеем признание надежных партнёров.
+
+
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Ключевые ценности
+
+            .container.animation-element
+                .row
+                    .col-12.col-lg-4
+                        .trademark__card
+                            h3.trademark__caption Семейный бизнес
+                            p.trademark__text Мы живем тем, что постоянно создаем новые модели для освещения пространства и создания неповторимой атмосферы света. Бизнес, который начинался с небольшой компании людей, интересующихся осветительными приборами, и состоящий в основном из членов одной семьи, с каждым годом рос и развивался. Сейчас компания является ведущим поставщиком декоративного освещения.
+                    .col-12.col-lg-8
+                        .trademark__pic
+                            img(src="https://aws.massive.ru/technolight/images/trademark/buisness.jpg" alt="" loading="lazy")
+
+
+                    .col-12.col-lg-4
+                        .trademark__block
+                            .trademark__wrap
+                                h3.trademark__caption Наследие
+                                p.trademark__text Используя весь накопившийся опыт, знания и навыки в создании и производстве осветительных приборов, а также дистрибьюции этой продукции, мы не останавливаемся на достигнутом и каждый день расширяем свои возможности.
+                            .trademark__box
+                                .trademark__image
+                                    img(src="https://aws.massive.ru/technolight/images/trademark/heritage.jpg" alt="" loading="lazy")
+
+                    .col-12.col-lg-4
+                        .trademark__block
+                            .trademark__wrap
+                                h3.trademark__caption Инновации
+                                p.trademark__text Постоянное развитие и совершенствование, поиск новых идей и возможностей, взаимодействие с дизайнерами и архитекторами, конечная реализация проектов. Мы знаем о своем продукте абсолютно все. Используем безопасные материалы и самые передовые технологии.
+                            .trademark__box
+                                .trademark__image
+                                    img(src="https://aws.massive.ru/technolight/images/trademark/innovation.jpg" alt="" loading="lazy")
+
+                    .col-12.col-lg-4
+                        .trademark__block
+                            .trademark__wrap
+                                h3.trademark__caption Эстетика
+                                p.trademark__text Требовательное внимание к деталям позволяет нам создавать продукт простым и интуитивно понятным каждому. Именно это соотношение лежит в основе нашей деятельности.
+                            .trademark__box
+                                .trademark__image
+                                    img(src="https://aws.massive.ru/technolight/images/trademark/aesthetics.jpg" alt="" loading="lazy")

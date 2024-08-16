@@ -1,0 +1,112 @@
+section.section.section_filter
+    .description
+        .description__caption
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h1.container_caption-text Каталог
+
+        .description__filters.animation-element
+            .container
+                .filters.filters_short
+
+                    .filters__list
+                        // .active.dropped
+                        .filters__item
+                            span.filters__caption
+                                span Категория продукта
+                            .filters__drop
+                                .filters__options
+                                    label
+                                        // В name input добавляем имя параметра для фильтрации, а в value добавляем значение параметра
+                                        // span.value Должен идти ОБЯЗАТЕЛЬНО сразу после input
+                                        input.invisible(type='radio' name='category' value='Без категории' data-type='filter')
+                                        span.value Без категории
+                                    label
+                                        input.invisible(type='radio' name='category' value='Блоки питания' data-type='filter')
+                                        span.value Блоки питания
+                                    label
+                                        input.invisible(type='radio' name='category' value='Детали DOT' data-type='filter')
+                                        span.value Детали DOT
+                                    label
+                                        input.invisible(type='radio' name='category' value='Светильники' data-type='filter')
+                                        span.value Светильники
+                                    label
+                                        input.invisible(type='radio' name='category' value='Светильники без видимой рамки' data-type='filter')
+                                        span.value Светильники без видимой рамки
+                                    label
+                                        input.invisible(type='radio' name='category' value='Светильники с видимой рамкой' data-type='filter')
+                                        span.value Светильники с видимой рамкой
+                                    label
+                                        input.invisible(type='radio' name='category' value='Треки' data-type='filter')
+                                        span.value Треки
+                                    label
+                                        // У инпута отвечающего за сброс текущего фильра в value должно быть значение reset
+                                        // У span .value должен присутствовать класс-модификтор .value_reset
+                                        // Значение атрибута name у инпута должно быть такоеже как и у дригих в .filters__options (выше по коду)
+                                        input.invisible(type='radio' name='category' value='reset' data-type='filter')
+                                        span.value.value_reset Сбросить
+
+                        .filters__item
+                            span.filters__caption
+                                span Цвет элементов
+                            .filters__drop
+                                .filters__options
+                                    label
+                                        i.color(data-color="Не указан")
+                                        input.invisible(type='radio' name='color' value='Не указан' data-type='filter')
+                                        span.value Не указан
+                                    label
+                                        i.color(data-color="Белый")
+                                        input.invisible(type='radio' name='color' value='Белый' data-type='filter')
+                                        span.value Белый
+                                    label
+                                        i.color(data-color="Золотистый")
+                                        input.invisible(type='radio' name='color' value='Золотистый' data-type='filter')
+                                        span.value Золотистый
+                                    label
+                                        i.color(data-color="Никель")
+                                        input.invisible(type='radio' name='color' value='Никель' data-type='filter')
+                                        span.value Никель
+                                    label
+                                        i.color(data-color="Прозрачный")
+                                        input.invisible(type='radio' name='color' value='Прозрачный' data-type='filter')
+                                        span.value Прозрачный
+                                    label
+                                        i.color(data-color="Серебристый")
+                                        input.invisible(type='radio' name='color' value='Серебристый' data-type='filter')
+                                        span.value Серебристый
+                                    label
+                                        i.color(data-color="Чёрный")
+                                        input.invisible(type='radio' name='color' value='Чёрный' data-type='filter')
+                                        span.value Чёрный
+                                    label
+                                        input.invisible(type='radio' name='color' value='reset' data-type='filter')
+                                        span.value.value_reset Сбросить
+
+                        .filters__item
+                            span.filters__caption
+                                span Цена
+                            .filters__drop
+                                .filters__options
+                                    label
+                                        input.invisible(type='radio' name='price' value='По возрастанию' data-type='sort')
+                                        span.value По возрастанию
+                                    label
+                                        input.invisible(type='radio' name='price' value='По убыванию' data-type='sort')
+                                        span.value По убыванию
+                                    label
+                                        input.invisible(type='radio' name='type' value='reset' data-type='sort')
+                                        span.value.value_reset Сбросить
+
+
+                    // По дефолту к кнопке Сбросить все добавляем класс .disabled, так как никаких фильтров не выбрано
+                    .filters__reset.disabled
+                        // Чтобы не удалять лишние get параметры, в data-deleted-params пишем json массив в котором перечисляем все типы удаляемых get параметров в url
+                        .filters__item(data-deleted-params=['filter', 'sort', 'select'])
+                            span.filters__caption
+                                span Сбросить все
+
+        .description__msg
+            .container
+                span К сожалению, по Вашему запросу ничего не найдено. Товара с данными параметрами нет на сайте.

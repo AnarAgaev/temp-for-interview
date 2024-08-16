@@ -1,0 +1,40 @@
+div.modal.hide#passRecovery
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title Восстановление пароля
+            p.modal__subtitle Введите электронную почту
+
+        .modal__body
+            form.modal__form(action="")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        input(type="text" placeholder="Email")
+                        span.error-message Текст ошибки
+
+                button.btn.btn_block.btn_lite.modal__button(type="submit" data-modal data-modal-target="#passRecoveryMessage" data-modal-action="toggle")
+                    span Сбросить пароль
+
+        .modal__footer
+            button.modal__link(type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle") Вернуться к входу
+
+
+div.modal.hide#passRecoveryMessage
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title Восстановление пароля
+            p.modal__subtitle Новый пароль выслан на указанную почту
+            span.modal__check
+
+        .modal__footer
+            button.modal__link(type="button" data-modal data-modal-target="#enterEmail" data-modal-action="toggle") Перейти к входу

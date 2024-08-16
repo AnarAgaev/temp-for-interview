@@ -1,0 +1,265 @@
+.header__modal-back
+
+.container
+    .header__content
+        a.header__logo.logo-light(href="#")
+
+        if page !== 'custom'
+            nav.header__nav
+                .header__nav-caption.d-lg-none
+                    span.header__nav-logo.logo-dark
+                    button.header__nav-close
+
+                ul.header__nav-list
+                    // Элементку списка у которого есть подменю, нужно добавлять класс-модификатов .header__nav-item_with-inner
+                    // Для раскрытого пункта меню, добавлять класс .dropped
+                    li.header__nav-item.header__nav-item_prod.header__nav-item_with-inner
+                        i
+                        // Активному пункту меню добавляем класс .active
+                        // Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ
+                        button.header__nav-link.header__nav-link_product
+                            i.d-lg-none
+                            span Продукция
+
+                        // Для открытого подменю, добавляем класс .open
+                        .header__nav-collapse.header__nav-collapse_product.collapse
+                            .collapse__inner
+                                button.header__nav-close.d-none.d-lg-block
+
+                                .header__nav-superlink
+                                    a(href="#")
+                                        i
+                                        span Вся продукция
+
+                                ul.header__nav-sublist
+                                    // У списка подменю с заголовком у первого li класс .header__nav-subtitle
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Интерьерный свет
+
+                                    li.header__nav-inner-caption
+                                        span.header__nav-inner-toggle Модульные светильники
+                                        .header__nav-sublist-collapse
+                                            .header__nav-sublist-collapse__inner
+                                                ul.header__nav-inner-list
+                                                    li
+                                                        a(href="#") Встраиваемые
+                                                    li
+                                                        a(href="#") Накладные
+                                                    li
+                                                        a(href="#") Монтажные комплекты
+                                                    li
+                                                        a(href="#") Двойные рамки
+                                                    li
+                                                        a(href="#") Декоративные рамки безрамочные
+
+
+                                ul.header__nav-sublist
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Экстерьерный свет
+
+                                    li.header__nav-inner-caption
+                                        span.header__nav-inner-toggle Грунтовые
+                                        .header__nav-sublist-collapse
+                                            .header__nav-sublist-collapse__inner
+                                                ul.header__nav-inner-list
+                                                    li
+                                                        a(href="#") Светильники
+
+                                    li.header__nav-inner-caption
+                                        span.header__nav-inner-toggle Прожекторы
+                                        .header__nav-sublist-collapse
+                                            .header__nav-sublist-collapse__inner
+                                                ul.header__nav-inner-list
+                                                    li
+                                                        a(href="#") Светильники
+                                                    li
+                                                        a(href="#") Стойки в грунт
+
+
+                                ul.header__nav-sublist
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Системы освещения
+
+                                    li.header__nav-inner-caption
+                                        span.header__nav-inner-toggle PROFI 48
+                                        .header__nav-sublist-collapse
+                                            .header__nav-sublist-collapse__inner
+                                                ul.header__nav-inner-list
+                                                    li
+                                                        a(href="#") Треки
+                                                    li
+                                                        a(href="#") Светильники
+                                                    li
+                                                        a(href="#") Блоки питания
+                                                    li
+                                                        a(href="#") Двойные рамки
+                                                    li
+                                                        a(href="#") Декоративные рамки безрамочные
+
+
+                                ul.header__nav-sublist
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Компоненты
+
+                                    li.header__nav-inner-caption
+                                        span.header__nav-inner-toggle Источники питания
+                                        .header__nav-sublist-collapse
+                                            .header__nav-sublist-collapse__inner
+                                                ul.header__nav-inner-list
+                                                    li
+                                                        a(href="#") Блоки питания шины
+                                    li.header__nav-inner-caption
+                                        span.header__nav-inner-toggle Управление
+                                        .header__nav-sublist-collapse
+                                            .header__nav-sublist-collapse__inner
+                                                ul.header__nav-inner-list
+                                                    li
+                                                        a(href="#") Модули для беспроводного управления
+
+                                ul.header__nav-sublist
+                                    // У списка подменю с заголовком у первого li класс .header__nav-subtitle
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Одноуровневый список
+                                    li.header__nav-subitem
+                                        a.header__nav-sublink(href="#") Ссылка
+                                    li.header__nav-subitem
+                                        a.header__nav-sublink(href="#") Ссылка
+                                    li.header__nav-subitem
+                                        a.header__nav-sublink(href="#") Ссылка
+
+                    li.header__nav-item
+                        a.header__nav-link.header__nav-link_delivery(href="#")
+                            i.d-lg-none
+                            span Доставка и оплата
+                    li.header__nav-item
+                        a.header__nav-link.header__nav-link_buy(href="#")
+                            i.d-lg-none
+                            span Где купить
+                    li.header__nav-item
+                        a.header__nav-link.header__nav-link_configurator(href="#")
+                            i.d-lg-none
+                            span Конфигуратор
+                    li.header__nav-item.header__nav-item_company.header__nav-item_with-inner
+                        i
+                        // Пункты с подменю должны быть КНОПКАМИ А НЕ ССЫЛКАМИ
+                        button.header__nav-link.header__nav-link_company
+                            i.d-lg-none
+                            span Компания
+                        .header__nav-collapse.header__nav-collapse_company.collapse
+                            .collapse__inner
+                                button.header__nav-close.d-none.d-lg-block
+                                ul.header__nav-sublist
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Обмен и возврат
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Гарантия качества
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Наши проекты
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Жизнь компании
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Торговая марка
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Дизайн и качество
+                                    li.header__nav-subtitle
+                                        a.header__nav-sublink(href="#") Контакты
+                    li.header__nav-item.d-lg-none
+                        a.header__nav-link.header__nav-link_download(href="#")
+                            i.d-lg-none
+                            span Скачать
+
+        if page !== 'custom'
+            ul.header__buttons
+                li.d-none.d-lg-block
+                    a.header__buttons-link.header__buttons-link_call(href="tel:+9200000000")
+                        i
+                li
+                    button.header__buttons-link.header__buttons-link_search
+                        i
+                li
+                    a.header__buttons-link.header__buttons-link_favorites(href="#")
+                        i
+                            span.header__buttons-count 23
+                li
+                    a.header__buttons-link.header__buttons-link_cart(href="#")
+                        i
+                            span.header__buttons-count#cartProductCount 7
+                li.d-none.d-lg-block
+                    a.header__buttons-link.header__buttons-link_account(href="#")
+                        i
+    if page !== 'custom'
+        // По умолчанию добавляем класс .disable, т.к поиск по умолчанию скрыт
+        .header__search.disable
+            form.header__search-form
+                label
+                    i
+                    input.header__search-input(type="text" placeholder="Поиск")
+                    span.header__search-reset(type="reset")
+                button.header__search-close(type="button") Отмена
+
+            .header__search-hints
+
+                .header__search-links
+                    // span.no-results По Вашему запросу ничего не найдено
+                    a(href="#") Рамка Лофт 68 круглая серии безрамочных светильников  
+                        strong 41022-BK
+
+                .header__search-similar
+                    h5 смотрите похожие
+                    a(href="#")
+                        span.pic
+                            img(src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="")
+                        span.text Рамка Лофт 68 круглая поворотная  
+                            strong 41022-BK  
+                            | черная
+
+                    a(href="#")
+                        span.pic
+                            img(src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="")
+                        span.text Рамка Симпл 68 круглая поворотная  
+                            strong 41022-BK  
+                            | черная
+
+                    a(href="#")
+                        span.pic
+                            img(src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="")
+                        span.text Фиксирующее кольцо  
+                            strong 42001-BK  
+                            | черное
+
+                    a(href="#")
+                        span.pic
+                            img(src="https://aws.massive.ru/databus/products/technolight/165910/big/80108-mw.jpg" alt="")
+                        span.text Рамка двойная под круглые 85 черная  
+                            strong 41007-BK  
+                            | для модульных светильников Софт 85 и Твист 85
+
+        //- Вариант поиска с 3-мя категориями в выдаче
+        //- Временно решили заменить на вывод одной категории
+        //- .header__search-hints
+        //-     .header__search-helps
+        //-         span Трек для натяжного потолка
+        //-         span Софт
+        //-         span Лайн 300
+        //-         span Блок питания линейный
+        //-         span Торцевая заглушка для трека
+        //-         span Трек встраиваемый в гипсокартон
+
+        //-     .header__search-links
+        //-         a(href="#") Торцевая заглушка для трека
+        //-         a(href="#") Лайн 300
+        //-         a(href="#") Блок питания линейный
+        //-         a(href="#") Трек встраиваемый в гипсокартон
+        //-         a(href="#") Трек под натяжной потолок купить
+        //-         a(href="#") Споты для трека в Москве
+
+        //-     .header__search-categories
+        //-         a(href="#")
+        //-             p Светильники с рамкой
+        //-             span Категория
+        //-         a(href="#")
+        //-             p Светильники с рамкой
+        //-             span Категория
+
+    if page !== 'custom'
+        .header__msg-container

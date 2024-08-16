@@ -1,0 +1,9 @@
+mixin account-order(type, number, status, date, sum)
+    .account__order
+        .account__order-type(class=`account__order-type_${type}`)
+        .account__order-body
+            span.account__order-number= `№ ${number}`
+            span.account__order-status= status
+            if date
+                span.account__order-date= `от ${date}`
+            span.account__order-sum= `${sum} ₽`

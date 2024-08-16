@@ -1,0 +1,72 @@
+section.billboard.inactive
+    .billboard__slider
+        .swiper
+            .swiper-wrapper
+                .swiper-slide
+                    .billboard__container
+                        // Можно вставлять либо img либо video с классом .billboard__content
+                        // Только для видео адрес пишем в data-src Для картинок браузерная ленивая загрузка
+                        video.billboard__content(src="#" data-src="https://technolight.ru/assets/images/main-page/technolight_ru_9x16.mp4" playsinline loop)
+
+                        // Если для слайда используется картинка а не видео, то picture вместо класса .billboard__poster добавляем класс .billboard__content
+                        picture.billboard__poster
+                            source(media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-mob.jpg")
+                            source(media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-tab.jpg")
+                            source(media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-1-desc.jpg")
+                            img(src="https://aws.massive.ru/technolight/images/billboard/poster-1-desc.jpg" loading="lazy" alt="")
+
+                        // Если на странице нужна ссылка, добавляем блок с кнопкой
+                        .billboard__link
+                            a.btn.btn_billboard(href="#")
+                                i
+                                span Ссылка на билборде
+                .swiper-slide
+                    .billboard__container
+                        video.billboard__content(src="#" data-src='https://technolight.ru/assets/images/menu-pics/2_Bathroom_black.mp4' playsinline loop)
+                        picture.billboard__poster
+                            source(media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-mob.jpg")
+                            source(media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-tab.jpg")
+                            source(media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-4-desc.jpg")
+                            img(src="https://aws.massive.ru/technolight/images/billboard/poster-4-desc.jpg" loading="lazy" alt="")
+                .swiper-slide
+                    .billboard__container
+                        video.billboard__content(src="#" data-src='https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4' playsinline loop)
+                        picture.billboard__poster
+                            source(media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-mob.jpg")
+                            source(media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-tab.jpg")
+                            source(media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-3-desc.jpg")
+                            img(src="https://aws.massive.ru/technolight/images/billboard/poster-3-desc.jpg" loading="lazy" alt="")
+                .swiper-slide
+                    .billboard__container
+                        picture.billboard__content
+                            source(media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-mob.jpg")
+                            source(media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-tab.jpg")
+                            source(media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-2-desc.jpg")
+                            img(src="https://aws.massive.ru/technolight/images/billboard/poster-2-desc.jpg" loading="lazy" alt="")
+                .swiper-slide
+                    .billboard__container
+                        video.billboard__content(src="#" data-src='https://technolight.ru/assets/images/main-page/dot-220v_lego.mp4' playsinline loop)
+                        picture.billboard__poster
+                            source(media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-mob.jpg")
+                            source(media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-tab.jpg")
+                            source(media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-6-desc.jpg")
+                            img(src="https://aws.massive.ru/technolight/images/billboard/poster-6-desc.jpg" loading="lazy" alt="")
+                .swiper-slide
+                    .billboard__container
+                        picture.billboard__content
+                            source(media="(max-width: 767px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-mob.jpg")
+                            source(media="(min-width: 768px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-tab.jpg")
+                            source(media="(min-width: 1200px)" srcset="https://aws.massive.ru/technolight/images/billboard/poster-7-desc.jpg")
+                            img(src="https://aws.massive.ru/technolight/images/billboard/poster-7-desc.jpg" loading="lazy" alt="")
+                        .billboard__link
+                            a.btn.btn_billboard(href="https://technolight.ru/" target="_blank")
+                                i
+                                span Посмотреть DOT 220V
+            .billboard__pagination
+                //- .billboard__page.billboard__page_current
+                .swiper-pagination
+                //- .billboard__page.billboard__page_all
+
+    .billboard__message
+        a(href="#projects")
+            span

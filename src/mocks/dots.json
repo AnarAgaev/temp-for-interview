@@ -1,0 +1,1820 @@
+{
+    "id": 2,
+    "is_admin": true,
+    "steps": {
+        "Монтажный комплект": [
+            ["40001-89"],
+            ["40002-89"]
+        ],
+        "Декоративная рамка": [
+            ["41021-BK"],
+            ["41021-WH"],
+            ["41021-GD"],
+            ["41022-BK"],
+            ["41022-WH"],
+            ["41022-GD"],
+            ["41023-BK"],
+            ["41023-WH"],
+            ["41023-GD"]
+        ],
+        "Фиксирующее кольцо": [
+            ["42001-BK"],
+            ["42002-BK"]
+        ],
+        "Светодиодный модуль": [
+            ["44001-3K", "45001-02"],
+            ["44001-4K", "45001-02"],
+            ["44002-3K", "45002-02"],
+            ["44002-4K", "45002-02"],
+            ["44003-3K", "45003-02"],
+            ["44003-4K", "45003-02"],
+            ["44004-3K", "45004-02"],
+            ["44004-4K", "45004-02"],
+            ["44002-DTW", "45002-02"],
+            ["44002-27K", "45002-02"]
+        ],
+        "Линза": [
+            ["43001-15"],
+            ["43001-36"],
+            ["43001-60"],
+            ["43002-18"],
+            ["43002-38"],
+            ["43002-50"],
+            ["43003-30"],
+            ["43001-08"]
+        ],
+        "Светофильтр": [
+            ["46001-F1"],
+            [null]
+        ],
+        "Защитная накладка IP": [
+            ["46002-44"],
+            ["46001-44"],
+            [null]
+        ]
+    },
+    "stepsCount": {
+        "Монтажный комплект": 1,
+        "Декоративная рамка": 1,
+        "Фиксирующее кольцо": 1,
+        "Светодиодный модуль": 1,
+        "Линза": 1,
+        "Светофильтр": 1,
+        "Защитная накладка IP": 1
+    },
+    "blacklists": [
+        ["40001-89", "41023-BK", "41023-WH", "41023-GD"],
+        ["40002-89", "41021-BK", "41021-WH", "41021-GD", "41022-BK", "41022-WH", "41022-GD"],
+        ["40001-89", "46002-44"],
+        ["40002-89", "46001-44"],
+        ["44002-DTW", "43001-15", "43002-18"],
+        ["44002-3K", "43001-08"],
+        ["44002-4K", "43001-08"],
+        ["44003-3K", "43001-08"],
+        ["44003-4K", "43001-08"],
+        ["44004-3K", "43001-08"],
+        ["44004-4K", "43001-08"],
+        ["44002-DTW", "43001-08"],
+        ["44002-27K", "43001-08"]
+    ],
+    "titles": {
+        "40001-89": "Монтажный комплект круглый",
+        "40002-89": "Монтажный комлект квадратный",
+        "41021-BK": "Декоративная рамка Круглая Черная Симпл",
+        "41021-WH": "Декоративная рамка Круглая Белая Симпл",
+        "41021-GD": "Декоративная рамка Круглая Золотая Симпл",
+        "41022-BK": "Декоративная рамка Круглая Черная Лофт",
+        "41022-WH": "Декоративная рамка Круглая Белая Лофт",
+        "41022-GD": "Декоративная рамка Круглая Золотая Лофт",
+        "41023-BK": "Декоративная рамка Квадратная Черная",
+        "41023-WH": "Декоративная рамка Квадратная Белая",
+        "41023-GD": "Декоративная рамка Квадратная Золотая",
+        "42001-BK": "Фиксирующее кольцо Неповоротное",
+        "42002-BK": "Фиксирующее кольцо Поворотное",
+        "44001-3K": "Модуль 6 Вт 3000К",
+        "44001-4K": "Модуль 6 Вт 4000К",
+        "44002-3K": "Модуль 9 Вт 3000К",
+        "44002-4K": "Модуль 9 Вт 4000К",
+        "44003-3K": "Модуль 13 Вт 3000К",
+        "44003-4K": "Модуль 13 ВТ 4000К",
+        "44004-3K": "Модуль 16 ВТ 3000К",
+        "44004-4K": "Модуль 16 ВТ 4000К",
+        "44002-DTW": "Модуль 10 ВТ 1800-3000K",
+        "43001-15": "Линза Слим 15°",
+        "43001-36": "Линза Слим 36°",
+        "43001-60": "Линза Слим 60°",
+        "43002-18": "Линза Дарк 18°",
+        "43002-38": "Линза Дарк 38°",
+        "43002-50": "Линза Дарк 50°",
+        "46001-F1": "Светофильтр Ханикомб",
+        "46002-44": "Защитная накладка IP44",
+        "46001-44": "Защитная накладка IP44",
+        "45001-02": "Драйвер тока 6Вт 30-40В 130мА TRIAC диммируемый",
+        "45002-02": "Драйвер тока 9Вт 30-40В 210мА TRIAC диммируемый",
+        "45003-02": "Драйвер тока 13Вт 30-40В 300мА TRIAC диммируемый",
+        "45004-02": "Драйвер тока 16Вт 30-40В 420мА TRIAC диммируемый",
+        "44002-27K": "Модуль 9 Вт 2700 K",
+        "43003-30": "Линза Дарк DTW 30° для Атом 10 DTW и Атом 13 TW",
+        "43001-08": "Линза Слим  8° для Атом 6"
+    },
+    "shortTitles": {
+        "40001-89": "круглый",
+        "40002-89": "квадратный",
+        "41021-BK": "Черная Симпл",
+        "41021-WH": "Белая Симпл",
+        "41021-GD": "Золотая Симпл",
+        "41022-BK": "Черная Лофт",
+        "41022-WH": "Белая Лофт",
+        "41022-GD": "Золотая Лофт",
+        "41023-BK": "Черная",
+        "41023-WH": "Белая",
+        "41023-GD": "Золотая",
+        "42001-BK": "Неповоротное",
+        "42002-BK": "Поворотное",
+        "44001-3K": "6Вт 3000К",
+        "44001-4K": "6Вт 4000К",
+        "44002-3K": "9Вт 3000К",
+        "44002-4K": "9Вт 4000К",
+        "44003-3K": "13Вт 3000К",
+        "44003-4K": "13ВТ 4000К",
+        "44004-3K": "16ВТ 3000К",
+        "44004-4K": "16ВТ 4000К",
+        "44002-DTW": "10 ВТ 1800-3000K",
+        "43001-15": "Слим 15°",
+        "43001-36": "Слим 36°",
+        "43001-60": "Слим 60°",
+        "43002-18": "Дарк 18°",
+        "43002-38": "Дарк 38°",
+        "43002-50": "Дарк 50°",
+        "46001-F1": "Ханикомб",
+        "46002-44": "Фрейм IP44",
+        "46001-44": "IP44",
+        "45001-02": "Драйвер 6Вт",
+        "45002-02": "Драйвер 9Вт",
+        "45003-02": "Драйвер 13Вт",
+        "45004-02": "Драйвер 16Вт",
+        "44002-27K": "9 Вт 2700 K",
+        "43003-30": "Дарк 30°",
+        "43001-08": "Слим  8°"
+    },
+    "filters": {
+        "Монтажный комплект": {
+            "form": "Форма"
+        },
+        "Декоративная рамка": {
+            "armature_color": "Цвет",
+            "lamp_style": "Стиль"
+        },
+        "Фиксирующее кольцо": {
+            "frame_type": "Тип корпуса"
+        },
+        "Светодиодный модуль": {
+            "power": "Мощность, Вт",
+            "light_temperatures": "Цветовая температура, К"
+        },
+        "Линза": {
+            "ugr": "Показатель слепимости",
+            "light_angle": "Угол рассеивания"
+        }
+    },
+    "arts": [null, "40001-89", "40002-89", "41021-BK", "41021-GD", "41021-WH", "41022-BK", "41022-GD", "41022-WH", "41023-BK", "41023-GD", "41023-WH", "42001-BK", "42002-BK", "43001-08", "43001-15", "43001-36", "43001-60", "43002-18", "43002-38", "43002-50", "43003-30", "44001-3K", "44001-4K", "44002-27K", "44002-3K", "44002-4K", "44002-DTW", "44003-3K", "44003-4K", "44004-3K", "44004-4K", "45001-02", "45002-02", "45003-02", "45004-02", "46001-44", "46001-F1", "46002-44"],
+    "images": {
+        "41021-BK": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41021-bk.jpg",
+        "41021-WH": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41021-wh.jpg",
+        "41021-GD": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41021-gd.jpg",
+        "41022-BK": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41022-bk.jpg",
+        "41022-WH": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41022-wh.jpg",
+        "41022-GD": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41022-gd.jpg",
+        "41023-BK": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41023-bk.jpg",
+        "41023-WH": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41023-wh.jpg",
+        "41023-GD": "https:\/\/aws.massive.ru\/technolight\/public\/images\/dots\/konfigurator_dotov_bez_ramki\/41023-gd.jpg"
+    },
+    "characteristics": {
+        "Монтажный комплект": {
+            "form": "Форма"
+        },
+        "Декоративная рамка": {
+            "armature_color": "Цвет"
+        },
+        "Фиксирующее кольцо": {
+            "frame_type": "Тип фиксирующего кольца"
+        },
+        "Светодиодный модуль": {
+            "voltage": "Рабочее напряжение",
+            "power": "Мощность",
+            "light_temperatures": "Цветовая температура",
+            "color_rendering_index": "Индекс цветопередачи"
+        },
+        "Линза": {
+            "ugr": "UGR",
+            "light_angle": "Угол рассеивания"
+        },
+        "Защитная накладка IP": {
+            "ip_class": "Степень пыле-влагозащищенности"
+        }
+    },
+    "products": {
+        "40001-89": {
+            "id": 8,
+            "article": "40001-89",
+            "title": "Монтажный комплект Зеро",
+            "ip_class": 20,
+            "price": 990,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165492\/big\/40001-89.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "Круглый",
+            "armature_color": "Белый",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/montaznyi-komplekt-zero\/40001-89"
+        },
+        "40002-89": {
+            "id": 9,
+            "article": "40002-89",
+            "title": "Монтажный комплект Фрейм Зеро",
+            "ip_class": 20,
+            "price": 1340,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165493\/big\/40002-89.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "Квадратный",
+            "armature_color": "Белый",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/montaznyi-komplekt-freim-zero\/40002-89"
+        },
+        "41021-BK": {
+            "id": 10,
+            "article": "41021-BK",
+            "title": "Рамка Симпл 68 круглая RAL 9005 черная",
+            "ip_class": 20,
+            "price": 320,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165494\/big\/41021-bk.jpg",
+            "available": true,
+            "height_in_assembly": 16,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Симпл",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-simpl-68-kruglaia\/41021-BK"
+        },
+        "41021-GD": {
+            "id": 28,
+            "article": "41021-GD",
+            "title": "Рамка Симпл 68 круглая сатинированное золото",
+            "ip_class": 20,
+            "price": 360,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165512\/big\/41021-gd.jpg",
+            "available": true,
+            "height_in_assembly": 16,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Симпл",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Золотой",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-simpl-68-kruglaia\/41021-GD"
+        },
+        "41021-WH": {
+            "id": 11,
+            "article": "41021-WH",
+            "title": "Рамка Симпл 68 круглая RAL 9016 белая",
+            "ip_class": 20,
+            "price": 320,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165495\/big\/41021-wh.jpg",
+            "available": true,
+            "height_in_assembly": 16,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Симпл",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Белый",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-simpl-68-kruglaia\/41021-WH"
+        },
+        "41022-BK": {
+            "id": 12,
+            "article": "41022-BK",
+            "title": "Рамка Лофт 68 круглая RAL 9005 черная",
+            "ip_class": 20,
+            "price": 320,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165496\/big\/41022-bk.jpg",
+            "available": true,
+            "height_in_assembly": 16,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Лофт",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-loft-68-kruglaia\/41022-BK"
+        },
+        "41022-GD": {
+            "id": 29,
+            "article": "41022-GD",
+            "title": "Рамка Лофт 68 круглая сатинированное золото",
+            "ip_class": 20,
+            "price": 360,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165513\/big\/41022-gd.jpg",
+            "available": true,
+            "height_in_assembly": 16,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Лофт",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Золотой",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-loft-68-kruglaia\/41022-GD"
+        },
+        "41022-WH": {
+            "id": 13,
+            "article": "41022-WH",
+            "title": "Рамка Лофт 68 круглая RAL 9016 белая",
+            "ip_class": 20,
+            "price": 320,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165497\/big\/41022-wh.jpg",
+            "available": true,
+            "height_in_assembly": 16,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Лофт",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Белый",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-loft-68-kruglaia\/41022-WH"
+        },
+        "41023-BK": {
+            "id": 14,
+            "article": "41023-BK",
+            "title": "Рамка Фрейм Симпл 68 квадратная RAL 9005 черная",
+            "ip_class": 20,
+            "price": 580,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165498\/big\/41023-bk.jpg",
+            "available": true,
+            "height_in_assembly": 20,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Фрейм Симпл",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-simpl-68-kvadratnaia\/41023-BK"
+        },
+        "41023-GD": {
+            "id": 30,
+            "article": "41023-GD",
+            "title": "Рамка Фрейм Симпл 68 квадратная сатинированное золото",
+            "ip_class": 20,
+            "price": 620,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165514\/big\/41023-gd.jpg",
+            "available": true,
+            "height_in_assembly": 20,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Фрейм Симпл",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Золотой",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-simpl-68-kvadratnaia\/41023-GD"
+        },
+        "41023-WH": {
+            "id": 15,
+            "article": "41023-WH",
+            "title": "Рамка Фрейм Симпл 68 квадратная RAL 9016 белая",
+            "ip_class": 20,
+            "price": 580,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165499\/big\/41023-wh.jpg",
+            "available": true,
+            "height_in_assembly": 20,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Фрейм Симпл",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Белый",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/ramka-freim-simpl-68-kvadratnaia\/41023-WH"
+        },
+        "42001-BK": {
+            "id": 16,
+            "article": "42001-BK",
+            "title": "Фиксирующее кольцо",
+            "ip_class": 0,
+            "price": 620,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165500\/big\/42001-bk.jpg",
+            "available": true,
+            "height_in_assembly": 25,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": null,
+            "frame_type": "Неповоротная",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/fiksiruiushhee-kolco-nepovorotnoe-68\/42001-BK"
+        },
+        "42002-BK": {
+            "id": 17,
+            "article": "42002-BK",
+            "title": "Фиксирующее кольцо поворотное",
+            "ip_class": 0,
+            "price": 1020,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165501\/big\/42002-bk.jpg",
+            "available": true,
+            "height_in_assembly": 39,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": null,
+            "frame_type": "Поворотная",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/fiksiruiushhee-kolco-povorotnoe-68\/42002-BK"
+        },
+        "43001-08": {
+            "id": 768,
+            "article": "43001-08",
+            "title": "Линза Слим  8° для Атом 6",
+            "ip_class": 0,
+            "price": 940,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/201631\/big\/43001-08.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Слим",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "<19",
+            "link": "\/products\/interernyi-svet\/dot-220v\/linza-slim-8-dlia-atom-6\/43001-08"
+        },
+        "43001-15": {
+            "id": 675,
+            "article": "43001-15",
+            "title": "Линза Слим 15° для Атом 6",
+            "ip_class": 0,
+            "price": 480,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196588\/big\/43001-15.jpg",
+            "available": true,
+            "height_in_assembly": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Слим",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 15,
+            "ugr": "<19",
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-15"
+        },
+        "43001-36": {
+            "id": 676,
+            "article": "43001-36",
+            "title": "Линза Слим 36° для Атом 6",
+            "ip_class": 0,
+            "price": 480,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196589\/big\/43001-36.jpg",
+            "available": true,
+            "height_in_assembly": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Слим",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 36,
+            "ugr": "<19",
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-36"
+        },
+        "43001-60": {
+            "id": 677,
+            "article": "43001-60",
+            "title": "Линза Слим 60° для Атом 6",
+            "ip_class": 0,
+            "price": 480,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196590\/big\/43001-60.jpg",
+            "available": true,
+            "height_in_assembly": 5,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Слим",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 60,
+            "ugr": "<19",
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-slim\/43001-60"
+        },
+        "43002-18": {
+            "id": 678,
+            "article": "43002-18",
+            "title": "Линза Дарк 18° для Атом 6-9-13",
+            "ip_class": 0,
+            "price": 680,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196591\/big\/43002-18.jpg",
+            "available": true,
+            "height_in_assembly": 20,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Дарк",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 18,
+            "ugr": "<10",
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-18"
+        },
+        "43002-38": {
+            "id": 679,
+            "article": "43002-38",
+            "title": "Линза Дарк 38° для Атом 6-9-13",
+            "ip_class": 0,
+            "price": 680,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196592\/big\/43002-38.jpg",
+            "available": true,
+            "height_in_assembly": 20,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Дарк",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 38,
+            "ugr": "<10",
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-38"
+        },
+        "43002-50": {
+            "id": 680,
+            "article": "43002-50",
+            "title": "Линза Дарк 50° для Атом 6-9-13",
+            "ip_class": 0,
+            "price": 680,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196593\/big\/43002-50.jpg",
+            "available": true,
+            "height_in_assembly": 20,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Дарк",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 50,
+            "ugr": "<10",
+            "link": "\/products\/interernyi-svet\/dot-220v\/linzy-dark\/43002-50"
+        },
+        "43003-30": {
+            "id": 751,
+            "article": "43003-30",
+            "title": "Линза Дарк DTW 30° для Атом 10 DTW и Атом 13 TW",
+            "ip_class": 0,
+            "price": 1010,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/199171\/big\/43003-30.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Дарк",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 30,
+            "ugr": "<10",
+            "link": "\/products\/interernyi-svet\/dot-220v\/linza-dark-dlia-atom-10-dtw-i-atom-13-tw\/43003-30"
+        },
+        "44001-3K": {
+            "id": 670,
+            "article": "44001-3K",
+            "title": "Светодиодный модуль Атом 6 34В 130мА 6Вт 540лм 3000К 93+",
+            "ip_class": 20,
+            "price": 1880,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196583\/big\/44001-3k.jpg",
+            "available": true,
+            "height_in_assembly": 20,
+            "color_rendering_index": 93,
+            "voltage": 34,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 6,
+            "light_temperatures": 3000,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-6\/44001-3K"
+        },
+        "44001-4K": {
+            "id": 681,
+            "article": "44001-4K",
+            "title": "Светодиодный модуль Атом 6 34В 130мА 6Вт 560лм 4000К 93+",
+            "ip_class": 20,
+            "price": 1880,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196594\/big\/44001-4k.jpg",
+            "available": true,
+            "height_in_assembly": 20,
+            "color_rendering_index": 93,
+            "voltage": 34,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 6,
+            "light_temperatures": 4000,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-6\/44001-4K"
+        },
+        "44002-27K": {
+            "id": 696,
+            "article": "44002-27K",
+            "title": "Светодиодный модуль Атом 9 36В 210мА 9Вт лм 2700К 93+",
+            "ip_class": 20,
+            "price": null,
+            "old_price": null,
+            "sale": null,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196611\/big\/44002-27k.jpg",
+            "available": false,
+            "height_in_assembly": 0,
+            "color_rendering_index": 93,
+            "voltage": 36,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 9,
+            "light_temperatures": 2700,
+            "light_angle": 0,
+            "ugr": "",
+            "link": null
+        },
+        "44002-3K": {
+            "id": 682,
+            "article": "44002-3K",
+            "title": "Светодиодный модуль Атом 9 36В 210мА 9Вт 950лм 3000К 93+",
+            "ip_class": 20,
+            "price": 2000,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196595\/big\/44002-3k.jpg",
+            "available": true,
+            "height_in_assembly": 25,
+            "color_rendering_index": 93,
+            "voltage": 36,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 9,
+            "light_temperatures": 3000,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-3K"
+        },
+        "44002-4K": {
+            "id": 683,
+            "article": "44002-4K",
+            "title": "Светодиодный модуль Атом 9 36В 210мА 9Вт 980лм 4000К 93+",
+            "ip_class": 20,
+            "price": 2000,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196596\/big\/44002-4k.jpg",
+            "available": true,
+            "height_in_assembly": 25,
+            "color_rendering_index": 93,
+            "voltage": 36,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 9,
+            "light_temperatures": 4000,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-9\/44002-4K"
+        },
+        "44002-DTW": {
+            "id": 752,
+            "article": "44002-DTW",
+            "title": "Светодиодный модуль Атом 10 36В 210мА 10Вт 1800-3000К 93+",
+            "ip_class": 20,
+            "price": 2850,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/199172\/big\/44002-dtw.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": 93,
+            "voltage": 36,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 10,
+            "light_temperatures": "1800-3000",
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44002-DTW"
+        },
+        "44003-3K": {
+            "id": 684,
+            "article": "44003-3K",
+            "title": "Светодиодный модуль Атом 13 34В 300мА 13Вт 1240лм 3000К 93+",
+            "ip_class": 20,
+            "price": 2600,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196597\/big\/44003-3k.jpg",
+            "available": true,
+            "height_in_assembly": 30,
+            "color_rendering_index": 93,
+            "voltage": 34,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 13,
+            "light_temperatures": 3000,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44003-3K"
+        },
+        "44003-4K": {
+            "id": 685,
+            "article": "44003-4K",
+            "title": "Светодиодный модуль Атом 13 34В 300мА 13Вт 1280лм 4000К 93+",
+            "ip_class": 20,
+            "price": 2600,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196598\/big\/44003-4k.jpg",
+            "available": true,
+            "height_in_assembly": 30,
+            "color_rendering_index": 93,
+            "voltage": 34,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 13,
+            "light_temperatures": 4000,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-13\/44003-4K"
+        },
+        "44004-3K": {
+            "id": 25,
+            "article": "44004-3K",
+            "title": "Светодиодный модуль Атом 16 34В 420мА 16Вт 1650 лм 3000К 93+",
+            "ip_class": 20,
+            "price": 3600,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165509\/big\/44004-3k.jpg",
+            "available": true,
+            "height_in_assembly": 60,
+            "color_rendering_index": 93,
+            "voltage": 34,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 16,
+            "light_temperatures": 3000,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-16\/44004-3K"
+        },
+        "44004-4K": {
+            "id": 26,
+            "article": "44004-4K",
+            "title": "Светодиодный модуль Атом 16 34В 420мА 16Вт 1800 лм 4000К 93+",
+            "ip_class": 20,
+            "price": 3600,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165510\/big\/44004-4k.jpg",
+            "available": true,
+            "height_in_assembly": 60,
+            "color_rendering_index": 93,
+            "voltage": 34,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 16,
+            "light_temperatures": 4000,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetodiodnyi-modul-atom-16\/44004-4K"
+        },
+        "45001-02": {
+            "id": 686,
+            "article": "45001-02",
+            "title": "Драйвер тока 6Вт 30-40В 130мА TRIAC для Атом 6 диммируемый",
+            "ip_class": 20,
+            "price": 1500,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196599\/big\/45001-02.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 40,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Белый",
+            "power": 6,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-6vt-triac\/45001-02"
+        },
+        "45002-02": {
+            "id": 687,
+            "article": "45002-02",
+            "title": "Драйвер тока 9Вт 30-40В 210мА TRIAC для Атом 9 диммируемый",
+            "ip_class": 20,
+            "price": 1500,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196600\/big\/45002-02.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 40,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Белый",
+            "power": 9,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-9vt-triac\/45002-02"
+        },
+        "45003-02": {
+            "id": 688,
+            "article": "45003-02",
+            "title": "Драйвер тока 13Вт 30-40В 300мА TRIAC для Атом 13 диммируемый",
+            "ip_class": 20,
+            "price": 1760,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/196601\/big\/45003-02.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 40,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Белый",
+            "power": 13,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-13vt-triac\/45003-02"
+        },
+        "45004-02": {
+            "id": 27,
+            "article": "45004-02",
+            "title": "Драйвер тока 16Вт 30-40В 420мА TRIAC для Атом 16 диммируемый",
+            "ip_class": 20,
+            "price": 2070,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165511\/big\/45004-02.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 40,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Белый",
+            "power": 16,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/draiver-toka-16vt-triac\/45004-02"
+        },
+        "46001-44": {
+            "id": 23,
+            "article": "46001-44",
+            "title": "Защитная накладка IP44 для рамки Симпл 68 круглая",
+            "ip_class": 44,
+            "price": 320,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165507\/big\/46001-44.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Симпл",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Прозрачный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/zashhitnaia-nakladka-ip44-dlia-ramki-simpl-68-kruglaia\/46001-44"
+        },
+        "46001-F1": {
+            "id": 18,
+            "article": "46001-F1",
+            "title": "Светофильтр Ханикомб 42",
+            "ip_class": 20,
+            "price": 480,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165502\/big\/46001-f1.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": null,
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Чёрный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/svetofiltr-xanikomb-42\/46001-F1"
+        },
+        "46002-44": {
+            "id": 24,
+            "article": "46002-44",
+            "title": "Защитная накладка IP44 для рамки Фрейм Симпл 68 круглая",
+            "ip_class": 44,
+            "price": 320,
+            "old_price": 0,
+            "sale": false,
+            "image": "https:\/\/aws.massive.ru\/databus\/products\/technolight\/165508\/big\/46002-44.jpg",
+            "available": true,
+            "height_in_assembly": 0,
+            "color_rendering_index": "",
+            "voltage": 0,
+            "lamp_style": "Фрейм Симпл",
+            "frame_type": "",
+            "form": "",
+            "armature_color": "Прозрачный",
+            "power": 0,
+            "light_temperatures": null,
+            "light_angle": 0,
+            "ugr": "",
+            "link": "\/products\/interernyi-svet\/dot-220v\/zashhitnaia-nakladka-ip44-dlia-ramki-freim-simpl-68-kvadratnaia\/46002-44"
+        }
+    },
+    "terms": ["Форма"],
+    "units": {
+        "ip_class": " IP",
+        "light_angle": "°",
+        "light_temperatures": " K",
+        "power": " Вт"
+    },
+    "combos": [{
+        "combo": {
+            "Декоративная рамка": ["41021-BK"]
+        },
+        "final_image": "public\/combo\/images\/41021-bk.jpg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41021-WH"]
+        },
+        "final_image": "public\/combo\/images\/41021-wh.jpg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41021-GD"]
+        },
+        "final_image": "public\/combo\/images\/41021-gd.jpg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41022-BK"]
+        },
+        "final_image": "public\/combo\/images\/41022-bk.jpg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41022-WH"]
+        },
+        "final_image": "public\/combo\/images\/41022-wh.jpg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41022-GD"]
+        },
+        "final_image": "public\/combo\/images\/41022-gd.jpg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41023-BK"]
+        },
+        "final_image": "public\/combo\/images\/41023-bk.jpg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41023-WH"]
+        },
+        "final_image": "public\/combo\/images\/41023-wh.jpg"
+    }, {
+        "combo": {
+            "Декоративная рамка": ["41023-GD"]
+        },
+        "final_image": "public\/combo\/images\/41023-gd.jpg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15"],
+            "Светодиодный модуль": ["44001-3K"]
+        },
+        "light_flow": 504
+    }, {
+        "combo": {
+            "Линза": ["43001-36"],
+            "Светодиодный модуль": ["44001-3K"]
+        },
+        "light_flow": 517
+    }, {
+        "combo": {
+            "Линза": ["43001-60"],
+            "Светодиодный модуль": ["44001-3K"]
+        },
+        "light_flow": 522
+    }, {
+        "combo": {
+            "Линза": ["43001-15"],
+            "Светодиодный модуль": ["44001-4K"]
+        },
+        "light_flow": 548
+    }, {
+        "combo": {
+            "Линза": ["43001-36"],
+            "Светодиодный модуль": ["44001-4K"]
+        },
+        "light_flow": 560
+    }, {
+        "combo": {
+            "Линза": ["43001-60"],
+            "Светодиодный модуль": ["44001-4K"]
+        },
+        "light_flow": 559
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44001-3K"]
+        },
+        "light_flow": 442
+    }, {
+        "combo": {
+            "Линза": ["43002-38"],
+            "Светодиодный модуль": ["44001-3K"]
+        },
+        "light_flow": 459
+    }, {
+        "combo": {
+            "Линза": ["43002-50"],
+            "Светодиодный модуль": ["44001-3K"]
+        },
+        "light_flow": 448
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44001-4K"]
+        },
+        "light_flow": 476
+    }, {
+        "combo": {
+            "Линза": ["43002-38"],
+            "Светодиодный модуль": ["44001-4K"]
+        },
+        "light_flow": 488
+    }, {
+        "combo": {
+            "Линза": ["43002-50"],
+            "Светодиодный модуль": ["44001-4K"]
+        },
+        "light_flow": 479
+    }, {
+        "combo": {
+            "Линза": ["43001-15"],
+            "Светодиодный модуль": ["44002-3K"]
+        },
+        "light_flow": 886
+    }, {
+        "combo": {
+            "Линза": ["43001-36"],
+            "Светодиодный модуль": ["44002-3K"]
+        },
+        "light_flow": 900
+    }, {
+        "combo": {
+            "Линза": ["43001-60"],
+            "Светодиодный модуль": ["44002-3K"]
+        },
+        "light_flow": 912
+    }, {
+        "combo": {
+            "Линза": ["43001-15"],
+            "Светодиодный модуль": ["44002-4K"]
+        },
+        "light_flow": 925
+    }, {
+        "combo": {
+            "Линза": ["43001-36"],
+            "Светодиодный модуль": ["44002-4K"]
+        },
+        "light_flow": 951
+    }, {
+        "combo": {
+            "Линза": ["43001-60"],
+            "Светодиодный модуль": ["44002-4K"]
+        },
+        "light_flow": 950
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44002-3K"]
+        },
+        "light_flow": 778
+    }, {
+        "combo": {
+            "Линза": ["43002-38"],
+            "Светодиодный модуль": ["44002-3K"]
+        },
+        "light_flow": 859
+    }, {
+        "combo": {
+            "Линза": ["43002-50"],
+            "Светодиодный модуль": ["44002-3K"]
+        },
+        "light_flow": 756
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44002-4K"]
+        },
+        "light_flow": 840
+    }, {
+        "combo": {
+            "Линза": ["43002-38"],
+            "Светодиодный модуль": ["44002-4K"]
+        },
+        "light_flow": 920
+    }, {
+        "combo": {
+            "Линза": ["43002-50"],
+            "Светодиодный модуль": ["44002-4K"]
+        },
+        "light_flow": 802
+    }, {
+        "combo": {
+            "Линза": ["43001-15"],
+            "Светодиодный модуль": ["44003-3K"]
+        },
+        "light_flow": 1092
+    }, {
+        "combo": {
+            "Линза": ["43001-36"],
+            "Светодиодный модуль": ["44003-3K"]
+        },
+        "light_flow": 1155
+    }, {
+        "combo": {
+            "Линза": ["43001-60"],
+            "Светодиодный модуль": ["44003-3K"]
+        },
+        "light_flow": 1175
+    }, {
+        "combo": {
+            "Линза": ["43001-15"],
+            "Светодиодный модуль": ["44003-4K"]
+        },
+        "light_flow": 1169
+    }, {
+        "combo": {
+            "Линза": ["43001-36"],
+            "Светодиодный модуль": ["44003-4K"]
+        },
+        "light_flow": 1242
+    }, {
+        "combo": {
+            "Линза": ["43001-60"],
+            "Светодиодный модуль": ["44003-4K"]
+        },
+        "light_flow": 1245
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44003-3K"]
+        },
+        "light_flow": 981
+    }, {
+        "combo": {
+            "Линза": ["43002-38"],
+            "Светодиодный модуль": ["44003-3K"]
+        },
+        "light_flow": 1035
+    }, {
+        "combo": {
+            "Линза": ["43002-50"],
+            "Светодиодный модуль": ["44003-3K"]
+        },
+        "light_flow": 1001
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44003-4K"]
+        },
+        "light_flow": 1090
+    }, {
+        "combo": {
+            "Линза": ["43002-38"],
+            "Светодиодный модуль": ["44003-4K"]
+        },
+        "light_flow": 1122
+    }, {
+        "combo": {
+            "Линза": ["43002-50"],
+            "Светодиодный модуль": ["44003-4K"]
+        },
+        "light_flow": 1082
+    }, {
+        "combo": {
+            "Линза": ["43001-15"],
+            "Светодиодный модуль": ["44004-3K"]
+        },
+        "light_flow": 1424
+    }, {
+        "combo": {
+            "Линза": ["43001-36"],
+            "Светодиодный модуль": ["44004-3K"]
+        },
+        "light_flow": 1445
+    }, {
+        "combo": {
+            "Линза": ["43001-60"],
+            "Светодиодный модуль": ["44004-3K"]
+        },
+        "light_flow": 1531
+    }, {
+        "combo": {
+            "Линза": ["43001-15"],
+            "Светодиодный модуль": ["44004-4K"]
+        },
+        "light_flow": 1581
+    }, {
+        "combo": {
+            "Линза": ["43001-36"],
+            "Светодиодный модуль": ["44004-4K"]
+        },
+        "light_flow": 1612
+    }, {
+        "combo": {
+            "Линза": ["43001-60"],
+            "Светодиодный модуль": ["44004-4K"]
+        },
+        "light_flow": 1688
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44004-3K"]
+        },
+        "light_flow": 1293
+    }, {
+        "combo": {
+            "Линза": ["43002-38"],
+            "Светодиодный модуль": ["44004-3K"]
+        },
+        "light_flow": 1292
+    }, {
+        "combo": {
+            "Линза": ["43002-50"],
+            "Светодиодный модуль": ["44004-3K"]
+        },
+        "light_flow": 1339
+    }, {
+        "combo": {
+            "Линза": ["43002-18"],
+            "Светодиодный модуль": ["44004-4K"]
+        },
+        "light_flow": 1442
+    }, {
+        "combo": {
+            "Линза": ["43002-38"],
+            "Светодиодный модуль": ["44004-4K"]
+        },
+        "light_flow": 1467
+    }, {
+        "combo": {
+            "Линза": ["43002-50"],
+            "Светодиодный модуль": ["44004-4K"]
+        },
+        "light_flow": 1480
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring-pov_dark-lens_atom-13_109mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring-pov_dark-lens_atom-16_139mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring-pov_dark-lens_atom-6_99mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring-pov_dark-lens_atom-9_104mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring-pov_slim-lens_atom-13_94mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring-pov_slim-lens_atom-16_124mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring-pov_slim-lens_atom-6_84mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring-pov_slim-lens_atom-9_89mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring_dark-lens_atom-13_95mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring_dark-lens_atom-16_125mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring_dark-lens_atom-6_85mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring_dark-lens_atom-9_90mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring_slim-lens_atom-13_80mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring_slim-lens_atom-16_110mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring_slim-lens_atom-6_70mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41023-BK", "41023-WH", "41023-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/frame-simple-68_fix-ring_slim-lens_atom-9_75mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring-pov_dark-lens_atom-13_105mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring-pov_dark-lens_atom-16_135mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring-pov_dark-lens_atom-6_95mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring-pov_dark-lens_atom-9_100mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring-pov_slim-lens_atom-13_90mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring-pov_slim-lens_atom-16_120mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring-pov_slim-lens_atom-6_80mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring-pov_slim-lens_atom-9_85mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring_dark-lens_atom-13_91mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring_dark-lens_atom-16_121mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring_dark-lens_atom-6_81mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring_dark-lens_atom-9_86mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring_slim-lens_atom-13_76mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring_slim-lens_atom-16_106mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring_slim-lens_atom-6_66mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41022-BK", "41022-WH", "41022-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/loft-68_fix-ring_slim-lens_atom-9_71mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring-pov_dark-lens_atom-13_105mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring-pov_dark-lens_atom-16_135mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring-pov_dark-lens_atom-6_95mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring-pov_dark-lens_atom-9_100mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring-pov_slim-lens_atom-13_90mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring-pov_slim-lens_atom-16_120mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring-pov_slim-lens_atom-6_80mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42002-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring-pov_slim-lens_atom-9_85mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring_dark-lens_atom-13_91mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring_dark-lens_atom-16_121mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring_dark-lens_atom-6_81mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43002-18", "43002-38", "43002-50"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring_dark-lens_atom-9_86mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44003-3K", "44003-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring_slim-lens_atom-13_76mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44004-3K", "44004-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring_slim-lens_atom-16_106mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44001-3K", "44001-4K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring_slim-lens_atom-6_66mm.svg"
+    }, {
+        "combo": {
+            "Линза": ["43001-15", "43001-36", "43001-60"],
+            "Декоративная рамка": ["41021-BK", "41021-WH", "41021-GD"],
+            "Фиксирующее кольцо": ["42001-BK"],
+            "Светодиодный модуль": ["44002-3K", "44002-4K", "44002-DTW", "44002-27K"]
+        },
+        "final_drawing": "public\/combo\/drawings\/simple-68_fix-ring_slim-lens_atom-9_71mm.svg"
+    }],
+    "description": "Безрамочные модульные светильники под натяжной потолок DOT 220V -новое уникальное  решение Technolight. Комбинация функциональности профессионального освещения, на основе модулей АТОМ(от 6 до 16 вт) с управлением TRIAC или DALI, Оптики (от 15 до 60 гр), светофильтров и Запатентованной технологии установки Светильника в ПВХ или Тканевые полотна.",
+    "videos": [],
+    "files": []
+}

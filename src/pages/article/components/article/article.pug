@@ -1,0 +1,158 @@
+.container
+    .row
+        .col-12.col-lg-4
+            .article__gallary
+                span.article__badge черная пятница
+
+                .swiper.article__swiper
+                    .swiper-wrapper
+                        .swiper-slide
+                            .article__image
+                                img(src="https://aws.massive.ru/technolight/images/product/article.png" alt="" loading="lazy")
+                        .swiper-slide
+                            .article__image
+                                img(src="https://aws.massive.ru/technolight/images/product/article.png" alt="" loading="lazy")
+                        .swiper-slide
+                            .article__image
+                                img(src="https://aws.massive.ru/technolight/images/product/article.png" alt="" loading="lazy")
+                    button.article__favorite(type="button" data-product-id="80108-MW" data-title="Блок питания шины DALI 240 мА DLP-04R" data-message="Добавлен в избранное")
+
+                .article__pagination-container
+                    //- button.article__navigation.article__navigation_prev
+                    .article__pagination
+                    //- button.article__navigation.article__navigation_next
+
+        .col-12.col-lg-8
+            .article__content
+                .article__content-section.article__content-section_about
+                    .article__content-header
+                        .article__content-code 86108-3K-01-BK
+                        .article__content-params
+                            .article__content-color Блок питания шины DALI MW
+                            .article__content-price
+                                span 3 300 ₽
+                                span.article__content-price-old 8 500 ₽
+
+                .article__content-section.article__content-section_title
+                    p.article__content-title Характеристики
+
+                .article__content-section.article__content-section_list
+                    ul.article__content-list
+                        li.article__content-item
+                            span Производитель
+                            span Technolight®
+                        li.article__content-item
+                            span Цвет корпуса
+                            span Черный
+                        li.article__content-item
+                            span Вес
+                            span 3,6 кг
+                        li.article__content-item
+                            span Тип монтажа
+                            span Для натяжных потолков
+                        li.article__content-item
+                            span Габариты
+                            span
+                                mark 2 000 мм
+                                mark 74 мм
+                                mark 53 мм
+                        li.article__content-item
+                            span Рабочее напряжение
+                            span 16 В
+                        li.article__content-item
+                            span Мощность
+                            span 4 Вт
+
+                .article__content-section.article__content-section_cart
+                    .article__content-cart
+                        form.article__content-counter
+                            .article__content-calc
+                                button.btn.btn_lite.disabled(type='button')
+                                    i.dec
+                                // Если в корзине уже есть товар/артикул текущей страницы, то в input.value ставим количество данного артикула в корзине
+                                input(type='text' value='3' readonly)
+                                button.btn.btn_lite(type='button')
+                                    i.inc
+                            .article__content-message
+                                | Товара нет на складе
+                                button.tooltip__icon.article__content-informer(type='button')
+                                    span.article__content-tooltip(role="tooltip") Количество и сроки уточняйте у менеджера
+
+                        // Если в корзине нет товара/артикула текущей страницы, то по дефолту рендерим КНОПКУ Добавить в корзину
+                        button.btn.btn_block.btn_dark.article__add-to-cart(type="button" data-product-id="86108-3K-01-BK" data-title="Блок питания шины DALI MW" data-message="Добавлен в корзину")
+                            span Добавить в корзину
+
+                        // Если в корзине уже есть товар/артикул текущей страницы, то по дефолту рендерим ССЫЛКУ В корзине
+                        a.btn.btn_block.btn_dark(href="cart.html")
+                            span В корзине
+
+            .article__accordion
+                ul.article__accordion-list
+                    li.article__accordion-item
+                        .article__accordion-button
+                            span Описание
+                        .article__accordion-collapse
+                            .article__accordion-inner
+                                .article__accordion-desc
+                                    p Встраиваемый монтаж — это самый популярный и эстетичный вид использования трековой системы. Питающий шинопровод крепится на заранее собранный каркас из строительного профиля, закрывается листами гипсокартона или другого схожего материала. Затем выполняются финишные шпатлевочные и покрасочные работы.
+                                    p Для правильной установки необходима достаточная квалификация монтажников, а также мастеров, способных вывести идеально гладкую потолочную плоскость.
+                                    p В результате качественного выполнения всех отделочных работ получается тонкая черная линия. Ширина итоговой полосы — 23 мм.
+                    li.article__accordion-item
+                        .article__accordion-button
+                            span Характеристики
+                        .article__accordion-collapse
+                            .article__accordion-inner
+                                table.article__accordion-table(border='0')
+                                    tbody
+                                        tr
+                                            td.cellCaption Производитель
+                                            td Technolight®
+                                        tr
+                                            td.cellCaption Тип упаковки
+                                            td PAP (код 20)
+                                        tr
+                                            td.cellCaption Вес
+                                            td 0,232 кг
+                                        tr
+                                            td.cellCaption Тип монтажа
+                                            td Встраиваемый в гипсокартон с выполнением отделочных работ. Светильники легко устанавливаются в трек. Напряжение питания — 48
+                                        tr
+                                            td.cellCaption Конструкция
+                                            td Экструдированный алюминий с порошковым покрытием черного цвета (RAL 9005), медные проводники в диэлектрике из ПВХ и металлическая пластина для магнитного крепления светильников.
+                                        tr
+                                            td.cellCaption Габаритные размеры
+                                            td Длина — 2 000 мм, ширина — 74 мм, высота — 53 мм.
+                    li.article__accordion-item
+                        .article__accordion-button
+                            span Файлы для скачивания
+                        .article__accordion-collapse
+                            .article__accordion-inner
+                                .article__accordion-buttons
+                                    a.btn.btn_small.btn_lite.btn_download(href='https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4' download='')
+                                        i
+                                        span Инструкция по монтажу PDF
+                                    a.btn.btn_small.btn_lite.btn_download(href='https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4' download='')
+                                        i
+                                        span 3D-модель ZIP
+                    li.article__accordion-item
+                        .article__accordion-button
+                            span Видеоинструкция
+                        .article__accordion-collapse
+                            .article__accordion-inner
+                                .article__accordion-video
+                                    .swiper
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                a.video(href='https://www.youtube.com/embed/YHwnmYkkYrM?si=7VpmellS4GuvokPM' data-fancybox='video-instructions')
+                                                    span.pic
+                                                        img(src='https://aws.massive.ru/technolight/images/projects/video-poster.png' title='Светильники TECHNOLIGHT в жилом комплексе Небо.' alt='Светильники TECHNOLIGHT в жилом комплексе Небо.' loading='lazy')
+                                                    span.button-play.play
+                                            .swiper-slide
+                                                a.video(href='https://www.youtube.com/embed/17orKkflArA?si=Tq78lY3xfTo9THLQ' data-fancybox='video-instructions')
+                                                    span.pic
+                                                        img(src='https://aws.massive.ru/technolight/images/projects/collage/13.jpg' title='Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё получилось идеально!' alt='Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё получилось идеально!' loading='lazy')
+                                                    span.button-play.play
+                                        .article__pagination-container
+                                            //- button.article__accordion-navigation.article__accordion-navigation_prev
+                                            .article__accordion-pagination
+                                            //- button.article__accordion-navigation.article__accordion-navigation_next

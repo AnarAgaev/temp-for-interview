@@ -1,0 +1,53 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+.contract-offer {
+    position: relative;
+
+    &__body {
+        @include animationElementWithDelay;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: var(--color-font-primary);
+        font-size: 13px;
+        line-height: 18px;
+        text-align: justify;
+
+        @media (min-width: $md) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--color-background-template);
+        }
+
+        a {
+            @include link;
+            color: inherit;
+            width: auto;
+            background-size: 100% 100%;
+
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    background-size: 0 100%;
+                }
+            }
+
+            * {
+                text-decoration: none !important;
+            }
+        }
+
+        strong {
+            padding: 0 7px;
+            background: var(--color-background-light);
+        }
+    }
+}

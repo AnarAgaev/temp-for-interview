@@ -1,0 +1,48 @@
+div.modal.hide#passChange
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title Изменить пароль
+            p.modal__subtitle Введите текущий пароль и новый
+
+        .modal__body
+            form.modal__form(action="")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        input(type="text" placeholder="Текущий пароль")
+                        span.error-message Текст ошибки
+
+                    label
+                        input(type="text" placeholder="Повторите текущий пароль")
+                        span.error-message Текст ошибки
+
+                    label
+                        input(type="text" placeholder="Новый пароль")
+                        span.error-message Текст ошибки
+
+                button.btn.btn_block.btn_lite.modal__button(type="submit" data-modal data-modal-target="#passChangeMessage" data-modal-action="toggle")
+                    span Изменить пароль
+
+        .modal__footer
+            a.modal__link(href="#") Перейти в личный кабинет
+
+
+div.modal.hide#passChangeMessage
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title Изменить пароль
+            p.modal__subtitle Пароль успешно изменен
+            span.modal__check
+
+        .modal__footer
+            a.modal__link(href="#") Перейти в личный кабинет

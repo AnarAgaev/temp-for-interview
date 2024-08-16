@@ -1,0 +1,502 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/button-play/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'shops'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Где купить
+
+block content
+    section.section
+        .shops
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Где купить
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12
+                            .shops__map#mapWrapper
+                                #map(style="pointer-events: none;")
+                                    // После внеднеия нормальной карты, обязательно поставить задачу на удаление блокирующего кода
+                                    // В реальной карте инлайновые стили блокикирующе клики не добавлять. Нужны для демонстрации
+                                    iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A4e1f453110abd356e9b08a0d33f82e75155d6cea4c9a83a8161605ffd697b91c&amp;source=constructor" frameborder="0")
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Москва
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Центральный офис в Москве
+                                .shops__with-icon
+                                    i.balloon
+                                    p ARTPLAY центр дизайна, 105120, Москва, Нижняя Сыромятническая, д. 10 стр. 2
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ПТ 10:00 - 18:00
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:74957977251") +7 495-797-72-51
+                                .shops__list.shops__with-icon
+                                    i.wa
+                                    a(href="https://wa.me/74957470564") +7 (495) 747-05-64
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:order@technolight.ru") order@technolight.ru
+                        .col-12.col-xl-8.offset-xl-4
+                            .shops__video-wrap
+                                .shops__video
+                                    .video
+                                        // Ссылку на видео помещаем в data-src
+                                        iframe(data-src="https://www.youtube.com/embed/sOu5G9ocYzc?si=cpDS6nd8Tk7h4DEa" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+                                    .poster
+                                        img(src="https://aws.massive.ru/technolight/public/images/shops/poster.jpg" alt="" loading="lazy")
+                                    +button-play
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Москва
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Нижняя Сыромятническая, д.11, корпус 1, офис 310/308
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:+74959214291") +7 (495) 921-42-91
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:msk@bright-buro.ru") msk@bright-buro.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Санкт-Петербург
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p SVET.SPB.RU Шоу-рум
+                                p Центр дизайна Design District DAA
+                                .shops__with-icon
+                                    i.balloon
+                                    p Красногвардейская площадь, дом 3Е, этаж 1, помещение 1027
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ВС 10:00 - 20:00
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="www.svet.spb.ru" target="_blank") svet.spb.ru
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:78123372095") +7 (812) 337-20-95
+                                .shops__list.shops__with-icon
+                                    i.wa
+                                    a(href="https://wa.me/79052657095") +7 (905) 265-70-95
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:sales@technolight.spb.ru") sales@technolight.spb.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Санкт-Петербург
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Партнер в Санкт-Петербурге
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Большая Разночинная, д. 32
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:+78125397879") +7 (812) 539-78-79
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:info@bright-buro.ru") info@bright-buro.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Санкт-Петербург
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Партнер в Санкт-Петербурге
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Репищева, д.14 литера АД (м. Комендантский проспект, м. Пионерская)
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ПТ 8:00 - 18:00
+                                    span СБ 9:00 - 13:00
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="http://www.postavka-1.ru/" target="_blank") postavka-1.ru
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:78126482400") +7 (812) 648-24-00
+                                .shops__list.shops__with-icon
+                                    i.wa
+                                    a(href="tel:74957977251") +7 (911) 924-76-42
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:order@technolight.ru") order@technolight.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Самара
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p SAROS DESIGN
+                                .shops__with-icon
+                                    i.balloon
+                                    p
+                                        | Красноармейская ул д.1 к.1
+                                        br
+                                        | ЦСР «Кубатура» 2 этаж секция 221,6
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="https://saroslight.ru/" target="_blank") saroslight.ru
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79376645074") +7 (937) 664-50-74
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Иркутск
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Студия интерьерного света «Артикул»
+                                .shops__with-icon
+                                    i.balloon
+                                    p Иркутск, ул. Лызина, дом 9
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ПТ 10:00 - 18:00
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="https://artikul38.ru/" target="_blank") artikul38.ru
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79025669717") +7 (902) 566-97-17
+                                    a(href="tel:79016531349") +7 (901) 653-13-49
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:669717irina@mail.ru") 669717irina@mail.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Иркутск
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Партнер в Иркутске
+                                p Шоурум ART LOFT
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Байкальская, дом 346/6
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                                p Дополнительный офис:
+                                p Студия интерьерных решений
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Карла Маркса, дом 51
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="https://artloft.studio/" target="_blank") artloft.studio
+                                p Интернет-магазин:
+                                .shops__with-icon
+                                    i.web
+                                    a(href="https://line-room.ru/" target="_blank") line-room.ru
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79148951160") +7 (914) 895-11-60
+                                    a(href="tel:79148950088") +7 (914) 895-00-88
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:info@artloft.studio") info@artloft.studio
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Пермь
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Салон Интерьерных Решений
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Островского, дом 44а
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ПТ 9:00 - 19:00
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79654425727") +7 (965) 442-57-27
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:technolightperm@gmail.com") technolightperm@gmail.com
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Владивосток
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Официальный дилер по Дальнему Востоку
+                                p Шоу-рум "Аргус" (Дизайн света)
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Снеговая, дом 105
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="www.argusdv.ru" target="_blank") argusdv.ru
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79147030108") +7 (914) 703-01-08
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:info@argusdv.ru") info@argusdv.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Владивосток
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Шоу-рум "Абажур" (Дизайн света)
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Снеговая, дом 42Д
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="www.abat-jour.shop" target="_blank") abat-jour.shop
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79147902742") +7 (914) 790-27-42
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:abat_jour@mail.ru") abat_jour@mail.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Владивосток
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Шоу-рум "Дизайн света"
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Бородинская 46/50, ТЦ "Альянс", пав. 8
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="www.argusdv.ru" target="_blank") argusdv.ru
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79147030114") +7 (914) 703-01-14
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:ds@argusdv.ru") ds@argusdv.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Калининград
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Cалон света FOS
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Гагарина, дом 2а
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79062339900") +7 (906) 233-99-00
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:Fos39@mail.ru") Fos39@mail.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Краснодар
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Skyline
+                                .shops__with-icon
+                                    i.balloon
+                                    p г. Краснодар, ул. Солнечная, д. 57/2, оф. 9
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ПТ 9:00 - 17:00
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Челябинск
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Идея свет
+                                .shops__with-icon
+                                    i.balloon
+                                    p г. Челябинск, ул. Яковлева, д. 17
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ПТ 10:00 - 18:00
+                                    span СБ 10:00 - 14:00
+                                    span ВС выходной
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79512562601") +7 (951) 256-26-01
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:info@ideasvet.ru") info@ideasvet.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Нижний Новгород
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p ООО Волгастрой
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Памирская, дом 11В
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ПТ 8:00 - 17:00
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="https://www.pvc-store.ru/" target="_blank") pvc-store.ru
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:79036043516") +7 (903) 604-35-16
+                                    a(href="tel:79873952246") +7 (987) 395-22-46
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:pvc-store@yandex.ru") pvc-store@yandex.ru
+
+            .shops__item.animation-element
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            h3.shops__city Волгоград
+                        .col-12.col-md-6.col-xl-4
+                            .shops__location
+                                p Салон сантехники "Аква-гарант"
+                                .shops__with-icon
+                                    i.balloon
+                                    p ул. Восточная, 21Б
+                                .shops__list.shops__with-icon
+                                    i.clock
+                                    span ПН-ПТ 9:00 - 18:00
+                                    span СБ 10:00 - 15:00
+                                    span ВС выходной
+                                .shops__show-on-map
+                                    button(type="button") Показать на карте
+                        .col-12.col-md-6.col-xl-4
+                            .shops__contacts
+                                .shops__with-icon
+                                    i.web
+                                    a(href="https://аква-гарант.рус" target="_blank") аква-гарант.рус
+                                .shops__list.shops__with-icon
+                                    i.phone
+                                    a(href="tel:78442680000") +7 (8442) 68-00-00
+                                    a(href="tel:79020983738") +7 (902) 098-37-38
+                                    a(href="tel:79173380755") +7 (917) 338-07-55
+                                .shops__with-icon
+                                    i.post
+                                    a(href="mailto:aqua-garant@mail.ru") aqua-garant@mail.ru

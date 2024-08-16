@@ -1,0 +1,41 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'warranty'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Компания
+                li
+                    span Страница не найдена
+
+block content
+    section.section
+        .warranty
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Гарантия качества
+
+            .warranty__body.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-6.col-xl-4
+                            .warranty__content
+                                p.warranty__description Гарантия качества — это одна из наших основных задач, наряду с контролем запасов, в обеспечении контроля процесса производства, которое заключается в планировании, руководстве, организации и контроле производства с целью достижения необходимого уровня качества.
+                                p.warranty__text На всю продукцию торговой марки Technolight® распространяется официальная гарантия.
+                        .col-12.col-lg-6.col-xl-8
+                            .warranty__pic
+                                img(src="https://aws.massive.ru/technolight/images/warranty.jpg" alt="" loading="lazy")
+                        .col-12
+                            p.warranty__signature Минимальный срок гарантии — 3 года.

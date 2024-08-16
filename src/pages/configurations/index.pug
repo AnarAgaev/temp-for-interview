@@ -1,0 +1,60 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/account-card/mixin.pug
+include ../../components/account-configuration/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'account'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Личный кабинет
+                li
+                    span Мои конфигурации
+
+block content
+    section.section
+        .account
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Мои конфигурации
+
+            .account__banner.animation-element
+                .container
+                    .account__msg
+                        p У вас нет конфигураций
+                        a(href="#") Создать конфигурацию
+
+            .account__configuration-list.animation-element
+                .container
+                    .row
+                        .col-12
+                            +account-configuration('3712', '07.11.2021')
+                        .col-12
+                            +account-configuration('7825', '15.08.2023')
+
+            .account__cards.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            +account-card('pencil', 'Изменить пароль', 'Изменить пароль')
+                        .col-12.col-lg-4
+                            +account-card('user', 'Личные данные', 'Изменить личные данные')
+                        .col-12.col-lg-4
+                            +account-card('cart', 'История заказов', 'Смотреть историю')
+
+            .account__back.animation-element
+                .container
+                    a.btn.btn_block.btn_dark(href="#")
+                        span Вернуться в каталог

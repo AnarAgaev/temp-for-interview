@@ -1,0 +1,34 @@
+.account-form
+    .account-form__dialog
+        .account-form__header
+            h3.account-form__title Введите код
+            p.account-form__subtitle Мы отправили код подтверждения на номер +7 926 818 11 84
+            a.account-form__link(href="#") Изменить
+
+        .account-form__body
+            form.account-form__form(action="" data-form-type="registration")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        i.pass
+                        input(type="text" name="code" placeholder="Введите код")
+                        span.error-message Текст ошибки
+
+                span.account-form__text
+                    | Получить новый код можно через  
+                    span#confirtCodeTimer 00:57
+
+                // На время блокировки ссылки получить код, добавляем класс .disabled
+                a.account-form__link.disabled(href="#") Получить новый код
+
+        .account-form__footer
+            span.account-form__footer-text или
+
+            a.btn.btn_block.btn_dark(href="#")
+                span Войти по почте
+
+            span.account-form__footer-text или через сервис
+
+            .account-form__footer-services
+                button(type="button").service.service_tinkoff
+                a(href="#").service.service_yandex

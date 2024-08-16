@@ -1,0 +1,19 @@
+@import '../../../../../scss/sass-variables';
+
+.height {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: var(--color-font-primary);
+    font-size: 16px;
+    line-height: 20px; /* 125% */
+    // user-select: none;
+
+    @media (min-width: $lg) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(calc(100% + 20px));
+    }
+}

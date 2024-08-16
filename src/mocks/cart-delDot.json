@@ -1,0 +1,28 @@
+{
+    "products": [
+		{
+			"article": "60121-3K-02-WH",
+			"count": 2
+		},
+		{
+			"article": "86108-3K-01-WH",
+			"count": 4
+		},
+		{
+			"article": "86108-3K-03-BK",
+			"count": 1
+		}
+    ],
+    "dots": [
+        {
+            "id": 1,
+            "price": 5040,
+            "count": 1
+        },
+        {
+            "id": 2,
+            "price": 7880,
+            "count": 2
+        }
+    ]
+}

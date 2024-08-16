@@ -1,0 +1,123 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+.not-found {
+    @include animationElement;
+
+    margin-bottom: 20px;
+
+    @media (min-width: $sm) {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $lg) {
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $xl) {
+        margin-bottom: 60px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    &__error {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-bottom: 40px;
+        color: var(--color-font-primary);
+        font-size: 53vw;
+        font-weight: 800;
+        line-height: 100%;
+        background-image: url("https://aws.massive.ru/technolight/images/404/404-mob.webp");
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 100%;
+        background-position: center;
+        animation: page-not-found 20s linear infinite;
+        // filter: grayscale(100%);
+
+        @media (min-width: $sm) {
+            font-size: 200px;
+        }
+
+        @media (min-width: $md) {
+            margin-bottom: 30px;
+            font-size: 256px;
+        }
+
+        @media (min-width: $lg) {
+            font-size: 300px;
+        }
+
+        @media (min-width: $xl) {
+            background-image: url("https://aws.massive.ru/technolight/images/404/404-desc.webp");
+            font-size: 390px;
+        }
+    }
+
+    &__title {
+        display: block;
+        margin: 0 0 20px;
+        padding: 0;
+        color: var(--color-font-primary);
+        font-size: 16px;
+        line-height: 21px;
+        text-align: center;
+        text-wrap: balance;
+        text-transform: uppercase;
+
+        @media (min-width: $md) {
+            margin-bottom: 20px;
+            font-size: 28px;
+            line-height: 35px;
+            font-weight: 300;
+        }
+    }
+
+    &__message {
+        display: block;
+        margin: 0 0 40px 0;
+        padding: 0;
+        color: var(--color-font-primary);
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        text-wrap: balance;
+
+        @media (min-width: $md) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        max-width: 453px;
+        height: auto;
+    }
+}
+
+@keyframes page-not-found {
+    0% {
+        background-size: 100%;
+    }
+    25% {
+        background-size: 80%;;
+    }
+    50% {
+        background-size: 100%;
+    }
+    75% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}

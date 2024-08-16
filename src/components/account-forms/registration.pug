@@ -1,0 +1,48 @@
+.account-form
+    .account-form__dialog
+        .account-form__header
+            h3.account-form__title Регистрация
+            p.account-form__subtitle Для регистрации укажите ваш Емейл, Номер телефона и Пароль
+
+        .account-form__body
+            form.account-form__form(action="" data-form-type="registration")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        i.phone
+                        input(type="tel" name="phone" placeholder="Телефон")
+                        span.error-message Текст ошибки
+
+                    label
+                        i.mail
+                        input(type="text" name="email" placeholder="Емейл")
+                        span.error-message Текст ошибки
+
+                    label
+                        i.pass
+                        input(type="password" name="pass" placeholder="Пароль")
+                        span.error-message Текст ошибки
+                        span.help Должен содержать минимум 8 символов
+                        span.toggle-visible-pass
+
+                    label
+                        i.pass
+                        input(type="password" name="repeatpass" placeholder="Повторите пароль")
+                        span.error-message Текст ошибки
+                        span.help Пароли должны совпадать
+                        span.toggle-visible-pass
+
+                button.btn.btn_block.btn_dark(type="submit")
+                    span Зарегистрироваться
+
+        .account-form__footer
+            span.account-form__footer-text или
+
+            a.btn.btn_block.btn_dark(href="#")
+                span Войти по почте
+
+            span.account-form__footer-text или через сервис
+
+            .account-form__footer-services
+                button(type="button").service.service_tinkoff
+                a(href="#").service.service_yandex

@@ -1,0 +1,15 @@
+@import '../../../../../scss/sass-variables';
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+    @media (min-width: $lg) {
+        margin-bottom: 0;
+    }
+}

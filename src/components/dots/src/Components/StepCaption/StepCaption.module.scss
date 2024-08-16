@@ -1,0 +1,19 @@
+@import '../../../../../scss/sass-variables';
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    color: var(--color-font-primary);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%; /* 28px */
+    text-transform: uppercase;
+    // user-select: none;
+}

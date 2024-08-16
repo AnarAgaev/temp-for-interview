@@ -1,0 +1,7 @@
+mixin account-card(icon, title, button)
+    .account__card
+        .account__card-caption
+            i(class=`account__card-icon account__card-icon_${icon}`)
+            h3.account__card-title= title
+        a.btn.btn_lite.btn_block(href="#")
+            span= button

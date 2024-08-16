@@ -1,0 +1,168 @@
+.commonTextUnderlineMixin {
+    display: inline;
+    background-image: linear-gradient(transparent calc(100% - 1px), var(--color-font-inversion) 1px);
+    background-repeat: no-repeat;
+    transition: background-size .5s;
+    width: 100%;
+    background-size: 0 100%;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background-size: 100% 100%;
+        }
+    }
+}
+
+@mixin textUnderlineMixin_lite {
+    @extend .commonTextUnderlineMixin;
+    background-image: linear-gradient(transparent calc(100% - 1px), var(--color-font-inversion) 1px);
+}
+
+@mixin textUnderlineMixin_dark {
+    @extend .commonTextUnderlineMixin;
+    background-image: linear-gradient(transparent calc(100% - 1px), var(--color-font-primary) 1px) !important;
+}
+
+@mixin buttonAnimation {
+    &.active {
+        &::before {
+            border-radius: 0;
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1);
+            transition-duration: 0s;
+        }
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 0;
+        aspect-ratio: 1/1;
+        background-color: var(--color-background-light);
+        border-radius: 100%;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(0);
+        // transition: transform .6s cubic-bezier(.32,.94,.6,1) .2s,
+        //     opacity .6s cubic-bezier(.32,.94,.6,1) .2s;
+        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover::before {
+            border-radius: 0;
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1);
+        }
+    }
+}
+
+@mixin imgSafety {
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--color-back-secondary) center no-repeat;
+        background-size: cover;
+    }
+}
+
+.commonAnimationElementStyles {
+    opacity: 1;
+    transform: translateY(0);
+    transition: var(--synth-transition);
+    transition-duration: 2s;
+
+    &.animation-element {
+        opacity: 0;
+    }
+}
+
+@mixin animationElement {
+    @extend .commonAnimationElementStyles;
+
+    &.animation-element {
+        transform: translateY(100px);
+    }
+}
+
+@mixin animationElementWithDelay {
+    @extend .commonAnimationElementStyles;
+
+    &.animation-element {
+        transform: translateY(150px);
+    }
+}
+
+@mixin link {
+    font-family: inherit;
+    display: inline-block;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+
+    @include textUnderlineMixin_dark;
+}
+
+/*
+@mixin scrollbar {
+    //- Стили для firefox
+    scrollbar-color: var(--color-background-template) transparent;
+    scrollbar-width: thin;
+
+    //- скроллбар
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 0;
+        background: var(--color-background-template);
+        border-radius: 0px;
+        cursor: pointer;
+    }
+
+    //- кнопки управления ползунком и скроллом
+    &::-webkit-scrollbar-button {
+        display: none;
+        width: 0px; // можно установить размер без цвета, чтобы добавить отступы для скроллбара
+        height: 0px; // можно установить размер без цвета, чтобы добавить отступы для скроллбара
+        background-color: transparent;
+    }
+
+    //- Цвет дорожки, по которой двигается бегунок прокрутки.
+    &::-webkit-scrollbar-track {
+        background: var(--color-background-light);
+        border-radius: 0px;
+    }
+
+    //- видимая часть трека
+    // &::-webkit-scrollbar-track-piece {
+    // }
+
+    //- Цвет бегунка полосы, а так же его закругление.
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--color-background-template);
+        border-radius: 0px;
+
+        &:hover {
+            background-color: var(--color-background-dark-hover);
+        }
+    }
+
+    //- уголки на кнопках управления ползунком
+    &::-webkit-scrollbar-corner {
+        display: none;
+        width: 0;
+        height: 0;
+        background-color: transparent;
+    }
+
+    //- Основная ширина полосы прокрутки.
+    // &::-webkit-resizer {
+    // }
+}*/

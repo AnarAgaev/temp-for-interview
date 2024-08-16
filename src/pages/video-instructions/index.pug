@@ -1,0 +1,59 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/button-play/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'video-instructions'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Видеоинструкции
+
+block content
+    section.section
+        .video-instructions
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h1.container_caption-text Видеоинструкции
+
+            .video-instructions__item.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            h2.video-instructions__caption PROFI 48V
+                        .col-12.col-lg-8
+                            .video-instructions__video-wrap
+                                .video-instructions__video
+                                    .video
+                                        // Ссылку на видео помещаем в data-src
+                                        iframe(data-src="https://www.youtube.com/embed/YHwnmYkkYrM?si=YEkXxmLnki9n7Xoq" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+                                    .poster
+                                        img(src="https://aws.massive.ru/technolight/public/images/video-instructions/profi.jpg" alt="" loading="lazy")
+                                    +button-play
+
+
+            .video-instructions__item.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            h2.video-instructions__caption DOT 220V
+                        .col-12.col-lg-8
+                            .video-instructions__video-wrap
+                                .video-instructions__video
+                                    .video
+                                        // Ссылку на видео помещаем в data-src
+                                        iframe(data-src="https://www.youtube.com/embed/YHwnmYkkYrM?si=YEkXxmLnki9n7Xoq" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+                                    .poster
+                                        img(src="https://aws.massive.ru/technolight/public/images/video-instructions/dot.jpg" alt="" loading="lazy")
+                                    +button-play

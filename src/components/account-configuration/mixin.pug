@@ -1,0 +1,18 @@
+mixin account-configuration(number, date)
+    .account__configuration
+        .account__configuration-order
+            .account__configuration-check
+                i
+            .account__configuration-info
+                span.account__configuration-number= `№ ${number}`
+                span.account__configuration-date= `Создан ${date}`
+        .account__configuration-buttons
+            a.account__configuration-btn.account__configuration-btn_edit(href="#" title="Редактировать конфигурацию")
+                i
+                mark  Редактировать
+            a.account__configuration-btn.account__configuration-btn_download(href="#" title="Скачать конфигурацию")
+                i
+                mark Скачать
+            a.account__configuration-btn.account__configuration-btn_delete(href="#" title="Удалить конфигурацию")
+                i
+                mark Удалить

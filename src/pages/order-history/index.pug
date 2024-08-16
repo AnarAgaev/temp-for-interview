@@ -1,0 +1,66 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/account-card/mixin.pug
+include ../../components/account-order/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'account'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Личный кабинет
+                li
+                    span История заказов
+
+block content
+    section.section
+        .account
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text История заказов
+
+            .account__banner.animation-element
+                .container
+                    .account__msg
+                        p У вас ещё нет заказов
+                        a(href="#") Перейти в каталог
+
+            .account__order-list.animation-element
+                .container
+                    .row
+                        .col-12.col-md-6.col-lg-4.col-xl-3
+                            +account-order('check', '2014783079', 'Оплачен. Заказ выполнен', '15.01.2022', '5 780 633')
+                        .col-12.col-md-6.col-lg-4.col-xl-3
+                            +account-order('check', '2014783079', 'Оплачен. Заказ выполнен', '15.01.2022', '223 346')
+                        .col-12.col-md-6.col-lg-4.col-xl-3
+                            +account-order('check', '2014783079', 'Оплачен. Заказ выполнен', '15.01.2022', '6 274')
+                        .col-12.col-md-6.col-lg-4.col-xl-3
+                            +account-order('error', '2014783079', 'Не оплачен. Заказ ожидает подтверждения', false, '12 117')
+                        .col-12.col-md-6.col-lg-4.col-xl-3
+                            +account-order('check', '2014783079', 'Оплачен. Заказ выполнен', '15.01.2022', '1 203 697')
+
+            .account__cards.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            +account-card('pencil', 'Изменить пароль', 'Изменить пароль')
+                        .col-12.col-lg-4
+                            +account-card('user', 'Личные данные', 'Изменить личные данные')
+                        .col-12.col-lg-4
+                            +account-card('mixer', 'Мои конфигурации', 'Смотреть конфигурации')
+
+            .account__back.animation-element
+                .container
+                    a.btn.btn_block.btn_dark(href="#")
+                        span Вернуться в каталог

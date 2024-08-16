@@ -1,0 +1,38 @@
+mixin card(signature, images, data, badges)
+    //- .col-6.col-md-3(data-json!= '#{data}')
+    .col-6.col-md-3(data-filter!=data)
+        a.cards-series__item(href="#")
+            .cards-series__body
+                each image, i in images
+                    - let isActive = i === 0 ? 'active' : ''
+                    if i === 0 && image !== ''
+                        img.cards-series__pic(class=isActive, data-type='black', src=image, alt="", loading="lazy")
+                    if i === 1 && image !== ''
+                        img.cards-series__pic(class=isActive, data-type='white', src=image, alt="", loading="lazy")
+                    if i === 2 && image !== ''
+                        img.cards-series__pic(class=isActive, data-type='gold', src=image, alt="", loading="lazy")
+                    if i === 3 && image !== ''
+                        img.cards-series__pic(class=isActive, data-type='black-white', src=image, alt="", loading="lazy")
+
+                if (images && images.length > 1)
+                    ul.cards-series__controls
+                        each image, c in images
+                            if c === 0 && image !== ''
+                                li.cards-series__tab.cards-series__tab_black.active(data-target-type="black")
+                            if c === 1 && image !== ''
+                                li.cards-series__tab.cards-series__tab_white(data-target-type="white")
+                            if c === 2 && image !== ''
+                                li.cards-series__tab.cards-series__tab_gold(data-target-type="gold")
+                            if c === 3 && image !== ''
+                                li.cards-series__tab.cards-series__tab_black-white(data-target-type="black-white")
+
+                if (badges && badges.length > 0)
+                    .cards-series__badge-list
+                        each badge, i in badges
+                            if badge === 'new'
+                                span.cards-series__badge-item Новинка
+                            if badge === 'waterproof'
+                                .cards-series__badge-item.cards-series__badge-item_waterproof IP 44
+                                    i
+
+            p.cards-series__signature= signature

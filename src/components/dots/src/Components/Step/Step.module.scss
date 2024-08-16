@@ -1,0 +1,41 @@
+@import '../../../../../scss/sass-variables';
+
+.item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 130px;
+    height: 46px;
+    padding: 5px 10px;
+    user-select: none;
+    background: var(--color-background-template);
+    text-wrap: balance;
+    color: var(--color-font-inversion);
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    transition: var(--base-transition);
+
+    @media (min-width: $sm) {
+        width: calc((100% - 30px) / 4);
+    }
+
+    @media (min-width: $lg) {
+        width: 130px;
+        height: 53px;
+        padding: 10px 10px 7px 10px;
+        line-height: 1.5;
+    }
+
+    &_active {
+        background: var(--color-font-lite);
+        color: var(--color-font-primary);
+    }
+
+    &_passed {
+        background: var(--color-background-accent);
+    }
+}

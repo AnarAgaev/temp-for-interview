@@ -1,0 +1,192 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/button-play/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'single-project'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Компания
+                li
+                    a(href="#") Наши проекты
+                li
+                    span ЖК "Небо" с основным освещением от TECHNOLIGHT
+
+block content
+    section.section
+        .project
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text ЖК "Небо" с основным освещением от TECHNOLIGHT
+
+            .container
+                article.project__content.animation-element
+                    .project__creative(data-type="video")
+                        .project__creative-body
+                            .project__video
+                                .video
+                                    // Ссылку на видео помещаем в data-src
+                                    iframe(data-src="https://www.youtube.com/embed/YHwnmYkkYrM?si=YEkXxmLnki9n7Xoq" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+                                .poster
+                                    img(src="https://aws.massive.ru/technolight/images/projects/video-poster.png" alt="" loading="lazy")
+                                +button-play
+                        .project__creative-aside
+                            img(src="https://aws.massive.ru/technolight/images/projects/video-aside.png" alt="" loading="lazy")
+
+                    .project__two-column-text(data-type="split_text")
+                        div
+                            p В квартире площадью 120 кв.м. в жилом комплексе "Небо" с основным освещением от TECHNOLIGHT, были установлены светильники ЛАЙН с управлением по протоколу DALI. Настройки сценариев освещения были реализованы через приложение CASAMBI. Управление группами светильников было продублировано с клавиш выключателей с нескольких мест, под персональные желания заказчика.
+                        div
+                            p Дальше весь ремонт он контролировал сам, вникая в каждую деталь. Перед комплектацией объекта светом инженер TECHNOLIGHT выполнил расчет освещенности, а во время ремонта осуществлялся авторский надзор со стороны бренда TECHNOLIGHT, в том числе подбор дополнительного оборудования и контроль работы электриков. Результат - многофункциональная система освещения с гибкими настройками и комфортным уровнем освещенности с помощью качественного света.
+
+                    .project__creative(data-type="gallery")
+                        .project__creative-body
+                            .project__collage
+                                .swiper
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            // Изображения в ссылке и src картинки могут быть разными. В href ссылки должно быть более качественное изображение
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/1.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/1.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/2.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/2.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/3.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/3.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/4.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/4.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/5.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/5.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/6.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/6.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/7.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/7.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/8.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/8.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/9.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/9.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/10.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/10.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/11.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/11.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/12.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/12.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/13.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/13.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/14.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/14.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/15.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/15.jpg' alt="" loading="lazy")
+                                        .swiper-slide
+                                            a(href='https://aws.massive.ru/technolight/images/projects/collage/16.jpg' data-fancybox='post-collage')
+                                                img(src='https://aws.massive.ru/technolight/images/projects/collage/16.jpg' alt="" loading="lazy")
+
+                                    .project__collage-scrollbar
+                                        //- .project__collage-page.project__collage-page_current
+                                        .swiper-scrollbar
+                                        //- .project__collage-page.project__collage-page_all
+
+                        .project__creative-aside
+                            img(src="https://aws.massive.ru/technolight/images/projects/collage-aside.png" alt="" loading="lazy")
+
+                    div(data-type="text")
+                        p Квартира большая - пространства для вариативности сценариев освещения много. Но самое важное - это грамотный светорасчет и подбор оборудования, к чему TECHNOLIGHT подходит очень ответственно, ведь от этого зависит и здоровье, комфорт и общее состояние тех, кто будет здесь жить.
+
+                    div(data-type="text")
+                        h2 Заголовок второго уровня h2
+                        h3 Заголовок третьего уровня h3
+                        h4 Заголовок четвертого уровня h4
+
+                        ul
+                            li Элемент списка
+                            li Ещё элемент списка
+                            li Элемент списка с каким-то более длинным текстом
+                            li Ещё один элемент списка
+                            li Последний элемент списка для примера того как будет выглядеть список на странице проекта, статьи или поста.
+                            li А вот элемент списка с вложенной  
+                                a(href="#")
+                                    span(style='text-decoration: underline;') Ссылкой
+
+                        ol
+                            li Элемент нумерованного списка
+                            li Ещё элемент нумерованного списка
+                            li Элемент нумерованного списка с каким-то более длинным текстом
+                            li Ещё один элемент нумерованного списка
+                            li Последний элемент нумерованного списка для примера того как будет выглядеть список на странице проекта, статьи или поста.
+                            li А вот элемент нумерованного списка с вложенной  
+                                a(href="#")
+                                    span(style='text-decoration: underline;') Ссылкой
+                        p
+                            | Просто ссылка внутри какого-либо текста будет  
+                            a(href='http://minio:9000') Как-то так
+                            |  выглядеть.
+
+                        p
+                            strong Жирный текст
+
+                        p
+                            em Акцентный текст
+
+                        p
+                            span(style='text-decoration: underline;') Подчеркнутый текст
+
+                        p
+                            del Зачеркнутый текст
+
+                        blockquote
+                            | Какая-то цитат произвольной длинны
+                            br
+                            | которая может быть произвольной длинны
+
+                        pre.
+                            function sum(a, b) {
+                                return a + b;
+                            }
+
+                        figure
+                            img(src="https://aws.massive.ru/technolight/images/projects/content-picture.png" alt="")
+                            figcaption Рис 1. Подпись для картинкой будет выглядеть так
+
+
+            // Кнопка назад добавлена для демонстрации. Использовать по необходимости (либо назад, либо предыдущий/следующий). В итоговом макете ее нет.
+            .container
+                nav.project__navigation.animation-element
+                    a.project__nav-link.project__nav-link_prev(href="#")
+                        i
+                        span Вернуться назад
+
+            .container
+                nav.project__navigation.animation-element
+                    a.project__nav-link.project__nav-link_prev(href="#")
+                        i
+                        span Предыдущий проект
+                    a.project__nav-link.project__nav-link_next(href="#")
+                        span Следующий проект
+                        i
+                    a.btn.btn_dark.btn_block(href="#")
+                        span К списку проектов

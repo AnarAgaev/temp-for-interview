@@ -1,0 +1,10 @@
+services:
+  node:
+    build:
+      context: .
+      dockerfile: ./docker/node/Dockerfile
+    working_dir: /app
+    user: '82:82'
+    volumes:
+      - ./:/app
+    entrypoint: /app/docker/entrypoint.node.production.sh

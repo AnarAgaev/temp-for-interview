@@ -1,0 +1,14 @@
+@import '../../../../../scss/sass-variables';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    column-gap: 20px;
+    margin-bottom: 40px;
+
+    @media (min-width: $xxl) {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}

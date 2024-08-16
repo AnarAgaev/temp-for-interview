@@ -1,0 +1,291 @@
+{
+    "data": {
+        "id": 54,
+        "alias": "spot-42",
+        "title": "Спот 42",
+        "parent_id": 8,
+        "category_id": 7,
+        "uuid": "bff410fb-8390-11ee-8af9-005056953bcb",
+        "type": "series",
+        "description": "Встраиваемый монтаж — это самый популярный и эстетичный вид использования трековой системы. Питающий шинопровод крепится на заранее собранный каркас из строительного профиля, закрывается листами гипсокартона или другого схожего материала. Затем выполняются финишные шпатлевочные и покрасочные работы.<br><br>Для правильной установки необходима достаточная квалификация монтажников, а также мастеров, способных вывести идеально гладкую потолочную плоскость.<br><br>В результате качественного выполнения всех отделочных работ получается тонкая черная линия. Ширина итоговой полосы — 23 мм.",
+        "images": [{
+            "color": "black",
+            "image": "https://yarusvsm.ru/all_about_product/Technolight_series/profi-48v/spot-42/spot-42_1.jpg"
+        }, {
+            "color": "white",
+            "image": "https://yarusvsm.ru/all_about_product/Technolight_series/profi-48v/spot-42/spot-42_2.jpg"
+        }, {
+            "color": "black-white",
+            "image": "https://yarusvsm.ru/all_about_product/Technolight_series/profi-48v/spot-42/spot-42_3.jpg"
+        }],
+        "videos": [
+            {
+                "url": "https://www.youtube.com/embed/YHwnmYkkYrM?si=7VpmellS4GuvokPM",
+                "name": "Светильники TECHNOLIGHT в жилом комплексе Небо.",
+                "poster": "https://aws.massive.ru/technolight/images/projects/video-poster.png"
+            }, {
+                "url": "https://www.youtube.com/embed/17orKkflArA?si=Tq78lY3xfTo9THLQ",
+                "name": "Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё получилось идеально!",
+                "poster": "https://aws.massive.ru/technolight/images/projects/collage/13.jpg"
+            }
+        ],
+        "specifications":{
+            "Производитель":"Technolight®",
+            "Тип упаковки":"PAP (код 20)",
+            "Вес":"0,232 кг",
+            "Тип монтажа":"Встраиваемый в гипсокартон с выполнением отделочных работ. Светильники легко устанавливаются в трек. Напряжение питания — 48",
+            "Конструкция":"Экструдированный алюминий с порошковым покрытием черного цвета (RAL 9005), медные проводники в диэлектрике из ПВХ и металлическая пластина для магнитного крепления светильников.",
+            "Габаритные размеры":"Длина — 2 000 мм, ширина — 74 мм, высота — 53 мм."
+        },
+        "files": [{
+            "url": "https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4",
+            "name": "Инструкция по монтажу PDF"
+        }, {
+            "url": "https://technolight.ru/assets/images/menu-pics/1_Badroom_white.mp4",
+            "name": "3D-модель ZIP"
+        }],
+        "position": 0,
+        "available": true,
+        "is_new": false,
+        "products_available": [{
+            "id": 441,
+            "article_id": 165925,
+            "article": "86108-3K-01-BK",
+            "title": "Спот 42 48В 8Вт 490лм 3000К 93+ 36° недиммируемый RAL 9005 черный",
+            "alias": "spot-42/86108-3K-01-BK",
+            "new": null,
+            "ip_class": 20,
+            "price": 6200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/175863/86108-3k-01-bk.jpg",
+            "color": "Чёрный",
+            "colorful_temperature": 3000,
+            "light_flow": 490,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 442,
+            "article_id": 165926,
+            "article": "86108-3K-01-WH",
+            "title": "Спот 42 48В 8Вт 490лм 3000К 93+ 36° недиммируемый RAL 9016 белый",
+            "alias": "spot-42/86108-3K-01-WH",
+            "new": null,
+            "ip_class": 20,
+            "price": 6200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/175864/86108-3k-01-wh.jpg",
+            "color": "Чёрный",
+            "colorful_temperature": 3000,
+            "light_flow": 490,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 457,
+            "article_id": 165941,
+            "article": "86108-4K-01-BK",
+            "title": "Спот 42 48В 8Вт 560лм 4000К 93+ 36° недиммируемый RAL 9005 черный",
+            "alias": "spot-42/86108-4K-01-BK",
+            "new": null,
+            "ip_class": 20,
+            "price": 6200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/175869/86108-4k-01-bk.jpg",
+            "color": "Чёрный",
+            "colorful_temperature": 4000,
+            "light_flow": 560,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 458,
+            "article_id": 165942,
+            "article": "86108-4K-01-WH",
+            "title": "Спот 42 48В 8Вт 560лм 4000К 93+ 36° недиммируемый RAL 9016 белый",
+            "alias": "spot-42/86108-4K-01-WH",
+            "new": null,
+            "ip_class": 20,
+            "price": 6200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/175870/86108-4k-01-wh.jpg",
+            "color": "Белый",
+            "colorful_temperature": 4000,
+            "light_flow": 560,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 466,
+            "article_id": 165950,
+            "article": "86108-3K-04-BK",
+            "title": "Спот 42 48В 8Вт 490лм 3000К 93+ 36° диммирование DALI RAL 9005 черный",
+            "alias": "spot-42/86108-3K-04-BK",
+            "new": 1,
+            "ip_class": 20,
+            "price": 9200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/175867/86108-3k-04-bk.jpg",
+            "color": "Чёрный",
+            "colorful_temperature": 3000,
+            "light_flow": 490,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 467,
+            "article_id": 165951,
+            "article": "86108-4K-04-BK",
+            "title": "Спот 42 48В 8Вт 560лм 4000К 93+ 36° диммирование DALI RAL 9005 черный",
+            "alias": "spot-42/86108-4K-04-BK",
+            "new": 1,
+            "ip_class": 20,
+            "price": 9200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/175871/86108-4k-04-bk.jpg",
+            "color": "Чёрный",
+            "colorful_temperature": 4000,
+            "light_flow": 560,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 468,
+            "article_id": 165952,
+            "article": "86108-3K-04-WH",
+            "title": "Спот 42 48В 8Вт 490лм 3000К 93+ 36° диммирование DALI RAL 9016 белый",
+            "alias": "spot-42/86108-3K-04-WH",
+            "new": 1,
+            "ip_class": 20,
+            "price": 9200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/175868/86108-3k-04-wh.jpg",
+            "color": "Белый",
+            "colorful_temperature": 3000,
+            "light_flow": 490,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 469,
+            "article_id": 165953,
+            "article": "86108-4K-04-WH",
+            "title": "Спот 42 48В 8Вт 560лм 4000К 93+ 36° диммирование DALI RAL 9016 белый",
+            "alias": "spot-42/86108-4K-04-WH",
+            "new": 1,
+            "ip_class": 20,
+            "price": 9200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/175872/86108-4k-04-wh.jpg",
+            "color": "Белый",
+            "colorful_temperature": 4000,
+            "light_flow": 560,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 489,
+            "article_id": 165973,
+            "article": "86108-3K-01-WW",
+            "title": "Спот 42 48В 8Вт 490лм 3000К 93+ 36° недиммируемый RAL 9016 белый",
+            "alias": "spot-42/86108-3K-01-WW",
+            "new": null,
+            "ip_class": 20,
+            "price": 6200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/206277/86108-3k-01-ww.jpg",
+            "color": "Белый",
+            "colorful_temperature": 3000,
+            "light_flow": 490,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }, {
+            "id": 490,
+            "article_id": 165974,
+            "article": "86108-4K-01-WW",
+            "title": "Спот 42 48В 8Вт 560лм 4000К 93+ 36° недиммируемый RAL 9016 белый",
+            "alias": "spot-42/86108-4K-01-WW",
+            "new": null,
+            "ip_class": 20,
+            "price": 6200,
+            "old_price": null,
+            "sale": null,
+            "available": true,
+            "image": "https://ms.fandeco.ru/assets/images/products/206278/86108-4k-01-ww.jpg",
+            "color": "Белый",
+            "colorful_temperature": 4000,
+            "light_flow": 560,
+            "power": 8,
+            "angle_of_light": 36,
+            "brightness_adjustment": false
+        }],
+        "fields": {
+            "color": [{
+                "value": "Чёрный",
+                "products": [441, 442, 449, 457, 466, 467, 499]
+            }, {
+                "value": "Белый",
+                "products": [450, 458, 468, 469, 489, 490, 498, 500, 501, 512, 513]
+            }],
+            "colorful_temperature": [{
+                "value": 3000,
+                "products": [441, 442, 449, 450, 466, 468, 489, 498, 512]
+            }, {
+                "value": 4000,
+                "products": [457, 458, 467, 469, 490, 499, 500, 501, 513]
+            }],
+            "light_flow": [{
+                "value": 490,
+                "products": [441, 442, 449, 450, 466, 468, 489, 498, 512]
+            }, {
+                "value": 560,
+                "products": [457, 458, 467, 469, 490, 499, 500, 501, 513]
+            }],
+            "power": [{
+                "value": 8,
+                "products": [441, 442, 449, 450, 457, 458, 466, 467, 468, 469, 489, 490, 498, 499, 500, 501, 512, 513]
+            }],
+            "angle_of_light": [{
+                "value": 36,
+                "products": [441, 442, 449, 450, 457, 458, 466, 467, 468, 469, 489, 490, 498, 499, 500, 501, 512, 513]
+            }],
+            "brightness_adjustment": [{
+                "value": false,
+                "products": [441, 442, 449, 450, 457, 458, 466, 467, 468, 469, 489, 490, 498, 499, 500, 501, 512, 513]
+            }]
+        },
+        "translate": {
+            "color": "Цвет",
+            "colorful_temperature": "Цветовая температура",
+            "light_flow": "Световой поток",
+            "power": "Мощность",
+            "angle_of_light": "Угол света",
+            "brightness_adjustment": "Регулировка яркости"
+        },
+        "units": {
+            "colorful_temperature": "К",
+            "light_flow": "Лм",
+            "power": "Вт",
+            "angle_of_light": "°"
+        }
+    }
+}

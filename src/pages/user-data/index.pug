@@ -1,0 +1,80 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/account-card/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'account'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Личные данные
+
+block content
+    section.section
+        .account
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text
+                            a.link-back(href="#" title="Вернуться в личный кабинет")
+                            span Личные данные
+
+            .account__form.animation-element
+                .container
+                    .row
+                        .col-12.col-md-6
+                            form.account__form-body#changeUserDataForm(action="")
+                                .account__form-data
+                                    .account__form-section
+                                        // Для ошибки полю .account__form-controller добавляем класс .has-error
+                                        .account__form-controller
+                                            label.account__form-label
+                                                i.user
+                                                input(type="text" placeholder="ФИО" name="name")
+                                            span.account__form-error Сообщение об ошибке
+                                        .account__form-controller
+                                            label.account__form-label
+                                                i.post
+                                                input(type="text" placeholder="Email" name="email")
+                                            span.account__form-error Сообщение об ошибке
+
+                                    .account__form-section
+                                        .account__form-controller
+                                            label.account__form-label
+                                                i.phone
+                                                input(type="tel" placeholder="Телефон" name="phone")
+                                            span.account__form-error Сообщение об ошибке
+                                        .account__form-controller
+                                            label.account__form-label
+                                                i.baloon
+                                                input(type="text" placeholder="Город" name="city")
+                                            span.account__form-error Сообщение об ошибке
+
+                                .account__form-button
+                                    button.btn.btn_block.btn_dark(type="submit")
+                                        span Сохранить
+
+            .account__cards.animation-element
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            +account-card('pencil', 'Изменить пароль', 'Изменить пароль')
+                        .col-12.col-lg-4
+                            +account-card('cart', 'История заказов', 'Смотреть историю')
+                        .col-12.col-lg-4
+                            +account-card('mixer', 'Мои конфигурации', 'Смотреть конфигурации')
+
+            .account__back.animation-element
+                .container
+                    a.btn.btn_block.btn_dark(href="#")
+                        span Вернуться в каталог

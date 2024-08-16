@@ -1,0 +1,203 @@
+{
+  "data": {
+    "id": 37,
+    "parent_id": 8,
+    "order": 17,
+    "title": "Глобо 135",
+    "uuid": "3f7f4a3a-8450-11ee-8af9-005056953bcb",
+    "alias": "globo-135",
+    "type": "series",
+    "level": 3,
+    "images": [
+      {
+        "name": "black",
+        "image": "https://yarusvsm.ru/all_about_product/Technolight_series/profi-48v/globo-135/globo-135_1.jpg"
+      }
+    ],
+    "description": null,
+    "available": true,
+    "is_new": null,
+    "ip_class": null,
+    "ignore_errors": 0,
+    "specifications": {
+      "Производитель": "Technolight®",
+      "Тип монтажа": "Светильники легко устанавливаются в трек. Держатся за счет магнитов и механических фиксаторов. Напряжение питания — 48В.",
+      "Конструкция": "Сплошной матовый рассеиватель из стекла с эффектом софт-тач диаметром 135 мм, корпус из алюминия с порошковым покрытием черного (RAL 9005) цвета, магнитное крепление и механические фиксаторы для установки в трек.",
+      "Тип упаковки": "PAP (код 20)",
+      "Дополнительно": "Ознакомьтесь с инструкцией по установке светильников до начала использования. Инструкция поставляется в комплекте вместе со светильником.",
+      "Источник света": "LED Citizen, 8Вт, 590лм, 3000K, CRI 93+.",
+      "Степень защиты": "IP20",
+      "Регулировка яркости": "Недиммируемые, аналоговый 1-10В, цифровой протокол DALI."
+    },
+    "files": [],
+    "videos": [],
+    "products_available": [
+      {
+        "id": 541,
+        "article_id": 166025,
+        "article": "86708-3K-01-BK",
+        "title": "Глобо 135 48В 8Вт 590лм 3000К 93+ 270° недиммируемый RAL 9005 черный",
+        "new": false,
+        "ip_class": 20,
+        "price": 10600,
+        "old_price": null,
+        "sale": null,
+        "image": "https://ms.fandeco.ru/assets/images/products/175978/86708-3k-01-bk.jpg",
+        "available": true,
+        "ignore_errors": 0,
+        "color": "Чёрный",
+        "light_temperatures": 3000,
+        "light_flow": 590,
+        "power": 8,
+        "light_angle": 270,
+        "dimmer": "Недиммируемый",
+        "length": 0,
+        "width": 0,
+        "height": 0,
+        "track_length": 173,
+        "pivot": {
+          "product_category_id": 37,
+          "product_id": 541
+        }
+      },
+      {
+        "id": 565,
+        "article_id": 166049,
+        "article": "86708-3K-04-BK",
+        "title": "Глобо 135 48В 8Вт 590лм 3000К 93+ 270° диммирование DALI RAL 9005 черный",
+        "new": true,
+        "ip_class": 20,
+        "price": 13600,
+        "old_price": null,
+        "sale": null,
+        "image": "https://ms.fandeco.ru/assets/images/products/175979/86708-3k-04-bk.jpg",
+        "available": true,
+        "ignore_errors": 0,
+        "color": "Чёрный",
+        "light_temperatures": 3000,
+        "light_flow": 590,
+        "power": 8,
+        "light_angle": 270,
+        "dimmer": "DALI",
+        "length": 0,
+        "width": 0,
+        "height": 0,
+        "track_length": 173,
+        "pivot": {
+          "product_category_id": 37,
+          "product_id": 565
+        }
+      },
+      {
+        "id": 590,
+        "article_id": 166074,
+        "article": "86708-3K-03-BK",
+        "title": "Глобо 135 48В 8Вт 590лм 3000К 93+ 270° диммирование 1-10В RAL 9005 черный",
+        "new": true,
+        "ip_class": 20,
+        "price": 12900,
+        "old_price": null,
+        "sale": null,
+        "image": "https://ms.fandeco.ru/assets/images/products/226496/86708-3k-03-bk.jpg",
+        "available": true,
+        "ignore_errors": 0,
+        "color": "Чёрный",
+        "light_temperatures": 3000,
+        "light_flow": 590,
+        "power": 8,
+        "light_angle": 270,
+        "dimmer": "1-10В",
+        "length": 0,
+        "width": 0,
+        "height": 0,
+        "track_length": 173,
+        "pivot": {
+          "product_category_id": 37,
+          "product_id": 590
+        }
+      }
+    ],
+    "fields": {
+      "color": [
+        {
+          "value": "Чёрный",
+          "products": [
+            541,
+            565,
+            590
+          ]
+        }
+      ],
+      "light_flow": [
+        {
+          "value": 590,
+          "products": [
+            541,
+            565,
+            590
+          ]
+        }
+      ],
+      "light_temperatures": [
+        {
+          "value": 3000,
+          "products": [
+            541,
+            565,
+            590
+          ]
+        }
+      ],
+      "light_angle": [
+        {
+          "value": 270,
+          "products": [
+            541,
+            565,
+            590
+          ]
+        }
+      ],
+      "power": [
+        {
+          "value": 8,
+          "products": [
+            541,
+            565,
+            590
+          ]
+        }
+      ],
+      "dimmer": [
+        {
+            "value": "Недиммируемый",
+            "products": [541]
+        }, {
+            "value": "1-10В",
+            "products": [590]
+        },
+        {
+            "value": "DALI",
+            "products": [565]
+        }
+      ]
+    },
+    "translate": {
+      "color": "Цвет",
+      "light_temperatures": "Цветовая температура",
+      "light_flow": "Световой поток",
+      "power": "Мощность",
+      "light_angle": "Угол света",
+      "brightness_adjustment": "Регулировка яркости",
+      "dimmer":"Диммирование"
+    },
+    "units": {
+      "color": "",
+      "light_temperatures": "К",
+      "light_flow": "Лм",
+      "power": "Вт",
+      "light_angle": "°",
+      "dimmer":""
+    }
+  }
+}

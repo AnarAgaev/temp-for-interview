@@ -1,0 +1,30 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'catalog'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Продукция
+                li
+                    span Каталог
+
+block content
+
+    // На стороне бэка нужно проинициализировать переменную window._PRODUCTS_PER_PAGE в которой храним количество товаров на странице каталога!
+    script.
+        window._PRODUCTS_PER_PAGE = 60
+
+    include components/description/description
+    include components/cards-items/cards-items
+    include components/pagination/pagination

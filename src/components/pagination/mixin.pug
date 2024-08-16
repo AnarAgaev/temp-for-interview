@@ -1,0 +1,27 @@
+mixin pagination(pages, isLinks)
+    if (isLinks)
+        .pagination.animation-element
+            a.pagination__extremum.disabled(href="" data-page="first") первая
+            a.pagination__btn.pagination__btn_prev.disabled(href="" data-page="prev")
+                i
+            each page in pages
+                if page[1]
+                    a.pagination__btn.pagination__btn_page.active(href="" data-page=page[0])= page[0]
+                else
+                    a.pagination__btn.pagination__btn_page(href="" data-page=page[0])= page[0]
+            a.pagination__btn.pagination__btn_next(href="" data-page="next")
+                i
+            a.pagination__extremum(href="" data-page="last") последняя
+    else
+        .pagination.animation-element
+            button.pagination__extremum.disabled(data-page="first") первая
+            button.pagination__btn.pagination__btn_prev.disabled(href="" data-page="prev")
+                i
+            each page in pages
+                if page[1]
+                    button.pagination__btn.pagination__btn_page.active(data-page=page[0])= page[0]
+                else
+                    button.pagination__btn.pagination__btn_page(data-page=page[0])= page[0]
+            button.pagination__btn.pagination__btn_next(data-page="next")
+                i
+            button.pagination__extremum(data-page="last") последняя

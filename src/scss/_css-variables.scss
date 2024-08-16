@@ -1,0 +1,33 @@
+:root {
+    --base-transition: all .1s linear;
+    --synth-transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    --synth-timing-func: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --font-family: 'Open Sans', sans-serif;
+
+    --color-font-primary: #000;
+    --color-font-secondary: #787878;
+    --color-font-inversion: #fff;
+    --color-font-lite: #eaeaea;
+    --color-font-hover-dark: #b8b8b8;
+    --color-font-danger: #f00;
+    --color-back-primary: #fff;
+    --color-back-secondary: #f5f5f5;
+    --color-background-light: #eaeaea;
+    --color-background-dark: #000;
+    --color-background-dark-hover: #535353;
+    --color-background-accent: #787878;
+    --color-background-template: #363636;
+    --color-background-accent-opacity: rgba(54, 54, 54, 0.5);
+
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gold: #d99c00;
+}
+
+// Breakpoints for Media quires
+// $sm: 576px;
+// $md: 768px;
+// $lg: 992px;
+// $xl: 1200px;
+// $xxl: 1440px;

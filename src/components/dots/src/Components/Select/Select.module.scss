@@ -1,0 +1,180 @@
+@import '../../../../../scss/sass-variables';
+
+.select {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 80px;
+    user-select: none;
+
+    &_open {
+        z-index: 10;
+    }
+
+    @media (min-width: $sm) {
+        flex-direction: row;
+        height: 40px;
+        border-bottom: 1px solid var(--color-background-dark);
+    }
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    color: var(--color-font-secondary);
+    font-size: 14px;
+    line-height: 1.3;
+
+    @media (min-width: $sm) {
+        font-size: 16px;
+        width: calc(60% - 5px);
+    }
+
+    mark {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: none;
+        background: transparent;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $sm) {
+        top: 0;
+        width: calc(40% - 5px);
+    }
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    background: var(--color-background-accent);
+    color: var(--color-font-inversion);
+    font-size: 14px;
+    line-height: 1.3;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @media (min-width: $sm) {
+        height: 39px;
+        font-size: 16px;
+    }
+
+    span {
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &::after {
+        content: '';
+        flex-shrink: 0;
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        transition: var(--base-transition);
+        background: transparent no-repeat center;
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1IDcuNUwxMCAxMi41TDUgNy41IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNjY2NjciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K");
+    }
+
+    &_open::after {
+        transform: scale(1, -1);
+    }
+
+    &_disabled {
+        cursor: no-drop;
+        background: var(--color-font-hover-dark);
+    }
+
+    &_current {
+        background: var(--color-font-hover-dark);
+        opacity: 0.4;
+    }
+}
+
+.drop {
+    display: none;
+    position: relative;
+    overflow: hidden;
+
+    &_open {
+        display: block;
+    }
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: inset 0 0 0 1px var(--color-background-dark);
+    background: var(--color-back-primary);
+    overflow: hidden;
+
+    label {
+        &:first-of-type {
+            margin-top: 1px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 1px;
+
+            span {
+                border: none;
+            }
+        }
+    }
+}
+
+.reset {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding: 10px;
+    margin: 0 1px;
+    border-bottom: 1px solid var(--color-background-light);
+    color: var(--color-background-dark-hover);
+    font-size: 12px;
+    line-height: 18px;
+    background: transparent;
+    transition: var(--base-transition);
+    cursor: pointer;
+
+    @media (min-width: $sm) {
+        line-height: 20px; /* 125% */
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            color: var(--color-font-primary);
+            background: var(--color-back-secondary);
+        }
+    }
+}

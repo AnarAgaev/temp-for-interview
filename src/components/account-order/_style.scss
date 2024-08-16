@@ -1,0 +1,100 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+.account {
+    &__order-list {
+        margin-bottom: 20px;
+
+        @include animationElementWithDelay;
+
+        @media (min-width: $md) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__order {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        @media (min-width: $md) {
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: $xl) {
+            margin-bottom: 60px;
+        }
+
+        &-type {
+            flex-shrink: 0;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: transparent no-repeat center;
+
+            &_check {
+                background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzc2XzI1MTY4KSI+CjxjaXJjbGUgY3g9IjE1IiBjeT0iMTUiIHI9IjE0LjUiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMCAxNUMwIDExLjAyMTggMS41ODAzNSA3LjIwNjQ0IDQuMzkzNCA0LjM5MzRDNy4yMDY0NCAxLjU4MDM1IDExLjAyMTggMCAxNSAwQzE4Ljk3ODIgMCAyMi43OTM2IDEuNTgwMzUgMjUuNjA2NiA0LjM5MzRDMjguNDE5NiA3LjIwNjQ0IDMwIDExLjAyMTggMzAgMTVDMzAgMTguOTc4MiAyOC40MTk2IDIyLjc5MzYgMjUuNjA2NiAyNS42MDY2QzIyLjc5MzYgMjguNDE5NiAxOC45NzgyIDMwIDE1IDMwQzExLjAyMTggMzAgNy4yMDY0NCAyOC40MTk2IDQuMzkzNCAyNS42MDY2QzEuNTgwMzUgMjIuNzkzNiAwIDE4Ljk3ODIgMCAxNVpNMTQuMTQ0IDIxLjQyTDIyLjc4IDEwLjYyNEwyMS4yMiA5LjM3NkwxMy44NTYgMTguNTc4TDguNjQgMTQuMjMyTDcuMzYgMTUuNzY4TDE0LjE0NCAyMS40MjJWMjEuNDJaIiBmaWxsPSJibGFjayIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzc2XzI1MTY4Ij4KPHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=");
+            }
+
+            &_error {
+                background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSJ3aGl0ZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOm11bHRpcGx5Ii8+CjxyZWN0IHg9IjcuNSIgeT0iNS42MjUiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxOC43NSIgZmlsbD0id2hpdGUiLz4KPHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSJ3aGl0ZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOm11bHRpcGx5Ii8+CjxwYXRoIGQ9Ik0xNSAxLjg3NUM3Ljc4MTI1IDEuODc1IDEuODc1IDcuNzgxMjUgMS44NzUgMTVDMS44NzUgMjIuMjE4OCA3Ljc4MTI1IDI4LjEyNSAxNSAyOC4xMjVDMjIuMjE4OCAyOC4xMjUgMjguMTI1IDIyLjIxODggMjguMTI1IDE1QzI4LjEyNSA3Ljc4MTI1IDIyLjIxODggMS44NzUgMTUgMS44NzVaTTEzLjk2ODggNy41SDE2LjAzMTJWMTcuODEyNUgxMy45Njg4VjcuNVpNMTUgMjMuNDM3NUMxNC4yNSAyMy40Mzc1IDEzLjU5MzggMjIuNzgxMiAxMy41OTM4IDIyLjAzMTJDMTMuNTkzOCAyMS4yODEyIDE0LjI1IDIwLjYyNSAxNSAyMC42MjVDMTUuNzUgMjAuNjI1IDE2LjQwNjIgMjEuMjgxMiAxNi40MDYyIDIyLjAzMTJDMTYuNDA2MiAyMi43ODEyIDE1Ljc1IDIzLjQzNzUgMTUgMjMuNDM3NVoiIGZpbGw9IiNGRjAwMDAiLz4KPC9zdmc+Cg==");
+            }
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        &-number {
+            display: block;
+            margin-bottom: -5px;
+            color: var(--color-font-primary);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px; /* 125% */
+        }
+
+        &-status {
+            display: block;
+            color: var(--color-font-secondary);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px; /* 125% */
+
+            @media (min-width: $md) {
+                font-size: 16px;
+                line-height: 20px; /* 125% */
+            }
+        }
+
+        &-date {
+            display: block;
+            color: var(--color-font-primary);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px; /* 138.462% */
+
+            @media (min-width: $md) {
+                font-size: 16px;
+                line-height: 20px; /* 125% */
+            }
+        }
+
+        &-sum {
+            display: block;
+            color: var(--color-font-primary);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px; /* 138.462% */
+
+            @media (min-width: $md) {
+                font-size: 16px;
+                line-height: 20px; /* 125% */
+            }
+        }
+    }
+}

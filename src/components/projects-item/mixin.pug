@@ -1,0 +1,9 @@
+mixin project(sign, image, text)
+    a.projects__card(href="#")
+        .projects__desc= text
+        .projects__pic
+            img(src= image alt="" loading="lazy")
+            i
+        .projects__action
+            p= sign
+            mark

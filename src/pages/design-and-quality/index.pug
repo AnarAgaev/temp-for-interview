@@ -1,0 +1,63 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'design-and-quality'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Компания
+                li
+                    span Дизайн и качество
+
+block content
+    section.section
+        .daq
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Дизайн и качество
+
+            .container.animation-element
+                .row
+                    .col-12.col-lg-4
+                        .daq__card
+                            h3.daq__caption Дизайн
+                            p.daq__text
+                                | Продукция торговой марки Technolight® создается с помощью строгих прямых линий, стандартных форм, четких углов и ярких потоков света. Осуществляя проектирование световых приборов, мы опираемся на яркие примеры природных явлений, когда потоки солнечного или лунного света заливают наблюдаемые нами объекты, но самого источника света мы не замечаем. Он скрыт и органично растворён в общей картине природы.
+                                br
+                                | Так и дизайн моделей Technolight® органично и почти незаметно вписывается в любой интерьер, дополняет его своим светом, но никак не отвлекает на себя внимание.
+                    .col-12.col-lg-4
+                        .daq__card
+                            h3.daq__caption.d-none.d-lg-block
+                            p.daq__text
+                                | Строгие формы осветительных приборов в классических цветах — черном и белом, органично вписываются в современные интерьеры в любом цветовом решении. Прямые линии треков и соединительные элементы, делают незаметными переходы и повороты световой конструкции. Осветительные элементы простых и понятных форм плотно прилегают к направляющим, сливаясь в единую поверхность с потолком или с подвесным треком, и мягко рассеивают свет.
+                                br
+                                br
+                                | Создавая дизайн освещения с помощью продукции Technolight®, вы выбираете надежное и актуальное решение на долгие годы.
+                    .col-12.col-lg-4
+                        .daq__pic
+                            img(src="https://aws.massive.ru/technolight/images/design-and-quality/design.jpg" alt="" loading="lazy")
+
+            .container.animation-element
+                .row
+                    .col-12.col-lg-4
+                        .daq__card
+                            h3.daq__caption Качество
+                            p.daq__text
+                                | Мы искренне ценим ваше время и деньги и поэтому постоянно работаем над качеством нашей продукции, чтобы доставить удовольствие не только в процессе эксплуатации светильников, но и в процессе монтажа.
+                                br
+                                br
+                                | Осветительные системы Technolight® представляют из себя инновационный и высокотехнологичный конструктор. Тщательно продуманные детали каждого светильника, идеально подогнанные друг к другу элементы и надежные электрические соединители позволяют сократить общее время монтажа и увеличить срок эксплуатации продукции.
+                    .col-12.col-lg-8
+                        .daq__pic
+                            img(src="https://aws.massive.ru/technolight/images/design-and-quality/quality.jpg" alt="" loading="lazy")

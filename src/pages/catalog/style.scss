@@ -1,0 +1,13 @@
+@import '../../scss/sass-variables';
+
+.section {
+    &_product-list {
+        transition: all .2s ease-out;
+
+        &.blocked {
+            opacity: 0.5;
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+}

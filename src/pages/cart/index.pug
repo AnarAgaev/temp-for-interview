@@ -1,0 +1,209 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'cart'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Корзина
+
+block content
+    section.section
+        .cart
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        .print-logo
+                            img(src="https://aws.massive.ru/technolight/images/print-logo.png", alt="")
+
+                        h2.container_caption-text Корзина
+
+            // Для всех продуктов, независимо от того Дот это или просто продук даобавляем атрибут data-product
+            - for (let i = 1; i < 2; i++)
+                .cart__dot(data-product data-product-id="1").animation-element
+                    .container
+                        .row.cart__product
+                            .col-12.col-sm-6.col-xl-4.col-xxl-3.cart__dot-pic
+                                span.cart__dot-num= i
+                                    |.
+                                .cart__image
+                                    img(src="https://aws.massive.ru/technolight/images/cart/dot.png" alt="" loading="lazy")
+
+                            .col-12.col-xl-4.col-xxl-6.cart__dot-description
+                                .cart__caption
+                                    h2.cart__title DOT в сборе
+
+                                ul.cart__list
+                                    li
+                                        mark {1}
+                                        span
+                                            em 46001-F1  
+                                            | — Светофильтр Ханикомб 42
+                                    li
+                                        mark {2}
+                                        span
+                                            em 42001-BK  
+                                            | — Фиксирующее кольцо
+                                    li
+                                        mark {3}
+                                        span
+                                            em 43001-36  
+                                            | — Линза Слим 36° для Атом 6
+                                    li
+                                        mark {4}
+                                        span
+                                            em 40001-89  
+                                            | — Монтажный комплект Зеро
+                                    li
+                                        mark {5}
+                                        span
+                                            em 41021-BK  
+                                            | — Рамка Симпл 68 круглая RAL 9005 черная
+                                    li
+                                        mark {6}
+                                        span
+                                            em 46001-44  
+                                            | — Защитная накладка IP44 для рамки Симпл 68 круглая
+                                    li
+                                        mark {7}
+                                        span
+                                            em 44002-4K  
+                                            | — Светодиодный модуль Атом 9 36В 210мА 9Вт 980лм 4000К 93+
+                                    li
+                                        mark {8}
+                                        span
+                                            em 45002-02  
+                                            | — Драйвер тока 9Вт 30-40В 210мА TRIAC для Атом 9 диммируемый
+
+                            .col-12.col-sm-6.col-xl-4.col-xxl-3.cart__dot-calc
+                                .cart__calc
+                                    .cart__calc-body
+                                        .cart__calc-price
+                                            mark Цена:
+                                            div
+                                                // Для каждой цены добавляем атрибут data-price
+                                                span.value(data-price) 10 000
+                                                |  р.
+
+                                        .cart__calc-counter
+                                            span.cart__calc-count Количество:
+
+                                            // Если в Корзине только один товар конкретного типа, тогда кнопке убавить количество добавить класс disabled
+                                            button.btn.btn_lite(type='button' data-type="dec")
+                                                i.inc
+                                            input(type='tel' value='2' readonly)
+                                            button.btn.btn_lite(type='button' data-type="inc")
+                                                i.dec
+
+                                        .cart__calc-price
+                                            mark Итого:
+                                            div
+                                                // Для итоговой цены добавляем атрибут data-total
+                                                span.value(data-total) 20 000
+                                                |  р.
+
+                                    .cart__calc-del
+                                        button.btn.btn_lite.btn_del(type='button')
+                                            i
+                                            span  Удалить
+
+            - for (let j = 2; j < 4; j++)
+                .cart__item(data-product data-product-id="60121-3K-02-WH").animation-element
+                    .container
+                        .row.cart__product
+                            .col-12.col-sm-6.col-xl-4.col-xxl-3.cart__dot-pic
+                                span.cart__dot-num= j
+                                    |.
+                                .cart__image
+                                    img(src="https://aws.massive.ru/technolight/images/cart/line.png" alt="" loading="lazy")
+
+                            .col-12.col-md-6.col-xl-4.col-xxl-6.cart__dot-description
+                                .cart__caption
+                                    h2.cart__title
+                                        a(href="#") 60121-3K-02-WH
+                                    p.cart__subtitle Угол внутренний встраиваемый
+
+                                .cart__price.d-none.d-xl-flex
+                                    mark Цена:
+                                    div
+                                        span.value(data-price) 10 000
+                                        |  р.
+
+                            .col-12.col-sm-6.col-xl-4.col-xxl-3.offset-md-6.offset-xl-0.cart__dot-calc
+                                .cart__calc
+                                    .cart__calc-body
+                                        .cart__calc-price.d-xl-none
+                                            mark Цена:
+                                            div
+                                                span.value(data-price) 10 000
+                                                |  р.
+
+                                        .cart__calc-counter
+                                            span.cart__calc-count Количество:
+
+                                            button.btn.btn_lite(type='button' data-type="dec" disabled)
+                                                i.inc
+                                            input(type='tel' value='1' readonly)
+                                            button.btn.btn_lite(type='button' data-type="inc")
+                                                i.dec
+
+                                        .cart__calc-price
+                                            mark Итого:
+                                            div
+                                                span.value(data-total) 10 000
+                                                |  р.
+
+                                    .cart__calc-del
+                                        button.btn.btn_lite.btn_del(type='button')
+                                            i
+                                            span  Удалить
+
+            .cart__actions.animation-element
+                .container
+                    .row.cart__actions-total
+                        .col-12.col-xl-6
+
+
+                            .cart__total
+                                mark ИТОГО сумма:
+                                div
+                                    span#total 30 000
+                                    |  р.
+
+                        .col-12.col-xl-6
+                            button.btn.btn_block.btn_dark(type="button" data-modal data-modal-target="#setOrder" data-modal-action="show")
+                                span Отправить заказ
+
+                    .row.cart__actions-buttons
+                        .col-12.col-lg-4
+                            button.btn.btn_block.btn_lite.btn_download
+                                i
+                                span Экспорт в Exel
+                        .col-12.col-lg-4
+                            button.btn.btn_block.btn_lite.btn_download#SaveAsPDF
+                                i
+                                span Экспорт в PDF
+                        .col-12.col-lg-4
+                            a.btn.btn_block.btn_lite.btn_search(href="#")
+                                i
+                                span Продолжить выбор
+
+            .cart__contacts
+                table
+                    tr
+                        td www.technolight.ru
+                        td +7 495 797-72-51
+                        td order@technolight.ru
+                p
+                    strong ARTPLAY центр дизайна
+                    | , Москва, Нижняя Сыромятническая, д. 10 стр. 2

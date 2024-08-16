@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title> React Product component for Component page</title>
+	<link rel="icon" type="image/png" href="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" />
+
+	<link rel="stylesheet" href="http://localhost:7001/css/vendor.css" />
+	<link rel="stylesheet" href="http://localhost:7001/css/main.css" />
+	<link rel="stylesheet" href="http://localhost:7001/css/pages/dots.css" />
+
+	<script>
+
+		window.MODE = 'dev'
+
+		window.terms = [
+			"Форма",
+			"МОЩНОСТЬ",
+			"степень защиты"
+		],
+
+		window.cartLink = "https://anaragaev.github.io/technolight.layout/cart.html"
+		window.getCartLink = "https://anaragaev.github.io/technolight.layout/mocks/cart-get.json"
+
+		// window.productDataLink = "http://localhost:7001/mocks/without-fields.json";
+		// window.productDataLink = "http://localhost:7001/mocks/spot-42-fixed.json";
+		// window.productDataLink = "http://localhost:7001/mocks/spot-42-empty.json";
+		window.productDataLink = "http://localhost:7001/mocks/spot-42.json";
+
+	</script>
+</head>
+<!--
+	spot-42   : 86108-3K-01-BK
+	globo-135 : 86708-3K-01-BK
+-->
+<body data-product-article="86108-4K-01-WH">
+	<div style=" position: absolute; top: 0; left: 0; width: 100%; z-index: 100;">
+		<div class="header__msg-container"></div>
+	</div>
+
+	<section class="section">
+		<div class="product">
+			<div class="product__component">
+				<div class="container">
+					<div class="row" id="productComponent"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="spinner" id="spinner">
+		<div class="spinner__body">
+			<div class="spinner__item"></div>
+			<div class="spinner__item"></div>
+			<div class="spinner__item"></div>
+		</div>
+	</div>
+
+	<div class="informer" id="informer">
+		<div class="informer__back"></div>
+		<div class="informer__body">
+			<button class="informer__close"></button>
+			<div class="informer__content"></div>
+		</div>
+	</div>
+
+	<script src="http://localhost:7001/js/vendor.min.js"></script>
+	<script src="http://localhost:7001/js/main.js" defer></script>
+	<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

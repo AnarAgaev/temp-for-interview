@@ -1,0 +1,175 @@
+section.section
+    .description
+        .description__caption
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h1.container_caption-text Трековая система profi 48v
+
+        //- .description__filters.animation-element
+            .container
+                .filters
+
+                    .filters__list
+                        // .active.dropped
+                        .filters__item
+                            span.filters__caption
+                                span Категория продукта
+                            .filters__drop
+                                .filters__options
+                                    label
+                                        // В name input добавляем имя параметра для фильтрации, а в value добавляем значение параметра
+                                        // span.value Должен идти ОБЯЗАТЕЛЬНО сразу после input
+                                        input.invisible(type='radio' name='category' value='tracks')
+                                        span.value Треки
+                                    label
+                                        input.invisible(type='radio' name='category' value='lamps')
+                                        span.value Светильники
+                                    label
+                                        input.invisible(type='radio' name='category' value='accessories')
+                                        span.value Аксессуары
+                                    label
+                                        input.invisible(type='radio' name='category' value='components')
+                                        span.value Комплектующие
+                                    label
+                                        input.invisible(type='radio' name='category' value='power-adapters')
+                                        span.value Блоки питания
+                                    label
+                                        input.invisible(type='radio' name='category' value='bus-power-supplies')
+                                        span.value Блоки питания шины
+                                    label
+                                        input.invisible(type='radio' name='category' value='controls')
+                                        span.value Управление
+                                    label
+                                        // У инпута отвечающего за сброс текущего фильтра в value должно быть значение reset
+                                        // У span .value должен присутствовать класс-модификатор .value_reset
+                                        // Значение атрибута name у инпута должно быть такое же как и у других в .filters__options (выше по коду)
+                                        input.invisible(type='radio' name='category' value='reset')
+                                        span.value.value_reset Сбросить
+
+                        .filters__item
+                            span.filters__caption
+                                span Тип монтажа
+                            .filters__drop
+                                .filters__options
+                                    label
+                                        input.invisible(type='radio' name='type' value='builtin')
+                                        span.value Встраиваемый
+                                    label
+                                        input.invisible(type='radio' name='type' value='overhead')
+                                        span.value Накладной или подвесной
+                                    label
+                                        input.invisible(type='radio' name='type' value='stretch')
+                                        span.value Для натяжного потолка
+                                    label
+                                        input.invisible(type='radio' name='type' value='reset')
+                                        span.value.value_reset Сбросить
+
+                        .filters__item
+                            span.filters__caption
+                                span Цвет элементов
+                            .filters__drop
+                                .filters__options
+                                    label
+                                        i.color.color_black
+                                        input.invisible(type='radio' name='color' value='black')
+                                        span.value Черный
+                                    label
+                                        i.color.color_white
+                                        input.invisible(type='radio' name='color' value='white')
+                                        span.value Белый
+                                    label
+                                        i.color.color_gold
+                                        input.invisible(type='radio' name='color' value='gold')
+                                        span.value Золотой
+                                    label
+                                        i.color.color_black-white
+                                        input.invisible(type='radio' name='color' value='black-white')
+                                        span.value Черно-белый
+                                    label
+                                        input.invisible(type='radio' name='color' value='reset')
+                                        span.value.value_reset Сбросить
+
+                    // По дефолту к кнопке Сбросить все добавляем класс .disabled, так как никаких фильтров не выбрано
+                    .filters__reset.disabled
+                        // В  data-deleted-types пишем json массив в котором перечисляем все типы из имеющихся фильтров
+                        .filters__item(data-deleted-types!=['category', 'type', 'color'])
+                            span.filters__caption
+                                span Сбросить все
+
+        .description__content.animation-element(style="margin-bottom: 60px")
+            .container
+                .row
+                    .col-12.col-md-6.col-lg-4.col-xxl-3
+                        .description__pic
+                            img(src="https://aws.massive.ru/technolight/images/cards/lights/4b.jpg" alt="" loading="lazy")
+
+                    .col-12.col-md-6.col-lg-8.col-xxl-6
+                        .description__text
+                            p
+                                strong Все абзацы по ширине.  
+                                | Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+                            p Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+                            p Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+
+                    .col-12.col-xxl-3
+                        .description__banner
+                            p.description__banner-text для расчета индивидуальной комплектации перейти в конфигуратор треков
+                            .description__banner-button
+                                a.btn.btn_lite.btn_block(href="#")
+                                    span Перейти в конфигуратор
+
+
+        .description__content.animation-element(style="margin-bottom: 60px")
+            .container
+                .row
+                    .col-12.col-md-6.col-lg-4.col-xxl-3
+                        .description__pic
+                            img(src="https://aws.massive.ru/technolight/images/cards/lights/4b.jpg" alt="" loading="lazy")
+
+                    .col-12.col-md-6.col-lg-8.col-xxl-6
+                        .description__text
+                            p
+                                strong
+                                    | Первый абзац по ширине, 2 других - в 2 столбца.
+                                    br
+                                    | Текст в столбцах разложен по 2 p (абзацам). Не может быть более 2 p!  
+                                | Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+
+                            .two-column-text
+                                p Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+                                p Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+
+                    .col-12.col-xxl-3
+                        .description__banner
+                            p.description__banner-text для расчета индивидуальной комплектации перейти в конфигуратор треков
+                            .description__banner-button
+                                a.btn.btn_lite.btn_block(href="#")
+                                    span Перейти в конфигуратор
+
+
+        .description__content.animation-element(style="margin-bottom: 100px")
+            .container
+                .row
+                    .col-12.col-md-6.col-lg-4.col-xxl-3
+                        .description__pic
+                            img(src="https://aws.massive.ru/technolight/images/cards/lights/4b.jpg" alt="" loading="lazy")
+
+                    .col-12.col-md-6.col-lg-8.col-xxl-6
+                        .description__text.description__text_two-column
+                            p
+                                strong Текст в 2 колонки, как в типографике.  
+                                | Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+                            p Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+                            p Трековая система — это удобный и понятный инструмент для светодизайна. Вы можете использовать линейные светильники для общего освещения и споты — в качестве акцентного. Одна идея объединяет в себе безграничные возможности для творчества.
+
+                    .col-12.col-xxl-3
+                        .description__banner
+                            p.description__banner-text для расчета индивидуальной комплектации перейти в конфигуратор треков
+                            .description__banner-button
+                                a.btn.btn_lite.btn_block(href="#")
+                                    span Перейти в конфигуратор
+
+        .description__msg
+            .container
+                span К сожалению, по Вашему запросу ничего не найдено. Товара с данными параметрами нет на сайте.

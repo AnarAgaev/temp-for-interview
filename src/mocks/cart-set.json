@@ -1,0 +1,31 @@
+{
+    "products": [
+	{
+		"article": "86108-3K-01-BK",
+		"price": 6800,
+		"count": 77
+	},
+	{
+		"article": "86108-3K-01-WH",
+		"price": 2300,
+		"count": 4
+	},
+	{
+		"article": "86108-3K-03-BK",
+		"price": 27000,
+		"count": 1
+	}
+    ],
+    "dots": [
+        {
+		"id": 1,
+		"price": 5040,
+		"count": 3
+        },
+        {
+		"id": 2,
+		"price": 7880,
+		"count": 5
+        }
+    ]
+}

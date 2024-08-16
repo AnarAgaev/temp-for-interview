@@ -1,0 +1,275 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'delivery-and-payment'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    span Доставка и оплата
+
+block content
+    section.section
+        .dap
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Доставка и оплата
+
+            .container
+                .dap__tabs.animation-element
+                    ul.dap__tabs-list
+                        // Если по умолчанию нужно открыть конкретный таб, то ему нужно добавить класс .dap__tabs-item_active
+                        li.dap__tabs-item.dap__tabs-item_active(data-target="delivery")
+                            button(type="button")
+                                span Доставка
+                        li.dap__tabs-item(data-target="payment")
+                            button(type="button")
+                                span Оплата
+                        li.dap__tabs-item(data-target="memo")
+                            button(type="button")
+                                span Памятка покупателю
+
+            // Если по умолчанию нужно открыть конкретный таб, то блоку с соответствующим ему контентом нужно добавить класс .animation-element и не добавлять класс .hide и .hidden
+            div.dap__tabs-content.animation-element(data-tab-target="delivery")
+                .container
+                    .row
+                        .col-12.col-xl-8.dap__warning
+                            p.dap__message Внимание! Доставка на объект осуществляется по факту 100% предоплаты стоимости за товар и без разгрузки.
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_data
+                                h3.dap__caption Доставка по России
+                                ul.dap__list
+                                    li
+                                        b Бесплатная доставка
+                                        |  до терминалов транспортных компаний «Деловые линии» и «Байкал Сервис » в городе Москва.
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_data
+                                //- h3.dap__caption Доставка по Москве
+                                //- ul.dap__list
+                                //-     li
+                                //-         b Стандартная доставка
+                                //-         |  — 750 руб в пределах МКАД и +50 руб за каждый 1 км после МКАД.
+                                //-     li
+                                //-         b Бесплатная доставка
+                                //-         |  — при сумме заказа свыше 50 000 руб.
+                                //-         br
+                                //-         |  Сроки доставки — 1-2 дня.
+
+
+
+
+                                h3.dap__caption Доставка по Москве
+                                ul.dap__list
+                                    li
+                                        b Стандартная доставка
+                                        | — 750 руб в пределах МКАД и +50 руб за каждый 1 км после МКАД.
+                                    li
+                                        b Бесплатная доставка
+                                        | — при сумме заказа свыше 50 000 руб.
+                                        br
+                                        | Сроки доставки — 1-2 дня.
+                                    li
+                                        b Самовывоз
+                                        | — при сумме заказа свыше 50 000 руб.
+                                        br
+                                        p Институтский проезд 7А стр.2
+                                        p Телефон:
+                                            a(style="color: unset; text-decoration: underline" href="tel:+79014063297") +7(901) 406 32 97
+                                        p Режим работы:
+                                        p Пн-Пт: 10:30-18:00, Сб,Вс: выходной.
+                                            b Необходимо за 2 часа до приезда водителя предупредить склад для заказа пропуска.
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_data.dap__card_data-image
+                                img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/delivery.png" alt="" loading="lazy")
+
+            div.dap__tabs-content.hide.hidden(data-tab-target="payment")
+                .container.dap__subcaption
+                    .row
+                        .col.col-xl-8
+                            h2.dap__subcaption-text Оплата для физических лиц
+
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_poster
+                                .dap__poster-body
+                                    h3.dap__caption Наличными
+                                    p.dap__poster-text Вы можете оплатить свой заказ наличными.
+                                .dap__poster-pic
+                                    img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/cash.png" alt="" loading="lazy")
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_poster
+                                .dap__poster-body
+                                    h3.dap__caption Банковской картой
+                                    p.dap__poster-text Мы осуществляем прием платежей банковскими картами VISA/VISA Electron, MasterCard/Maestro и МИР.
+                                .dap__poster-pic
+                                    img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/card.png" alt="" loading="lazy")
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_poster
+                                .dap__poster-body
+                                    h3.dap__caption Оплата по ссылке
+                                    p.dap__poster-text Оплата по ссылке — это удобно, быстро и безопасно.
+                                .dap__poster-pic
+                                    img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/link.png" alt="" loading="lazy")
+
+                .container.dap__subcaption
+                    .row
+                        .col.col-xl-8
+                            h2.dap__subcaption-text Оплата для юридических лиц
+
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_data
+                                h3.dap__caption Безналичный расчёт
+                                p.dap__text Для оплаты безналичным переводом, получите счёт у нашего менеджера.
+                        .col-12.col-lg-8
+                            .dap__card.dap__card_data.dap__card_data-2-column.dap__card_data-image
+                                img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/bill.png" alt="" loading="lazy")
+
+                .container.dap__subcaption
+                    .row
+                        .col.col-xl-8
+                            h2.dap__subcaption-text Правила оплаты и безопасность платежей, конфиденциальность информации
+
+                .container
+                    .row
+                        .col-12
+                            .dap__payment
+                                .dap__sign плата банковскими картами осуществляется через АО «АЛЬФА-БАНК».
+                                .dap__logo
+                                    ul
+                                        li
+                                            // Картинку можно добавлять внутри ссылки или просто саму по себе.
+                                            a(href="#")
+                                                img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/alfa.svg" alt="" loading="lazy")
+                            .dap__payment
+                                .dap__sign К оплате принимаются карты VISA, MasterCard, МИР.
+                                .dap__logo
+                                    ul
+                                        li
+                                            img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/visa.svg" alt="" loading="lazy")
+                                        li
+                                            img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/master.svg" alt="" loading="lazy")
+                                        li
+                                            img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/mir.svg" alt="" loading="lazy")
+
+                .container
+                    .dap__line
+
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            p.dap__simple-text Услуга оплаты через интернет осуществляется в соответствии с Правилами международных платежных систем Visa, MasterCard и Платежной системы МИР на принципах соблюдения конфиденциальности и безопасности совершения платежа, для чего используются самые современные методы проверки, шифрования и передачи данных по закрытым каналам связи. Ввод данных банковской карты осуществляется на защищенной платежной странице АО «АЛЬФА-БАНК».
+                        .col-12.col-xl-4
+                            p.dap__simple-text На странице для ввода данных банковской карты потребуется ввести данные банковской карты: номер карты, имя владельца карты, срок действия карты, трёхзначный код безопасности (CVV2 для VISA, CVC2 для MasterCard, Код Дополнительной Идентификации для МИР). Все необходимые данные пропечатаны на самой карте.
+                        .col-12.col-xl-4
+                            p.dap__simple-text
+                                | Трёхзначный код безопасности — это три цифры, находящиеся на обратной стороне карты.
+                                br
+                                br
+                                | Далее вы будете перенаправлены на страницу Вашего банка для ввода кода безопасности, который придет к Вам в СМС. Если код безопасности к Вам не пришел, то следует обратиться в банк выдавший Вам карту.
+
+                .container
+                    .row
+                        .col-12
+                            p.dap__refuse Случаи отказа в совершении платежа:
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {1}
+                                p.dap__desc Банковская карта не предназначена для совершения платежей через интернет, о чем можно узнать, обратившись в Ваш Банк.
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {2}
+                                p.dap__desc Недостаточно средств для оплаты на банковской карте. Подробнее о наличии средств на банковской карте Вы можете узнать, обратившись в банк, выпустивший банковскую карту.
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {3}
+                                p.dap__desc Данные банковской карты введены неверно.
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {4}
+                                p.dap__desc Истек срок действия банковской карты. Срок действия карты, как правило, указан на лицевой стороне карты (это месяц и год, до которого действительна карта). Подробнее о сроке действия карты Вы можете узнать, обратившись в банк, выпустивший банковскую карту.
+
+                        .col-12.col-lg-8
+                            .dap__card.dap__card_mosaic.dap__card_mosaic-image
+                                img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/refuse.png" alt="" loading="lazy")
+
+                .container
+                    .row
+                        .col-12.col-lg-8
+                            p.dap__refuse По вопросам оплаты с помощью банковской карты и иным вопросам, связанным с работой сайта, Вы можете обращаться по следующим телефонам:  
+                                a.link(href="tel:+74957470564") +7 495 747-05-64
+
+                .container
+                    .row
+                        .col-12.col-xl-4
+                            p.dap__simple-text Предоставляемая вами персональная информация (имя, адрес, телефон, e-mail, номер банковской карты) является конфиденциальной и не подлежит
+                        .col-12.col-xl-4
+                            p.dap__simple-text разглашению. Данные вашей кредитной карты передаются только в зашифрованном виде и не сохраняются на нашем Web-сервере.
+
+            div.dap__tabs-content.hide.hidden(data-tab-target="memo")
+                .container.dap__subcaption
+                    .row
+                        .col.col-xl-8
+                            h2.dap__subcaption-text Памятка покупателю
+
+                .container
+                    .row
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {1}
+                                p.dap__desc При получении заказа осмотрите упаковку на наличие повреждений и следов вскрытия. Далее осмотрите сам товар на предмет его целостности и комплектации.
+
+                        .col-12.col-sm-6.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {2}
+                                p.dap__desc Вы можете выбрать удобную для вас дату доставки при уточнении деталей заказа с менеджером.
+
+                        .col-12.col-sm-6.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {3}
+                                p.dap__desc Если в назначенное время вы не можете принять заказ, то за день до доставки вам нужно связаться со своим менеджером и перенести сроки.
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {4}
+                                p.dap__desc Перед доставкой курьер позвонит и договорится о точном времени.
+
+                        .col-12.col-lg-8
+                            .dap__card.dap__card_mosaic.dap__card_mosaic-image
+                                img(src="https://aws.massive.ru/technolight/images/delivery-and-payment/memo.png" alt="" loading="lazy")
+
+                        .col-12.col-sm-6.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {5}
+                                p.dap__desc Юридическим лицам для получения товара необходимо предоставить печать организации, либо доверенность на получение, и паспорт лица, на которое она выписана. В противном случае, мы можем организовать повторную доставку, но она будет оплачиваться отдельно.
+
+                        .col-12.col-sm-6.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {6}
+                                p.dap__desc Просьба заранее заказывать пропуски для наших курьеров, если доставка осуществляется на закрытые территории.
+
+                        .col-12.col-lg-4
+                            .dap__card.dap__card_mosaic
+                                h3.dap__number {7}
+                                p.dap__desc Консультации по технической части продукции сотрудниками службы доставки не осуществляются.

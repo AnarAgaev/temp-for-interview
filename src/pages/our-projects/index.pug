@@ -1,0 +1,61 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/projects-item/mixin.pug
+include ../../components/pagination/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'our-projects'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Компания
+                li
+                    span Наши проекты
+
+block content
+    section.section
+        .projects
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Наши проекты
+
+            .projects__list.animation-element
+                .container
+                    .row
+                        .col-12.col-sm-6.col-lg-4
+                            +project('Узнать больше', 'https://aws.massive.ru/technolight/images/home/project-1.jpg', 'Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё Освещение TECHNOLIGHT в новом офисе OnProekt, в котором всё')
+
+                        .col-12.col-sm-6.col-lg-4
+                            +project('Узнать больше', 'https://aws.massive.ru/technolight/images/home/project-2.jpg', 'Калуга. ЖК «Комфорт Парк»')
+
+                        .col-12.col-sm-6.col-lg-4
+                            +project('Узнать больше', 'https://aws.massive.ru/technolight/images/home/project-3.jpg', 'ЖК «Небо» с основным освещением от TECHNOLIGHT')
+
+                        .col-12.col-sm-6.col-lg-4
+                            +project('Узнать больше', 'https://aws.massive.ru/technolight/images/home/project-4.jpg', 'Москва. Современный интерьер от дизайнера Павла Алексеева')
+
+                        .col-12.col-sm-6.col-lg-4
+                            +project('Узнать больше', 'https://aws.massive.ru/technolight/images/home/project-5.jpg', 'Сочи. Уютная студия')
+
+                        .col-12.col-sm-6.col-lg-4
+                            +project('Узнать больше', 'https://aws.massive.ru/technolight/images/home/project-6.jpg', 'Пермь. Квартира с элементами лофта для семейной пары с ребенком.')
+
+                        .col-12.col-sm-6.col-lg-4
+                            +project('Узнать больше', 'https://aws.massive.ru/technolight/images/home/project-7.jpg', 'Квартира в небоскребе элит-класса')
+
+                        .col-12.col-sm-6.col-lg-4
+                            +project('Узнать больше', 'https://aws.massive.ru/technolight/images/home/project-8.jpg', 'Новосибирск. Уютная кухня-гостиная')
+
+        .container
+            +pagination([[1, false], [2, true], [3, false]], true)

@@ -1,0 +1,118 @@
+//- Include used template for this page
+extends ../../template/template
+
+include ../../components/button-play/mixin.pug
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'contacts'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#") Главная
+                li
+                    a(href="#") Компания
+                li
+                    span Контакты
+
+block content
+    section.section
+        .contacts
+            .container.container_caption.animation-element
+                .row
+                    .col.col-xl-8
+                        h2.container_caption-text Контакты
+
+            .container.animation-element
+                .row
+                    .col-12.col-lg-4
+                        .contacts__card.contacts__card_data
+                            h3.contacts__caption Центральный офис в Москве:
+                            .contacts__description
+                                .contacts__with-icon
+                                    i.contacts__icon.contacts__icon_house
+                                    p.contacts__text ARTPLAY центр дизайна, 105120, Москва, Нижняя Сыромятническая, д. 10 стр. 2
+                                .contacts__with-icon
+                                    i.contacts__icon.contacts__icon_clock
+                                    p.contacts__text ПН-ПТ 8:00 - 22:00
+
+                    .col-12.col-lg-4
+                        .contacts__card.contacts__card_data
+                            h3.contacts__caption Пишите/звоните:
+                            .contacts__description
+                                .contacts__with-icon
+                                    i.contacts__icon.contacts__icon_phone
+                                    ul.contacts__list
+                                        li
+                                            a(href="tel:+74957977251") +7 495-797-72-51 (Офисный)
+                                        li
+                                            a(href="https://wa.me/74957470564") +7 495-747-05-64 (WhatsApp)
+                                .contacts__with-icon
+                                    i.contacts__icon.contacts__icon_wa
+                                    p.contacts__text
+                                        a(href="https://wa.me/74957470564") +7 495-747-05-64
+                                .contacts__with-icon
+                                    i.contacts__icon.contacts__icon_post
+                                    p.contacts__text
+                                        a(href="mailto:order@technolight.ru") order@technolight.ru
+
+                    .col-12.col-lg-4
+                        .contacts__card.contacts__card_video
+                            // Ссылку на видео помещаем в data-src
+                            iframe(data-src="https://www.youtube.com/embed/sOu5G9ocYzc?si=cpDS6nd8Tk7h4DEa" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+                            .contacts__poster
+                                i
+                                span Как к нам пройти?
+                                +button-play
+
+                    .col-12
+                        .contacts__card.contacts__card_map#mapWrapper
+                            #map(style="pointer-events: none;")
+                                // После внеднеия нормальной карты, обязательно поставить задачу на удаление блокирующего кода
+                                // В реальной карте инлайновые стили блокикирующе клики не добавлять. Нужны для демонстрации
+                                iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A4e1f453110abd356e9b08a0d33f82e75155d6cea4c9a83a8161605ffd697b91c&amp;source=constructor" frameborder="0")
+
+                    .col-12.col-xxl-4
+                        .contacts__card.contacts__card_requisites
+                            h3.contacts__caption Реквизиты:
+                            .contacts__description
+                                // Список .contacts__list можно заменить на p.contacts__text на тот случай если в БД все реквизиты будут в одной ячейке
+                                ul.contacts__list
+                                    li Индивидуальный предприниматель Крылова Елизавета Казбековна
+                                    li ИНН 772480469855
+                                    li ОГРНИП 320774600419716
+                                    li 115211, г. Москва, ул. Борисовские пруды, д. 12 к.1, кв.277
+                                    li Банк: АО «АЛЬФА-БАНК»
+                                    li Номер счёта: 40802810301820001074
+                                    li БИК: 044525593
+                                    li Кор. счёт: 30101810200000000593
+                                    li ОКПО 2003317260
+                                    li ОКАТО 45296557000
+
+                    .col-12.col-xxl-8
+                        .contacts__card.contacts__card_socials
+                            h2.contacts__socials-title Мы в соцсетях:
+                            // Если иконок много и их надо переносить на несколько строк, к ul добавляем атрибут data-wrap
+                            ul.contacts__socials-list(data-wrap)
+                                li
+                                    a(href="#")
+                                        i.contacts__socials-icon.contacts__socials-icon_vk
+                                li
+                                    a(href="#")
+                                        i.contacts__socials-icon.contacts__socials-icon_telegram
+                                li
+                                    a(href="#")
+                                        i.contacts__socials-icon.contacts__socials-icon_yt
+                                li
+                                    a(href="#")
+                                        i.contacts__socials-icon.contacts__socials-icon_pin
+                                // Если необходимо, то любой из иконок можно растянуть на 2 строки, для этого к li добавляем класс .two-column. Точно также можно растянуть иконку на 3 колонки с помощью класса .three-column
+                                li.two-column
+                                    a(href="#")
+                                        i.contacts__socials-icon.contacts__socials-icon_zen

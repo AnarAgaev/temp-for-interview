@@ -1,0 +1,47 @@
+div.modal.hide#setOrder
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title отправить заказ
+
+        .modal__body
+            form.modal__form#setOrderForm(action="")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        input(type="text" placeholder="ФИО*" name="name")
+                        span.error-message Текст ошибки
+
+                    label
+                        input(type="text" placeholder="Телефон*" name="phone")
+                        span.error-message Текст ошибки
+
+                    label
+                        input(type="text" placeholder="Email" name="email")
+                        span.error-message Текст ошибки
+
+                    label
+                        input(type="text" placeholder="Город" name="city")
+                        span.error-message Текст ошибки
+
+                button.btn.btn_block.btn_lite.modal__button.modal__button_offset(type="submit")
+                    span Отправить
+
+        .modal__footer
+            .modal__note Поля, отмеченные символом *, обязательны для заполнения
+
+div.modal.hide#orderSentMsg
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title Заказ отправлен
+            p.modal__subtitle Вы можете продолжить выбор товаров
+            span.modal__check

@@ -1,0 +1,169 @@
+include ../../../../components/cards-item/mixin-card-item
+include ../../../../components/cards-series/mixin-card-series-slide
+
+section.section
+    .product
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Вместе с этим товаром покупают
+
+        .recommendation.animation-element
+            .container
+                .recommendation__slider
+                    .swiper
+                        .swiper-wrapper
+                            +card(true, "https://aws.massive.ru/technolight/images/recommendation/1.jpg", "60121-3K-02-WH", "Угол внутренний встраиваемый", "888 000")
+                            +card(true, "https://aws.massive.ru/technolight/images/recommendation/2.jpg", "86108-3K-03-BK", "Дарклайн 350", "123 769")
+                            +card(true, "https://aws.massive.ru/technolight/images/recommendation/3.jpg", "86108-3K-04-WH", "Блок питания в трек 48В 100Вт", "90 000")
+                            +card(true, "https://aws.massive.ru/technolight/images/recommendation/4.jpg", "86108-3K-01-WH", "Линза для спот 60", "1 000 328")
+                        .swiper-scrollbar
+
+section.section
+    .product
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Недавно просмотренные
+
+        .recommendation.animation-element
+            .container
+                .recommendation__slider
+                    .swiper
+                        .swiper-wrapper
+                            +card(true, "https://aws.massive.ru/technolight/images/recommendation/3.jpg", "80001-2M-BK", "Блок питания в трек 48В 100Вт", "97 000")
+                            +card(true, "https://aws.massive.ru/technolight/images/recommendation/4.jpg", "80001-2M-BK", "Линза для спот 60", "563 083")
+                            +card(true, "https://aws.massive.ru/technolight/images/recommendation/2.jpg", "80001-2M-BK", "Дарклайн 350", "888 000")
+                            +card(true, "https://aws.massive.ru/technolight/images/recommendation/1.jpg", "80001-2M-BK", "Угол внутренний встраиваемый", "107 300")
+                        .swiper-scrollbar
+
+section.section
+    .product
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Свайпер с карточками серии
+
+        .recommendation.animation-element
+            .container
+                .recommendation__slider.recommendation__slider_series
+                    .swiper
+                        .swiper-wrapper
+                            +card-series('Спот 42', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/1b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/1w.jpg',
+                                    '',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/1bc.jpg',
+                                ],
+                                {category: 'lamps', type: 'stretch', color: ['black', 'white', 'black-white']},
+                                ['waterproof']
+                            )
+
+                            +card-series('Спот 50', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/2b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/2w.jpg',
+                                    '',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/2bc.jpg',
+                                ],
+                                {category: 'lamps', type: 'stretch', color: ['black', 'white', 'black-white']},
+                            )
+
+                            +card-series('Спот Зум 50', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/3b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/3w.jpg',
+                                ],
+                                {category: 'lamps', type: 'overhead', color: ['black', 'white']},
+                            )
+
+                            +card-series('Спот 60', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/4b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/4w.jpg',
+                                ],
+                                {category: 'lamps', type: 'overhead', color: ['black', 'white']},
+                            )
+
+                            +card-series('Мун 100', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/5b.jpg'
+                                ],
+                                {category: 'lamps', type: 'overhead', color: ['black']},
+                            )
+
+                            +card-series('Лайн 300', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/6b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/6w.jpg',
+                                ],
+                                {category: 'lamps', type: 'builtin', color: ['black', 'white']},
+                            )
+
+                            +card-series('Лайн 600', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/7b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/7w.jpg',
+                                ],
+                                {category: 'lamps', type: 'builtin', color: ['black', 'white']},
+                                [ 'new', 'waterproof' ]
+                            )
+
+                            +card-series('Лайн 900', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/8b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/8w.jpg',
+                                ],
+                                {category: 'lamps', type: 'overhead', color: ['black', 'white']},
+                            )
+
+                            +card-series('Лайн 1200', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/9b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/9w.jpg',
+                                ],
+                                {category: 'lamps', type: 'builtin', color: ['black', 'white']},
+                            )
+
+                            +card-series('Дарклайн 180', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/10b.jpg',
+                                    'https://aws.massive.ru/technolight/images/cards/lights/10w.jpg',
+                                ],
+                                {category: 'lamps', type: 'builtin', color: ['black', 'white']},
+                            )
+
+                            +card-series('Дарклайн 350', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/11b.jpg'
+                                ],
+                                {category: 'lamps', type: 'builtin', color: ['black']},
+                            )
+
+                            +card-series('Лайн Турн 180', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/12b.jpg',
+                                ],
+                                {category: 'lamps', type: 'stretch', color: ['black']},
+                            )
+
+                            +card-series('Дарклайн Турн 180', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/13b.jpg',
+                                ],
+                                {category: 'lamps', type: 'stretch', color: ['black']},
+                                ['new']
+                            )
+
+                            +card-series('Глобо 135', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/14b.jpg',
+                                ],
+                                {category: 'lamps', type: 'stretch', color: ['black']},
+                            )
+
+                            +card-series('Глобо 135 подвесной', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/15b.jpg',
+                                ],
+                                {category: 'lamps', type: 'overhead', color: ['black']},
+                            )
+
+                            +card-series('Тьюб 30', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/16b.jpg',
+                                ],
+                                {category: 'lamps', type: 'overhead', color: ['black']},
+                            )
+
+                            +card-series('Музеон 45', [
+                                    'https://aws.massive.ru/technolight/images/cards/lights/17b.jpg'
+                                ],
+                                {category: 'lamps', type: 'builtin', color: ['black']},
+                            )
+                        .swiper-scrollbar

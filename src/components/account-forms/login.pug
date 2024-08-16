@@ -1,0 +1,35 @@
+.account-form
+    .account-form__dialog
+        .account-form__header
+            h3.account-form__title Вход
+            p.account-form__subtitle Только для зарегистрированных пользователей
+
+        .account-form__body
+            form.account-form__form(action="" data-form-type="login")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        i.mail
+                        input(type="text" name="email" placeholder="Email или телефон")
+                        span.error-message Текст ошибки
+
+                    label
+                        i.pass
+                        input(type="password" name="pass" placeholder="Пароль")
+                        span.error-message Текст ошибки
+                        span.help Должен содержать минимум 8 символов
+                        span.toggle-visible-pass
+
+                button.btn.btn_block.btn_dark(type="submit")
+                    span Войти
+
+        .account-form__footer
+            span.account-form__footer-text или через сервис
+
+            .account-form__footer-services
+                button(type="button").service.service_tinkoff
+                a(href="#").service.service_yandex
+
+            .account-form__footer-links
+                a.account-form__link(href="#") Забыли пароль?
+                a.account-form__link(href="#") Зарегистрироваться

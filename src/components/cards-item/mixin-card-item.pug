@@ -1,0 +1,34 @@
+mixin card(isSlider, image, code, name, pirce)
+    if isSlider
+        .swiper-slide
+            .product-item__card
+                a.product-item__body(href="#")
+                    .product-item__pic
+                        img(src=image alt="" loading="lazy")
+                        // Товару, добавленному в избранное, добавлять класс .selected
+                        button.product-item__favorites(type="button" data-product-id= code data-title= name data-message="Добавлен в избранное")
+                    .product-item__content
+                        .product-item__desc
+                            span.product-item__code= code
+                            p.product-item__name= name
+                        .product-item__buy
+                            span.product-item__price= pirce
+                                |  ₽
+                            // Товару, добавленному в корзину, добавлять класс .selected
+                            button.product-item__cart(type="button" data-product-id= code data-title= name data-message="Добавлен в корзину")
+    else
+        .product-item__card
+            a.product-item__body(href="#")
+                .product-item__pic
+                    img(src=image alt="" loading="lazy")
+                    // Товару, добавленному в избранное, добавлять класс .selected
+                    button.product-item__favorites(type="button" data-product-id= code data-title= name data-message="Добавлен в избранное")
+                .product-item__content
+                    .product-item__desc
+                        span.product-item__code= code
+                        p.product-item__name= name
+                    .product-item__buy
+                        span.product-item__price= pirce
+                            |  ₽
+                        // Товару, добавленному в корзину, добавлять класс .selected
+                        button.product-item__cart(type="button" data-product-id= code data-title= name data-message="Добавлен в корзину")

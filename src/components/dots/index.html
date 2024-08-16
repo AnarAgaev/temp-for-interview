@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>React Dots component for Dots page</title>
+	<link rel="icon" type="image/png" href="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" />
+
+	<link rel="stylesheet" href="http://localhost:7001/css/vendor.css" />
+	<link rel="stylesheet" href="http://localhost:7001/css/main.css" />
+	<link rel="stylesheet" href="http://localhost:7001/css/pages/dots.css" />
+
+	<script>
+
+		window.MODE = 'dev'
+
+		window.terms = [
+			"Форма",
+			"МОЩНОСТЬ",
+			"степень защиты"
+		],
+
+		window.cartLink = "https://anaragaev.github.io/technolight.layout/cart.html";
+		window.getCartLink = "https://anaragaev.github.io/technolight.layout/mocks/cart-get.json"
+
+		// Дефолтный API URL дотов с рамкой и без рамки
+		window.dotsDataLink = 'http://localhost:7001/mocks/';
+		(function() {
+			const urlParams = new URLSearchParams(window.location.search);
+			if (urlParams.has('border')) window.dotsDataLink += 'dots-border.json'
+			else if (urlParams.has('mini')) window.dotsDataLink += 'dots-mini.json'
+			else if (urlParams.has('double')) window.dotsDataLink += 'dots-double-border.json'
+			else window.dotsDataLink += 'dots.json'
+		})()
+
+		// window.dotsDataLink = 'https://technolight.lightopt.ru/api/dots/2';
+		// window.dotsDataLink = 'http://localhost:7001/mocks/dots-border.json';
+
+	</script>
+</head>
+<body>
+	<div style=" position: absolute; top: 0; left: 0; width: 100%; z-index: 100;">
+		<div class="header__msg-container"></div>
+	</div>
+
+	<section class="section">
+		<div class="dots">
+			<div class="dots__component">
+				<div class="container">
+					<div class="row" id="dotsComponent"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="spinner" id="spinner">
+		<div class="spinner__body">
+			<div class="spinner__item"></div>
+			<div class="spinner__item"></div>
+			<div class="spinner__item"></div>
+		</div>
+	</div>
+
+	<div class="informer" id="informer">
+		<div class="informer__back"></div>
+		<div class="informer__body">
+			<button class="informer__close"></button>
+			<div class="informer__content"></div>
+		</div>
+	</div>
+
+	<script src="http://localhost:7001/js/vendor.min.js"></script>
+	<script src="http://localhost:7001/js/main.js" defer></script>
+	<script type="module" src="/src/main.tsx"></script>
+
+</body>
+</html>

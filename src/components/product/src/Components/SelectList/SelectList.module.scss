@@ -1,0 +1,78 @@
+@import '../../../../../scss/sass-variables';
+
+.selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $md) {
+        gap: 40px
+    }
+
+    @media (min-width: $xxl) {
+        gap: 10px;
+    }
+}
+
+.title {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: var(--color-font-primary);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%; /* 28px */
+    text-transform: uppercase;
+
+    @media (min-width: $sm) {
+        font-size: 28px;
+        line-height: 35px; /* 125% */
+    }
+
+    @media (min-width: $lg) {
+        font-size: 24px;
+        line-height: 140%; /* 28px */
+    }
+
+    @media (min-width: $xxl) {
+        font-size: 20px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -10px;
+        bottom: 0;
+        width: calc(100% + 20px);
+        height: 1px;
+        background-color: var(--color-background-dark);
+
+        @media (min-width: $md) {
+            left: -20px;
+            width: calc(100% + 40px);
+        }
+
+        @media (min-width: $lg) {
+            display: none;
+        }
+    }
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $sm) {
+        gap: 10px;
+    }
+
+    @media (min-width: $xxl) {
+        min-height: 290px;
+    }
+}

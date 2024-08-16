@@ -1,0 +1,430 @@
+//- Комментарии к карточке товара
+//- *
+//- У каждой картинки в карточке должен быть указан дата-атрибут data-type, по которому его будет находить кликнутый tab
+//- Активной картинке добавляем класс .active
+//- *
+//- У каждого таба должен быть указан data-target-type
+//- В нем храним data-type картинки которую будем показывать при клике по соответствующему табу
+//- *
+//- Активному контроллеру добавляем класс .active
+
+include ../../../../components/cards-series/mixin-card-series
+
+a#treki.anchor-target
+section.section.section_filtered
+    .cards-series
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Треки
+
+        .cards-series__list.animation-element
+            .container
+                .row
+                    +card('рамочные', [
+                            'https://aws.massive.ru/technolight/public/images/dot-configurators/01J0QTGR6BEDPXW9PKWF4R0TFY.jpg'
+                        ],
+                        {category: 'lamps', type: 'stretch', color: ['black']},
+                        []
+                    )
+                    +card('Трек встраиваемый в гипсокартон', [
+                            'https://aws.massive.ru/technolight/images/cards/tracks/track-1-black.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/tracks/track-1-white.jpg'
+                        ],
+                        {category: 'tracks', type: 'builtin', color: ['black', 'white']},
+                        ['new', 'waterproof']
+                    )
+
+                    +card('Трек накладной или подвесной', [
+                            'https://aws.massive.ru/technolight/images/cards/tracks/track-2-black.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/tracks/track-2-white.jpg',
+                        ],
+                        {category: 'tracks', type: 'builtin', color: ['black', 'white']}
+                    )
+
+                    +card('Трек мини накладной или подвесной', [
+                            'https://aws.massive.ru/technolight/images/cards/tracks/track-3-black.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/tracks/track-3-white.jpg',
+                        ],
+                        {category: 'tracks', type: 'overhead', color: ['black', 'white']},
+                        ['new']
+                    )
+
+                    +card('Трек для натяжного потолка', [
+                            'https://aws.massive.ru/technolight/images/cards/tracks/track-4-black.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/tracks/track-4-white.jpg'
+                        ],
+                        {category: 'tracks', type: 'stretch', color: ['black', 'white']}
+                    )
+
+a#svetilniki.anchor-target
+section.section.section_filtered
+    .cards-series
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Светильники
+
+        .cards-series__list.animation-element
+            .container
+                .row
+                    +card('Спот 42', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/1b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/1w.jpg',
+                            '',
+                            'https://aws.massive.ru/technolight/images/cards/lights/1bc.jpg',
+                        ],
+                        {category: 'lamps', type: 'stretch', color: ['black', 'white', 'black-white']},
+                        ['waterproof']
+                    )
+
+                    +card('Спот 50', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/2b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/2w.jpg',
+                            '',
+                            'https://aws.massive.ru/technolight/images/cards/lights/2bc.jpg',
+                        ],
+                        {category: 'lamps', type: 'stretch', color: ['black', 'white', 'black-white']},
+                    )
+
+                    +card('Спот Зум 50', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/3b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/3w.jpg',
+                        ],
+                        {category: 'lamps', type: 'overhead', color: ['black', 'white']},
+                    )
+
+                    +card('Спот 60', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/4b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/4w.jpg',
+                        ],
+                        {category: 'lamps', type: 'overhead', color: ['black', 'white']},
+                    )
+
+                    +card('Мун 100', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/5b.jpg'
+                        ],
+                        {category: 'lamps', type: 'overhead', color: ['black']},
+                    )
+
+                    +card('Лайн 300', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/6b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/6w.jpg',
+                        ],
+                        {category: 'lamps', type: 'builtin', color: ['black', 'white']},
+                    )
+
+                    +card('Лайн 600', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/7b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/7w.jpg',
+                        ],
+                        {category: 'lamps', type: 'builtin', color: ['black', 'white']},
+                        [ 'new', 'waterproof' ]
+                    )
+
+                    +card('Лайн 900', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/8b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/8w.jpg',
+                        ],
+                        {category: 'lamps', type: 'overhead', color: ['black', 'white']},
+                    )
+
+                    +card('Лайн 1200', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/9b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/9w.jpg',
+                        ],
+                        {category: 'lamps', type: 'builtin', color: ['black', 'white']},
+                    )
+
+                    +card('Дарклайн 180', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/10b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/lights/10w.jpg',
+                        ],
+                        {category: 'lamps', type: 'builtin', color: ['black', 'white']},
+                    )
+
+                    +card('Дарклайн 350', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/11b.jpg'
+                        ],
+                        {category: 'lamps', type: 'builtin', color: ['black']},
+                    )
+
+                    +card('Лайн Турн 180', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/12b.jpg',
+                        ],
+                        {category: 'lamps', type: 'stretch', color: ['black']},
+                    )
+
+                    +card('Дарклайн Турн 180', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/13b.jpg',
+                        ],
+                        {category: 'lamps', type: 'stretch', color: ['black']},
+                        ['new']
+                    )
+
+                    +card('Глобо 135', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/14b.jpg',
+                        ],
+                        {category: 'lamps', type: 'stretch', color: ['black']},
+                    )
+
+                    +card('Глобо 135 подвесной', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/15b.jpg',
+                        ],
+                        {category: 'lamps', type: 'overhead', color: ['black']},
+                    )
+
+                    +card('Тьюб 30', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/16b.jpg',
+                        ],
+                        {category: 'lamps', type: 'overhead', color: ['black']},
+                    )
+
+                    +card('Музеон 45', [
+                            'https://aws.massive.ru/technolight/images/cards/lights/17b.jpg'
+                        ],
+                        {category: 'lamps', type: 'builtin', color: ['black']},
+                    )
+
+a#aksessuary.anchor-target
+section.section.section_filtered
+    .cards-series
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Аксессуары
+
+        .cards-series__list.animation-element
+            .container
+                .row
+                    +card('Светофильтр Кросс для Спот 42', [
+                            'https://aws.massive.ru/technolight/images/cards/accessories/1.jpg'
+                        ],
+                        {category: 'accessories', type: 'builtin', color: ['black']},
+                    )
+                    +card('Светофильтр Ханикомб для Спот 50', [
+                            'https://aws.massive.ru/technolight/images/cards/accessories/2.jpg'
+                        ],
+                        {category: 'accessories', type: 'builtin', color: ['black']},
+                        ['new', 'waterproof']
+                    )
+                    +card('Светофильтр Спред для Спот 50', [
+                            'https://aws.massive.ru/technolight/images/cards/accessories/3.jpg'
+                        ],
+                        {category: 'accessories', type: 'builtin', color: ['black']},
+                    )
+                    +card('Линза для Спот 42-50', [
+                            'https://aws.massive.ru/technolight/images/cards/accessories/4.jpg'
+                        ],
+                        {category: 'accessories', type: 'overhead', color: ['black']},
+                        ['waterproof']
+                    )
+                    +card('Светофильтр Ханикомб для Спот 60', [
+                            'https://aws.massive.ru/technolight/images/cards/accessories/5.jpg'
+                        ],
+                        {category: 'accessories', type: 'overhead', color: ['black']},
+                    )
+                    +card('Светофильтр Спред для Спот 60', [
+                            'https://aws.massive.ru/technolight/images/cards/accessories/6.jpg'
+                        ],
+                        {category: 'accessories', type: 'stretch', color: ['black']},
+                    )
+                    +card('Линза для Спот 60', [
+                            'https://aws.massive.ru/technolight/images/cards/accessories/7.jpg'
+                        ],
+                        {category: 'accessories', type: 'stretch', color: ['black']},
+                        ['new']
+                    )
+
+a#komplektuyushchie.anchor-target
+section.section.section_filtered
+    .cards-series
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Комплектующие
+
+        .cards-series__list.animation-element
+            .container
+                .row
+                    +card('Угол на плоскости встраиваемый', [
+                            'https://aws.massive.ru/technolight/images/cards/components/1b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/1w.jpg'
+                        ],
+                        {category: 'components', type: 'builtin', color: ['black', 'white']},
+                    )
+                    +card('Угол внутренний встраиваемый', [
+                            'https://aws.massive.ru/technolight/images/cards/components/2b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/2w.jpg'
+                        ],
+                        {category: 'components', type: 'builtin', color: ['black', 'white']},
+                    )
+                    +card('Угол на плоскости накладной или подвесной', [
+                            'https://aws.massive.ru/technolight/images/cards/components/3b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/3w.jpg'
+                        ],
+                        {category: 'components', type: 'builtin', color: ['black', 'white']},
+                    )
+                    +card('Угол внутренний накладной или подвесной', [
+                            'https://aws.massive.ru/technolight/images/cards/components/4b.jpg'
+                        ],
+                        {category: 'components', type: 'builtin', color: ['black']},
+                        ['new', 'waterproof']
+                    )
+                    +card('Угол на плоскости мини накладной или подвесной', [
+                            'https://aws.massive.ru/technolight/images/cards/components/5b.jpg'
+                        ],
+                        {category: 'components', type: 'overhead', color: ['black']},
+                    )
+                    +card('Угол внутренний мини накладной или подвесной', [
+                            'https://aws.massive.ru/technolight/images/cards/components/6b.jpg'
+                        ],
+                        {category: 'components', type: 'overhead', color: ['black']},
+                    )
+                    +card('Соединитель для трека механический', [
+                            'https://aws.massive.ru/technolight/images/cards/components/7b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/7w.jpg'
+                        ],
+                        {category: 'components', type: 'stretch', color: ['black', 'white']},
+                    )
+                    +card('Торцевые заглушки', [
+                            'https://aws.massive.ru/technolight/images/cards/components/8b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/8w.jpg'
+                        ],
+                        {category: 'components', type: 'stretch', color: ['black', 'white']},
+                        ['new']
+                    )
+                    +card('Торцевые заглушки мини', [
+                            'https://aws.massive.ru/technolight/images/cards/components/9b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/9w.jpg'
+                        ],
+                        {category: 'components', type: 'stretch', color: ['black', 'white']},
+                    )
+                    +card('Торцевая заглушка под трек для натяжного потолка', [
+                            'https://aws.massive.ru/technolight/images/cards/components/10b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/10w.jpg'
+                        ],
+                        {category: 'components', type: 'stretch', color: ['black', 'white']},
+                    )
+                    +card('Декоративная заглушка', [
+                            'https://aws.massive.ru/technolight/images/cards/components/11b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/11w.jpg'
+                        ],
+                        {category: 'components', type: 'overhead', color: ['black', 'white']},
+                    )
+                    +card('Подвес', [
+                            'https://aws.massive.ru/technolight/images/cards/components/12b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/12w.jpg'
+                        ],
+                        {category: 'components', type: 'builtin', color: ['black', 'white']},
+                    )
+                    +card('Потолочная база с подвесом', [
+                            'https://aws.massive.ru/technolight/images/cards/components/13b.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/components/13w.jpg'
+                        ],
+                        {category: 'components', type: 'builtin', color: ['black', 'white']},
+                    )
+                    +card('Коннектор для ввода питания', [
+                            'https://aws.massive.ru/technolight/images/cards/components/14b.jpg'
+                        ],
+                        {category: 'components', type: 'builtin', color: ['black']},
+                    )
+                    +card('Коннектор токопроводящий прямой', [
+                            'https://aws.massive.ru/technolight/images/cards/components/15b.jpg'
+                        ],
+                        {category: 'components', type: 'overhead', color: ['black']},
+                        ['new', 'waterproof']
+                    )
+                    +card('Коннектор токопроводящий гибкий', [
+                            'https://aws.massive.ru/technolight/images/cards/components/16b.jpg'
+                        ],
+                        {category: 'components', type: 'stretch', color: ['black']},
+                    )
+                    +card('Соединители под трек для натяжного потолка прямые', [
+                            'https://aws.massive.ru/technolight/images/cards/components/17b.jpg'
+                        ],
+                        {category: 'components', type: 'stretch', color: ['black']},
+                    )
+                    +card('Соединители под трек для натяжного потолка угловые', [
+                            'https://aws.massive.ru/technolight/images/cards/components/18b.jpg'
+                        ],
+                        {category: 'components', type: 'stretch', color: ['black']},
+                        ['waterproof']
+                    )
+
+a#bloki-pitaniya.anchor-target
+section.section.section_filtered
+    .cards-series
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Блоки питания
+
+        .cards-series__list.animation-element
+            .container
+                .row
+                    +card('Блок питания линейный 48В', [
+                            'https://aws.massive.ru/technolight/images/cards/power-supplies/1.jpg'
+                        ],
+                        {category: 'power-adapters', type: 'overhead', color: ['black']},
+                        ['new', 'waterproof']
+                    )
+                    +card('Блок питания в трек 48В 100Вт', [
+                            'https://aws.massive.ru/technolight/images/cards/power-supplies/2.jpg',
+                        ],
+                        {category: 'power-adapters', type: 'overhead', color: ['black']},
+                    )
+                    +card('Блок питания в трек 48В 120Вт', [
+                            'https://aws.massive.ru/technolight/images/cards/power-supplies/3.jpg'
+                        ],
+                        {category: 'power-adapters', type: 'builtin', color: ['black']},
+                        ['new']
+                    )
+                    +card('Блок питания в трек 48В 250Вт', [
+                            'https://aws.massive.ru/technolight/images/cards/power-supplies/4.jpg',
+                        ],
+                        {category: 'power-adapters', type: 'stretch', color: ['black']},
+                    )
+
+a#bloki-pitaniya-shiny.anchor-target
+section.section.section_filtered
+    .cards-series
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Блоки питания шины
+
+        .cards-series__list.animation-element
+            .container
+                .row
+                    +card('Блок питания шины DALI MW', [
+                            'https://aws.massive.ru/technolight/images/cards/bus-power-supplies/1.jpg',
+                        ],
+                        {category: 'bus-power-supplies', type: 'builtin', color: ['black']},
+                    )
+
+a#upravlenie.anchor-target
+section.section.section_filtered
+    .cards-series
+        .container.container_caption.animation-element
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Управление
+
+        .cards-series__list.animation-element
+            .container
+                .row
+                    +card('Модуль для беспроводного управления CBU-DCS', [
+                            'https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg',
+                        ],
+                        {category: 'controls', type: 'overhead', color: ['black', 'white']},
+                        ['new', 'waterproof']
+                    )
+                    +card('Модуль для беспроводного управления CBU-ASD', [
+                            'https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg',
+                            'https://aws.massive.ru/technolight/images/cards/сontrol/1.jpg'
+                        ],
+                        {category: 'controls', type: 'stretch', color: ['black', 'white', 'gold', 'black-white']},
+                    )

@@ -1,0 +1,289 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'index'
+
+block content
+    style.
+        .link-list {
+            margin-bottom: 60px;
+        }
+        .link-list h1 {
+            color: #363636;
+            font-weight: 300;
+            margin-top: 60px;
+        }
+        .link-list ul {
+            display: flex;
+            flex-direction: column;
+            column-gap: 20px;
+            list-style: none;
+        }
+        .link-list ul li a  {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: black;
+            padding: 10px;
+        }
+        .link-list ul li a:hover {
+            background: #f5f5f5;
+        }
+        .link-list ul li a:has([type="checkbox"])::after {
+            content: '';
+            display: inline-flex;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(0,0,0,.5);
+            margin-left: auto;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            color: rgba(0,0,0,.6);
+        }
+        .link-list ul li a:has([type="checkbox"]:checked)::after {
+            content: '✔';
+        }
+        .link-list ul li a [type="checkbox"]  {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .link-list ul li a i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: transparent no-repeat center;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMEM0LjMxMjUgMCAzLjc1IDAuNTYyNSAzLjc1IDEuMjVWMTguNzVDMy43NSAxOS40Mzc1IDQuMzEyNSAyMCA1IDIwSDE3LjVDMTguMTg3NSAyMCAxOC43NSAxOS40Mzc1IDE4Ljc1IDE4Ljc1VjVMMTMuNzUgMEg1WiIgZmlsbD0iI0UyRTVFNyIvPgo8cGF0aCBkPSJNMTUgNUgxOC43NUwxMy43NSAwVjMuNzVDMTMuNzUgNC40Mzc1IDE0LjMxMjUgNSAxNSA1WiIgZmlsbD0iI0IwQjdCRCIvPgo8cGF0aCBkPSJNMTguNzUgOC43NUwxNSA1SDE4Ljc1VjguNzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNi4yNSAxNi4yNUMxNi4yNSAxNi41OTM4IDE1Ljk2ODggMTYuODc1IDE1LjYyNSAxNi44NzVIMS44NzVDMS41MzEyNSAxNi44NzUgMS4yNSAxNi41OTM4IDEuMjUgMTYuMjVWMTBDMS4yNSA5LjY1NjI1IDEuNTMxMjUgOS4zNzUgMS44NzUgOS4zNzVIMTUuNjI1QzE1Ljk2ODggOS4zNzUgMTYuMjUgOS42NTYyNSAxNi4yNSAxMFYxNi4yNVoiIGZpbGw9IiMzNjM2MzYiLz4KPHBhdGggZD0iTTIuMTc1NzggMTQuNjkxNFYxMS44NTE2QzIuMTc1NzggMTEuNjcxOSAyLjMwNDY5IDExLjU0MyAyLjUzMTI1IDExLjU0M0MyLjcwNzAzIDExLjU0MyAyLjgzNTk0IDExLjY3MTkgMi44MzU5NCAxMS44NTE2VjEyLjk0MTRINC40NjQ4NFYxMS44NTE2QzQuNDY0ODQgMTEuNjcxOSA0LjYyNSAxMS41NDMgNC44MDQ2OSAxMS41NDNDNC45ODA0NyAxMS41NDMgNS4xMTMyOCAxMS42NzE5IDUuMTEzMjggMTEuODUxNlYxNC42OTE0QzUuMTEzMjggMTQuODY3MiA0Ljk3NjU2IDE1IDQuODA0NjkgMTVDNC42MjUgMTUgNC40NjQ4NCAxNC44NjMzIDQuNDY0ODQgMTQuNjkxNFYxMy41OTc3SDIuODM1OTRWMTQuNjkxNEMyLjgzNTk0IDE0Ljg2NzIgMi43MDcwMyAxNSAyLjUzMTI1IDE1QzIuMzA0NjkgMTUgMi4xNzU3OCAxNC44NjMzIDIuMTc1NzggMTQuNjkxNFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02Ljc1IDEyLjE2OEg1Ljg3NUM1LjQ0MTQxIDEyLjE2OCA1LjQ0MTQxIDExLjUyNzMgNS44NzUgMTEuNTI3M0g4LjIzODI4QzguNjgzNTkgMTEuNTI3MyA4LjY4MzU5IDEyLjE2OCA4LjIzODI4IDEyLjE2OEg3LjQxMDE2VjE0LjY5MTRDNy40MTAxNiAxNS4xMjUgNi43NSAxNS4xMzY3IDYuNzUgMTQuNjkxNFYxMi4xNjhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOS43MTQ4NCAxMi44MDQ3VjE0LjY1MjNDOS43MTQ4NCAxNC44NzExIDkuNTM1MTYgMTQuOTk2MSA5LjM1NTQ3IDE0Ljk5NjFDOS4xOTUzMSAxNC45OTYxIDkuMDU0NjkgMTQuODcxMSA5LjA1NDY5IDE0LjY1MjNWMTEuODM5OEM5LjA1NDY5IDExLjU3ODEgOS4yNzM0NCAxMS40OTYxIDkuMzU1NDcgMTEuNDk2MUM5LjUgMTEuNDk2MSA5LjU4NTk0IDExLjU4MiA5LjY2Nzk3IDExLjY3NThMMTAuNzY5NSAxMy4xNjAyTDExLjkxMDIgMTEuNjIxMUMxMi4wNzQyIDExLjQxOCAxMi40ODA1IDExLjQ5NjEgMTIuNDgwNSAxMS44Mzk4VjE0LjY1MjNDMTIuNDgwNSAxNC44NzExIDEyLjMzOTggMTQuOTk2MSAxMi4xNzk3IDE0Ljk5NjFDMTIgMTQuOTk2MSAxMS44NTk0IDE0Ljg3MTEgMTEuODU5NCAxNC42NTIzVjEyLjgwNDdMMTEuMDMxMiAxMy44NTU1QzEwLjg1MTYgMTQuMDc0MiAxMC42MjUgMTQuMDc0MiAxMC40NjA5IDEzLjg1NTVMOS43MTQ4NCAxMi44MDQ3WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTEzLjE3NTggMTEuODQzOEMxMy4xNzU4IDExLjY3OTcgMTMuMzE2NCAxMS41MzkxIDEzLjQ5MjIgMTEuNTM5MUMxMy42NTIzIDExLjUzOTEgMTMuNzg5MSAxMS42Nzk3IDEzLjc4OTEgMTEuODQzOFYxNC4zNDc3SDE1LjE0ODRDMTUuNjM2NyAxNC4zNDc3IDE1LjY0ODQgMTUuMDAzOSAxNS4xNDg0IDE1LjAwMzlIMTMuNDk2MUMxMy4zMjAzIDE1LjAwMzkgMTMuMTc5NyAxNC44Nzg5IDEzLjE3OTcgMTQuNjk5MkwxMy4xNzU4IDExLjg0MzhaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTUuNjI1IDE2Ljg3NUgzLjc1VjE3LjVIMTUuNjI1QzE1Ljk2ODggMTcuNSAxNi4yNSAxNy4yMTg4IDE2LjI1IDE2Ljg3NVYxNi4yNUMxNi4yNSAxNi41OTM4IDE1Ljk2ODggMTYuODc1IDE1LjYyNSAxNi44NzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+Cjwvc3ZnPgo=");
+        }
+        .link-list ul li a i.mdl {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMEM0LjMxMjUgMCAzLjc1IDAuNTYyNSAzLjc1IDEuMjVWMTguNzVDMy43NSAxOS40Mzc1IDQuMzEyNSAyMCA1IDIwSDE3LjVDMTguMTg3NSAyMCAxOC43NSAxOS40Mzc1IDE4Ljc1IDE4Ljc1VjVMMTMuNzUgMEg1WiIgZmlsbD0iI0UyRTVFNyIvPgo8cGF0aCBkPSJNMTUgNUgxOC43NUwxMy43NSAwVjMuNzVDMTMuNzUgNC40Mzc1IDE0LjMxMjUgNSAxNSA1WiIgZmlsbD0iI0IwQjdCRCIvPgo8cGF0aCBkPSJNMTguNzUgOC43NUwxNSA1SDE4Ljc1VjguNzVaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNC43MDEzIDEzSDkuMDI2ODZWMTMuNjI1SDE0LjcwMTNDMTQuODY1NiAxMy42MjUgMTUgMTMuMzQzOCAxNSAxM1YxMi4zNzVDMTUgMTIuNzE4OCAxNC44NjU2IDEzIDE0LjcwMTMgMTNaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik03LjM1MjMxIDEzSDE0LjAxODNWMTMuNjI1SDcuMzUyMzFDNy4xNTkzMiAxMy42MjUgNy4wMDE0NiAxMy4zNDM4IDcuMDAxNDYgMTNWMTIuMzc1QzcuMDAxNDYgMTIuNzE4OCA3LjE1OTMyIDEzIDcuMzUyMzEgMTNaIiBmaWxsPSIjQ0FEMUQ4Ii8+CjxwYXRoIGQ9Ik0xNSAxMi41MDE3QzE1IDEyLjc3NTggMTQuODUwMSAxMyAxNC42NjY3IDEzSDcuMzM0NzRDNy4xNTE0NCAxMyA3LjAwMTQ2IDEyLjc3NTggNy4wMDE0NiAxMi41MDE3VjcuNTE4OTFDNy4wMDE0NiA3LjI0NDg2IDcuMTUxNDQgNy4wMjA2MyA3LjMzNDc0IDcuMDIwNjNIMTQuNjY2N0MxNC44NTAxIDcuMDIwNjMgMTUgNy4yNDQ4NiAxNSA3LjUxODkxVjEyLjUwMTdaIiBmaWxsPSIjMzYzNjM2Ii8+Cjwvc3ZnPgo=);
+        }
+
+    .container.container_caption.link-list
+        .row
+            .col-12
+                h1 Карта страниц верстки
+
+    .container.link-list
+        .row
+            .col-12.col-lg-4
+                ul
+                    li
+                        a(href="home.html" target="_black")
+                            i
+                            span Главная
+                            input(type="checkbox" checked)
+                    li
+                        a(href="product.html" target="_black")
+                            i
+                            span Карточка
+                                b  Товара
+                            input(type="checkbox" checked)
+                    li
+                        a(href="dots.html" target="_black")
+                            i
+                            span Контфигуратор
+                                b  Дотов
+                            input(type="checkbox" checked)
+                    li
+                        a(href="article.html" target="_black")
+                            i
+                            span Карточка
+                                b  Артикула
+                            input(type="checkbox" checked)
+                    li
+                        a(href="series.html" target="_black")
+                            i
+                            span Страница
+                                b  Серии
+                            input(type="checkbox" checked)
+                    li
+                        a(href="return.html" target="_black")
+                            i
+                            span Правила возврата товара
+                            input(type="checkbox" checked)
+                    li
+                        a(href="warranty.html" target="_black")
+                            i
+                            span Гарантия качества
+                            input(type="checkbox" checked)
+                    li
+                        a(href="design-and-quality.html" target="_black")
+                            i
+                            span Дизайн и качество
+                            input(type="checkbox" checked)
+                    li
+                        a(href="trademark.html" target="_black")
+                            i
+                            span Торговая марка
+                            input(type="checkbox" checked)
+                    li
+                        a(href="contacts.html" target="_black")
+                            i
+                            span Контакты
+                            input(type="checkbox" checked)
+                    li
+                        a(href="account.html" target="_black")
+                            i
+                            span Личный кабинет
+                            input(type="checkbox")
+                    li
+                        a(href="order-history.html" target="_black")
+                            i
+                            span История заказов
+                            input(type="checkbox")
+                    li
+                        a(href="configurations.html" target="_black")
+                            i
+                            span Мои конфигурации
+                            input(type="checkbox")
+                    li
+                        a(href="user-data.html" target="_black")
+                            i
+                            span Личные данные
+                            input(type="checkbox")
+                    li
+                        a(href="change-password.html" target="_black")
+                            i
+                            span Изменить пароль
+                            input(type="checkbox")
+                    li
+                        a(href="contract-offer.html" target="_black")
+                            i
+                            span Договор оферта
+                            input(type="checkbox" checked)
+
+            .col-12.col-lg-4
+                ul
+                    li
+                        a(href="download.html" target="_black")
+                            i
+                            span Скачать
+                            input(type="checkbox" checked)
+                    li
+                        a(href="delivery-and-payment.html" target="_black")
+                            i
+                            span Доставка и оплата
+                            input(type="checkbox" checked)
+                    li
+                        a(href="products.html" target="_black")
+                            i
+                            span Продукция
+                            input(type="checkbox" checked)
+                    li
+                        a(href="our-projects.html" target="_black")
+                            i
+                            span Наши проекты
+                            input(type="checkbox" checked)
+                    li
+                        a(href="single-project.html" target="_black")
+                            i
+                            span Проект детально
+                            input(type="checkbox" checked)
+                    li
+                        a(href="404.html" target="_black")
+                            i
+                            span 404
+                            input(type="checkbox" checked)
+                    li
+                        a(href="cart.html" target="_black")
+                            i
+                            span Корзина
+                            input(type="checkbox" checked)
+                    li
+                        a(href="video-instructions.html" target="_black")
+                            i
+                            span Видеоинструкции
+                            input(type="checkbox")
+                    li
+                        a(href="shops.html" target="_black")
+                            i
+                            span Где купить
+                            input(type="checkbox" checkbox checked)
+                    li
+                        a(href="catalog.html" target="_black")
+                            i
+                            span Каталог (Все товары)
+                            input(type="checkbox")
+                    li
+                        a(href="login.html" target="_black")
+                            i
+                            span Вход
+                            input(type="checkbox")
+                    li
+                        a(href="registration.html" target="_black")
+                            i
+                            span Регистрация
+                            input(type="checkbox" checked)
+                    li
+                        a(href="password-recovery.html" target="_black")
+                            i
+                            span Восстановление пароля
+                            input(type="checkbox")
+                    li
+                        a(href="confirm-code.html" target="_black")
+                            i
+                            span Код подтверждения
+                            input(type="checkbox")
+                    li
+                        a(href="custom.html" target="_black")
+                            i
+                            span Страница оплаты
+                            input(type="checkbox")
+
+            .col-12.col-lg-4
+                ul
+                    li
+                        a(data-modal data-modal-target="#setOrder" data-modal-action="show"  href="#")
+                            i.mdl
+                            span Отправить заказ
+                            input(type="checkbox" checked)
+
+                    li
+                        a(data-modal data-modal-target="#passRecovery" data-modal-action="show"  href="#")
+                            i.mdl
+                            span Восстановление пароля
+                            input(type="checkbox")
+
+                    li
+                        a(data-modal data-modal-target="#passChange" data-modal-action="show"  href="#")
+                            i.mdl
+                            span Изменение пароля
+                            input(type="checkbox")
+
+                    li
+                        a(data-modal data-modal-target="#enterEmail" data-modal-action="show"  href="#")
+                            i.mdl
+                            span Вход по почте
+                            input(type="checkbox")
+
+                    li
+                        a(data-modal data-modal-target="#enterPhone" data-modal-action="show"  href="#")
+                            i.mdl
+                            span Вход по телефону
+                            input(type="checkbox")
+                    li
+                        a(data-modal data-modal-target="#modalMsg" data-modal-action="show"  href="#")
+                            i.mdl
+                            span Заказ успешно отправлен
+                            input(type="checkbox" checked)
+                            
+                    li
+                        a(onclick="window.informer.getInformation('test')")
+                            i.mdl
+                            span тест информера
+                            input(type="checkbox" checked)

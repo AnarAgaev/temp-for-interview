@@ -1,0 +1,31 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = '404'
+
+block breadcrumbs
+    .section.section_breadcrumbs
+        .container
+            ul.breadcrumbs.animation-element
+                li
+                    a(href="#!") Главная
+                li
+                    span Страница не найдена
+
+block content
+    section.section
+        .not-found.animation-element
+            .container
+                .not-found__body
+                    span.not-found__error 404
+                    h1.not-found__title Страница не найдена
+                    p.not-found__message Возможно, то, что вы ищете, находится здесь.
+                    .not-found__button
+                        a.btn.btn_dark.btn_block(href="#!")
+                            span Вся продукция
+

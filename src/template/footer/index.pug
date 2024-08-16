@@ -1,0 +1,165 @@
+.footer__nav.d-lg-none
+    ul
+        li
+            a.footer__nav-link.footer__nav-link_home(href="#")
+                i
+                span Главная
+        li
+            a.footer__nav-link.footer__nav-link_call(href="#")
+                i
+                span Позвонить
+        li
+            a.footer__nav-link.footer__nav-link_cart(href="#")
+                i
+                span Корзина
+        li
+            a.footer__nav-link.footer__nav-link_account(href="#")
+                i
+                span Аккаунт
+        li
+            // Активной ссылке, добавляем класс .active
+            button.footer__nav-link.footer__nav-link_menu
+                i
+                span Меню
+
+if page !== 'custom'
+    .footer__cards.animation-element
+        .container.container_caption
+            .row
+                .col.col-xl-8
+                    h2.container_caption-text Остались вопросы и нужна персональная консультация?
+        .container
+            .row
+                .col
+                    ul.footer__cards-list
+                        li.footer__cards-item
+                            // Если карточка не ссылка, то вместо тега <a> используем обычный div
+                            div.footer__cards-body
+                                i.footer__cards-icon.footer__cards-icon_connect
+                                .footer__cards-content
+                                    .footer__cards-title Звоните или пишите
+                                    p.footer__cards-description
+                                        span(style='padding-top: 5px;padding-bottom: 10px') Центральный шоурум в Г.Москва
+                                        a(href='tel:+74957977251') +7 495-797-72-51
+                                        a(href='https://wa.me/+74957470564' target='_blank') +7 495-747-05-64 (WhatsApp)
+                                        a(href='mailto:order@technolight.ru') order@technolight.ru
+                                        span(style='padding-top: 5px;padding-bottom: 10px') Региональный отдел продаж
+                                        a(href='tel:+79850668737') +7 985 066-87-37
+                                        a(href='https://wa.me/+79850668737' target='_blank') +7 985-066-87-37 (WhatsApp)
+                                        a(href='mailto:order@technolight.ru') order@technolight.ru
+
+                        li.footer__cards-item
+                            // Если карточка ссылка, то класс-модификатор .footer__cards-body_link
+                            a(href="#").footer__cards-body.footer__cards-body_link
+                                i.footer__cards-icon.footer__cards-icon_calc
+                                .footer__cards-content
+                                    // Если карточка ссылка, то к заголовку добавляем класс-модификатор .footer__cards-title_link
+                                    .footer__cards-title.footer__cards-title_link Расчет освещенности
+                                    p.footer__cards-description Заказывайте проект по свету у специалистов нашей компании и получайте профессиональную консультацию.
+
+                        li.footer__cards-item
+                            a(href="#").footer__cards-body.footer__cards-body_link
+                                i.footer__cards-icon.footer__cards-icon_download
+                                .footer__cards-content
+                                    .footer__cards-title.footer__cards-title_link Файлы для скачивания
+                                    p.footer__cards-description Последние версии каталогов, технические спецификации, IES-файлы и прочая документация.
+
+.footer__body
+    .footer__caption
+        .container
+            .row
+                .col
+                    .footer__logo
+                        a(href="").logo-light
+
+    if page !== 'custom'
+        .footer__menu
+            .container
+                .row
+                    .col-6.col-md-3
+                        h3.footer__list-title
+                            span Продукция
+                        ul.footer__list
+                            li.footer__list-item
+                                a(href="").footer__list-link Трековая система PROFI 48V
+                            li.footer__list-item
+                                a(href="").footer__list-link Модульные светильники DOT 220V
+                            li.footer__list-item
+                                a(href="").footer__list-link Вспомогательная продукция
+                            li.footer__list-item
+                                a(href="").footer__list-link Вся продукция
+                    .col-6.col-md-3
+                        h3.footer__list-title
+                            span Где купить
+                        ul.footer__list
+                            li.footer__list-item
+                                a(href="").footer__list-link Адреса магизинов
+                    .col-6.col-md-3
+                        h3.footer__list-title
+                            span Поддержка
+                        ul.footer__list
+                            li.footer__list-item
+                                a(href="").footer__list-link Оплата и доставка
+                            li.footer__list-item
+                                a(href="").footer__list-link Гарантия качества
+                            li.footer__list-item
+                                a(href="").footer__list-link Обмен и возврат
+                            li.footer__list-item
+                                a(href="").footer__list-link Подбор ассортимента
+                            li.footer__list-item
+                                a(href="").footer__list-link Видео сборки светильников
+                            li.footer__list-item
+                                a(href="").footer__list-link Расчет освещенности
+                            li.footer__list-item
+                                a(href="").footer__list-link Скачать
+                    .col-6.col-md-3
+                        h3.footer__list-title
+                            span Компания
+                        ul.footer__list
+                            li.footer__list-item
+                                a(href="").footer__list-link Наши проекты
+                            li.footer__list-item
+                                a(href="").footer__list-link Жизнь компании
+                            li.footer__list-item
+                                a(href="").footer__list-link Торговая марка
+                            li.footer__list-item
+                                a(href="").footer__list-link Дизайн и качество
+                            li.footer__list-item
+                                a(href="").footer__list-link Отдел разработки
+                            li.footer__list-item
+                                a(href="").footer__list-link Сотрудничество
+                            li.footer__list-item
+                                a(href="").footer__list-link Контакты
+
+    if page !== 'custom'
+        .footer__line
+            .container
+
+    if page !== 'custom'
+        .footer__location
+            .container
+                h3.footer__location-title Центральный офис в Москве
+                p.footer__location-place ARTPLAY центр дизайна, 105120, Москва, Нижняя Сыромятническая, д* 10 стр* 2
+                ul.footer__location-list
+                    li.footer__location-item
+                        a(href="tel:+74957977251") +7 495-797-72-51
+                    li.footer__location-item
+                        a(href="https://wa.me/74957470564" target="_blank") +7 495-747-05-64 (WhatsApp)
+                    li.footer__location-item
+                        a(href="mailto:order@technolight.ru") order@technolight.ru
+                .footer__location-socials
+                    a(href="https://t.me/technolight_official" target="_blank").social.social_telegram
+                    a(href="https://vk.com/technolightru" target="_blank").social.social_vk
+                    a(href="https://www.youtube.com/channel/UCt3wRyz1Z8b-WOlCHz43CuQ" target="_blank").social.social_youtube
+
+    if page !== 'custom'
+        .footer__line
+            .container
+
+    if page !== 'custom'
+        .footer__copy
+            .container
+                .footer__copy-content
+                    p
+                        a(href="#") Договор оферта
+                    p © Technolight

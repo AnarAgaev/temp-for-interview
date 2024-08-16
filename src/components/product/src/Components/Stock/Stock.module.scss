@@ -1,0 +1,15 @@
+@import '../../../../../scss/sass-variables';
+
+.message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-background-accent);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.informer {
+    position: relative;
+}

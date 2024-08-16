@@ -1,0 +1,17 @@
+//- Include used template for this page
+extends ../../template/template
+
+//- Variables for include this in used template
+block variables
+    - let title       = 'Technolight'
+    - let description = 'Write description for this page here'
+    - let keywords    = 'Write keywords for this page here'
+    - let page        = 'home'
+
+block content
+    include components/billboard/billboard
+    include components/projects/projects
+    // Временно скрыли секцию Жизнь компании, так как для нее пока нет контента
+    // Согласно задаче https://bt24.ddns.net/company/personal/user/12820/tasks/task/view/33121/
+    //- include components/life/life
+    include components/about/about

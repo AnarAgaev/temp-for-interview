@@ -1,0 +1,30 @@
+div.modal.hide#enterEmail
+    .modal__dialog
+        .modal__close
+            button(type="button" data-modal data-modal-action="close")
+
+        .modal__header
+            .modal__logo
+                img(src="https://aws.massive.ru/technolight/public/images/page/modal-logo.svg" alt="")
+            h3.modal__title Войти по почте
+            p.modal__subtitle Только для зарегистрированных пользователей
+
+        .modal__body
+            form.modal__form(action="")
+                fieldset
+                    // Для того чтобы показать ошибку, добавляем к label класс .has-error
+                    label
+                        input(type="text" placeholder="Email")
+                        span.error-message Текст ошибки
+
+                    label
+                        input(type="password" placeholder="Пароль")
+                        span.error-message Текст ошибки
+                        span.modal__toggle-visible-pass
+
+                button.btn.btn_block.btn_lite.modal__button(type="submit" data-modal data-modal-action="close")
+                    span Войти
+
+        .modal__footer
+            button.modal__link(type="button" data-modal data-modal-target="#enterPhone" data-modal-action="toggle") Войти по номеру телефона
+            button.modal__link(type="button" data-modal data-modal-target="#passRecovery" data-modal-action="toggle") Забыли пароль?

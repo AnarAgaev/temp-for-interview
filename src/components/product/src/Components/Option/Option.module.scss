@@ -1,0 +1,39 @@
+@import '../../../../../scss/_sass-variables.scss';
+
+.property {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin: 0 1px;
+    border-bottom: 1px solid var(--color-background-light);
+    color: var(--color-font-primary);
+    font-size: 13px;
+    line-height: 18px; /* 138.462% */
+    background: transparent;
+    transition: var(--base-transition);
+    cursor: pointer;
+
+    @media (min-width: $sm) {
+        font-size: 16px;
+        line-height: 20px; /* 125% */
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            background: var(--color-back-secondary);
+        }
+    }
+
+    &_active {
+        background: var(--color-back-secondary);
+    }
+}
+
+.disabled {
+    span {
+        cursor: not-allowed;
+        background: transparent !important;
+        color: var(--color-font-hover-dark);
+    }
+}

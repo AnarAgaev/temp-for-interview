@@ -1,0 +1,13 @@
+mixin poster(image, name, itemDesc, fileInfo, btnText )
+    .download__content.animation-element
+        .download__card
+            .download__poster
+                img(src=`https://aws.massive.ru/technolight/images/download/${image}` alt="" loading="lazy")
+            .download_description
+                h4.download__name= name
+                span.download__text= itemDesc
+                span.download__text= fileInfo
+        .download__button
+            a.btn.btn_block.btn_dark.btn_download(href="#" download)
+                i
+                span= btnText

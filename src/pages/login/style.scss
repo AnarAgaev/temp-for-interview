@@ -1,0 +1,10 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+.login {
+    &__body {
+        position: relative;
+        margin: 20px 0;
+        @include animationElementWithDelay;
+    }
+}

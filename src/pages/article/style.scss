@@ -1,0 +1,20 @@
+@import '../../scss/sass-variables';
+@import '../../scss/mixins';
+
+@import 'components/article/article';
+
+.article {
+    // user-select: none;
+
+    // * {
+    //     user-select: none;
+    // }
+
+    &__component {
+        @include animationElementWithDelay;
+
+        .container {
+            min-height: 400px;
+        }
+    }
+}
